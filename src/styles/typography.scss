@@ -1,0 +1,32 @@
+.h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 54px;
+  color: $col-white;
+  margin: 0;
+  &_black {
+    color: $col-black50;
+  }
+}
+
+.h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 45px;
+  color: $col-white;
+  margin: 0;
+  &_black {
+    color: $col-black50;
+  }
+}
+
+.h3 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 34px;
+  color: $col-white;
+  margin: 0;
+  &_black {
+    color: $col-black50;
+  }
+}

@@ -1,0 +1,18 @@
+.btn {
+  font-weight: 900;
+  text-align: center;
+  font-size: 14px;
+  height: 100%;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background .3s;
+  &_red {
+    color: $col-white;
+    background-color: $col-bright-red;
+    &:hover {
+      background-color: $col-dark-red;
+    }
+  }
+}

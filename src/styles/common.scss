@@ -1,0 +1,23 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Acrobat', sans-serif;
+  background-color: $col-black;
+}
+
+.z{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between
+}
+
+.content{
+  flex-grow: 1;
+}

@@ -370,22 +370,22 @@ th {
 
 @font-face {
   font-family: Acrobat;
-  src: url(fonts/Akrobat-Regular.otf) format("opentype");
+  src: url(../fonts/Akrobat-Regular.otf) format("opentype");
   font-weight: 300; }
 
 @font-face {
   font-family: Acrobat;
-  src: url(fonts/Akrobat-Bold.otf) format("opentype");
+  src: url(../fonts/Akrobat-Bold.otf) format("opentype");
   font-weight: 700; }
 
 @font-face {
   font-family: Acrobat;
-  src: url(fonts/Akrobat-ExtraBold.otf) format("opentype");
+  src: url(../fonts/Akrobat-ExtraBold.otf) format("opentype");
   font-weight: 900; }
 
 @font-face {
   font-family: Acrobat;
-  src: url(fonts/Akrobat-ExtraLight.otf) format("opentype");
+  src: url(../fonts/Akrobat-ExtraLight.otf) format("opentype");
   font-weight: 100; }
 
 .h1 {
@@ -416,7 +416,8 @@ th {
     color: #101010; }
 
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  height: 100%; }
 
 *,
 *:before,
@@ -425,12 +426,11 @@ html {
 
 body {
   font-family: 'Acrobat', sans-serif;
-  background-color: #000000; }
+  background-color: #000000;
+  height: 100%; }
 
 .z {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between; }
+  min-height: 100%; }
 
 .content {
   flex-grow: 1; }
@@ -472,7 +472,12 @@ body {
   display: none; }
 
 .header__phone-icon {
-  display: block; }
+  display: block;
+  background-image: url(../images/call.svg);
+  background-repeat: no-repeat;
+  width: 70px;
+  height: 70px;
+  background-position: 50%; }
 
 .header__select-sity {
   display: none; }
@@ -501,6 +506,51 @@ body {
   display: block; }
 
 .menu {
-  width: 0;
-  overflow: hidden; }
+  width: 100%;
+  overflow: hidden;
+  background-color: #000000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 10; }
+
+.menu__header-nav {
+  padding-left: 60px; }
+
+.menu__header-nav-item {
+  display: block;
+  text-decoration: none;
+  font-family: Acrobat;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.45;
+  color: #ffffff;
+  margin-bottom: 20px;
+  transition: color 0.3s; }
+  .menu__header-nav-item:hover {
+    text-decoration: none;
+    color: #ff001b; }
+
+.menu__header-close {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+.social {
+  display: flex;
+  justify-content: flex-start; }
+  .social_menu {
+    flex-flow: column;
+    position: absolute;
+    top: 70px;
+    right: 0; }
+
+.social__link {
+  display: block;
+  width: 70px;
+  height: 70px;
+  background-color: #222222; }
 

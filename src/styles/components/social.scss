@@ -1,0 +1,17 @@
+.social {
+  display: flex;
+  justify-content: flex-start;
+  &_menu {
+    flex-flow: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+  }
+}
+
+.social__link {
+  display: block;
+  width: 70px;
+  height: 70px;
+  background-color: $col-gray;
+}

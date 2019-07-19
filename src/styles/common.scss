@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  height: 100%;
 }
 *,
 *:before,
@@ -10,14 +11,16 @@ html {
 body {
   font-family: 'Acrobat', sans-serif;
   background-color: $col-black;
+  height: 100%;
 }
 
-.z{
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between
+.z {
+  min-height: 100%;
+  // display: flex;
+  // flex-flow: row;
+  // justify-content: space-between
 }
 
-.content{
+.content {
   flex-grow: 1;
 }

@@ -22,12 +22,7 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        use: [
-          { loader: 'style-loader' },
-          { loader: MiniCssExtractPlugin.loader },
-          { loader: 'css-loader' },
-          { loader: 'sass-loader' }
-        ]
+        use: [{ loader: 'style-loader' }, { loader: MiniCssExtractPlugin.loader }, { loader: 'css-loader' }, { loader: 'sass-loader' }]
       },
       {
         test: /\.svg$/,
@@ -37,19 +32,13 @@ module.exports = {
             options: {
               name: '[name].[ext]',
               outputPath: 'images/',
-              publicPath: 'images/'
+              publicPath: '../images/'
             }
           },
           {
             loader: 'svgo-loader',
             options: {
-              plugins: [
-                { removeTitle: true },
-                { convertColors: { shorthex: false } },
-                { convertPathData: false },
-                { collapseGroups: true },
-                { mergePaths: true }
-              ]
+              plugins: [{ removeTitle: true }, { convertColors: { shorthex: false } }, { convertPathData: false }, { collapseGroups: true }, { mergePaths: true }]
             }
           }
         ]

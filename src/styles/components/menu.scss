@@ -1,4 +1,38 @@
 .menu {
-  width: 0;
+  width: 100%;
   overflow: hidden;
+  background-color: $col-black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 10;
+}
+
+.menu__header-nav {
+  padding-left: 60px;
+}
+
+.menu__header-nav-item {
+  display: block;
+  text-decoration: none;
+  font-family: Acrobat;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.45;
+  color: $col-white;
+  margin-bottom: 20px;
+  transition: color 0.3s;
+  &:hover {
+    text-decoration: none;
+    color: $col-bright-red;
+  }
+}
+
+.menu__header-close {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 0;
+  right: 0;
 }

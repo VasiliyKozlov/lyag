@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: 'Acrobat', sans-serif;
+  font-family: "Acrobat", sans-serif;
   background-color: $col-black;
   height: 100%;
 }
@@ -19,6 +19,11 @@ body {
   // display: flex;
   // flex-flow: row;
   // justify-content: space-between
+}
+
+.wrapper {
+  width: 84%;
+  margin: auto;
 }
 
 .content {

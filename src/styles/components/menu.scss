@@ -1,5 +1,5 @@
 .menu {
-  width: 100%;
+  width: 0;
   overflow: hidden;
   background-color: $col-black;
   position: absolute;
@@ -7,6 +7,10 @@
   left: 0;
   height: 100%;
   z-index: 10;
+  transition: width 0.3s;
+  &.active {
+    width: 100%;
+  }
 }
 
 .menu__header-nav {
@@ -23,6 +27,7 @@
   color: $col-white;
   margin-bottom: 20px;
   transition: color 0.3s;
+  padding-right: 70px;
   &:hover {
     text-decoration: none;
     color: $col-bright-red;
@@ -35,4 +40,33 @@
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 9;
+  background-image: url(../images//icons/close-menu.svg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.menu__footer {
+  color: $col-white;
+  background-color: $col-black50;
+  transform: rotate(-90deg);
+  position: absolute;
+  bottom: 100vh;
+  width: 100vh;
+  right: 0;
+  height: 70px;
+  transform-origin: 100% 100%;
+}
+
+.menu__footer-copy {
+  display: none;
+}
+
+.menu__footer-autor {
+  font-size: 18px;
+  line-height: 70px;
+  text-indent: 20px;
+  span {
+    color: $col-bright-red;
+  }
 }

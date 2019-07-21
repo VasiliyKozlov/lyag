@@ -25,6 +25,19 @@ module.exports = {
         use: [{ loader: 'style-loader' }, { loader: MiniCssExtractPlugin.loader }, { loader: 'css-loader' }, { loader: 'sass-loader' }]
       },
       {
+        test: /\.(png|jpe?g|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'images/',
+              publicPath: '../images/'
+            },
+          },
+        ],
+      },
+      {
         test: /\.svg$/,
         use: [
           {

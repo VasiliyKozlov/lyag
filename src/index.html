@@ -10,13 +10,22 @@
   <body>
     <div class="z">
       <!-- MENU -->
-      <div class="menu">
+      <div class="menu ">
         <div class="menu__header">
+          <!-- SELECT SITY -->
+          <div class="select-sity select-sity_menu active">
+            <div class="select-sity__label">Москва</div>
+            <ul class="select-sity__list">
+              <li class="select-sity__item">санкт-петербург</li>
+              <li class="select-sity__item">Москва</li>
+            </ul>
+          </div>
+          <!-- SELECT SITY -->
           <div class="menu__header-logo">
             <img src="" alt="" />
           </div>
-          <div class="menu__header-close">
-            <button class="btn btn_red menu__header-close-btn"></button>
+          <div class="menu__header-close btn btn_red ">
+
           </div>
         </div>
         <nav class="menu__header-nav">
@@ -37,7 +46,7 @@
         </div>
         <!-- MENU SOCIAL -->
         <div class="menu__footer">
-          <div class="menu__footer-autor">Дизайн и разработка – <span class="color-red">A. Ruzov</span></div>
+          <div class="menu__footer-autor">Дизайн и разработка – <span>A. Ruzov</span></div>
           <div class="menu__footer-copy">
             © 2019 Ляг.Спиной. Все права защищены
           </div>
@@ -60,20 +69,12 @@
             </div>
 
             <!-- HEADER SOCIAL -->
-            <ul class="header__social social">
-              <li class="social__item">
-                <a class="social__link" href="" alt="facebook"></a>
-              </li>
-              <li class="social__item">
-                <a class="social__link" href="" alt="vk"></a>
-              </li>
-              <li class="social__item">
-                <a class="social__link" href="" alt="instagram"></a>
-              </li>
-              <li class="social__item">
-                <a class="social__link" href="" alt="telegram"></a>
-              </li>
-            </ul>
+            <div class="header__social social">
+              <a class="social__link social__link_fb" href="" alt="facebook"></a>
+              <a class="social__link social__link_vk" href="" alt="vk"></a>
+              <a class="social__link social__link_inst" href="" alt="instagram"></a>
+              <a class="social__link social__link_tel" href="" alt="telegram"></a>
+            </div>
             <!-- HEADER SOCIAL -->
           </div>
 
@@ -106,9 +107,70 @@
       </div>
       <!--CONTENT  -->
 
-      <main class="main" style="color: #fff">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse quos consequatur, saepe ab velit ipsam quam recusandae molestias fuga possimus quis et ad harum nemo delectus sapiente odit nisi
-        consectetur?
+      <main class="main" >
+
+        <!--FIRST SCREEN  -->
+        <div class="first-screen">
+          <div class="wrapper first-screen__wrapper">
+            <div class="first-screen__left">
+              <div class="first-screen__logo">
+                <img src="./images/logo.svg" alt="">
+              </div>
+              <div class="first-screen__slogan">
+                Сеть лучших в россии массажных мастерских
+              </div>
+              <div class="first-screen__footnote">
+                КРУТИ ВНИЗ
+              </div>
+            </div>
+            <div class="first-screen__right">
+              <div class="first-screen__price">
+                <div class="first-screen__price-item">1500<span>руб.</span> </div>
+                <div class="first-screen__price-for">Любой первый<br> массаж</div>
+              </div>
+              <div class="first-screen__order">
+                <div class="btn btn_red">записаться на первый массаж</div>
+              </div>
+              <div class="link-list link-list_first-screen">
+                <!-- <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--FIRST SCREEN  -->
+
+        <!--ABOUT US  -->
+        <div class="about">
+            <div class="about__wrapper wrapper">
+                <div class="about__video">
+                    <div class="about__video-control"></div>
+                    <div class="about__video-ext">
+                        <div class="about__video-ext-name">
+                            о ляг.спиной
+                        </div>
+                        <div class="about__video-ext-time">
+                            2:23 сек.
+                        </div>
+                    </div>
+                </div>
+                <div class="about__text">
+                    <div class="head-sections">
+                        о нас
+                    </div>
+                    <h3 class="h3">
+                        Мы хотим размять всю планету
+                    </h3>
+                     <div class="about__text-p">
+                        Наша цель – сделать массаж
+                        неотъемлемой частью здорового образа жизни современного человека
+                     </div>
+                </div>
+            </div>
+        </div>
+        <!--ABOUT US  -->
       </main>
       <footer class="footer"></footer>
     </div>

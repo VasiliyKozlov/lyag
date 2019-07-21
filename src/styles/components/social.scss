@@ -1,11 +1,14 @@
 .social {
   display: flex;
   justify-content: flex-start;
+  display: none;
   &_menu {
     flex-flow: column;
     position: absolute;
     top: 70px;
     right: 0;
+    z-index: 9;
+    display: block;
   }
 }
 
@@ -13,5 +16,23 @@
   display: block;
   width: 70px;
   height: 70px;
-  background-color: $col-gray;
+  background-color: $col-gray-light;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  transition: background .3s;
+  &:hover{
+    background-color: $col-bright-red;
+  }
+  &_fb {
+    background-image: url(../images/icons/fb.svg);
+  }
+  &_vk {
+    background-image: url(../images/icons/vk.svg);
+  }
+  &_inst {
+    background-image: url(../images/icons/inst.svg);
+  }
+  &_tel {
+    background-image: url(../images/icons/telegram.svg);
+  }
 }

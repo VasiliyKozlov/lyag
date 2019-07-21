@@ -5,6 +5,9 @@
   justify-content: space-between;
   flex-wrap: nowrap;
 }
+.header__left{
+  max-width: 70px
+}
 
 .header__right {
   flex-grow: 1;
@@ -43,6 +46,13 @@
   flex-wrap: nowrap;
   overflow: hidden;
   align-items: center;
+  transition: background .3s;
+  &:hover{
+    background-color: $col-bright-red;
+    .header__menu-btn-buter-line{
+      background-color: #fff;
+    }
+  }
 }
 
 .header__menu-btn-buter {
@@ -60,4 +70,5 @@
   margin: 0 auto 3px;
   background-color: $col-black;
   display: block;
+  transition: background .3s;
 }

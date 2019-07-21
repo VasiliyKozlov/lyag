@@ -1,0 +1,82 @@
+.select-sity{
+  height: 70px;
+  line-height: 70px;
+  background-color: $col-black;
+  color: $col-white;
+  font-weight: 300px;
+  font-size: 14px;
+  position: relative;
+  z-index: 9;
+  transition: background .3s;
+  position: relative;
+  display: none;
+  &_menu{
+    display: block;
+  }
+  &:after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    margin-top: -7px;
+    width: 14px;
+    height: 9px;
+    background-image: url(../images/icons/arrow-select-down.svg);
+    background-repeat: no-repeat;
+    z-index: 12;
+  }
+  &:hover{
+    background-color: $col-gray-dark;
+  }
+  &.active{
+    &:after{
+      background-image: url(../images/icons/arrow-select.svg);
+    }
+    .select-sity__list{
+      height: 140px;
+    }
+    .select-sity__label{
+      display: none
+    }
+  }
+}
+
+.select-sity__list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 0;
+  overflow: hidden;
+}
+
+.select-sity__label{
+  padding: 0 0 0 60px;
+  height: 70px;
+  line-height: 70px;
+  color: $col-white;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-image: url(../images/icons/gps.svg);
+  background-repeat: no-repeat;
+  background-position: 30px 50%;
+}
+
+.select-sity__item{
+  margin: 0;
+  padding: 0 0 0 60px;
+  height: 70px;
+  line-height: 70px;
+  color: $col-white;
+  background-color: $col-gray-dark;
+  background-image: url(../images/icons/gps.svg);
+  background-repeat: no-repeat;
+  background-position: 30px 50%;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: background .3s;
+  &:hover{
+    background-color: $col-black;
+  }
+}

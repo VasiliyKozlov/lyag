@@ -1,0 +1,15 @@
+.link-list{
+  width: 70px;
+  height: 70px;
+  background-image: url(../images/icons/links-list.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: $col-white;
+  transition: background .3s;
+  &:hover{
+    background-color: $col-gray-dark;
+  }
+  &_first-screen {
+    margin-left: 10px;
+  }
+}

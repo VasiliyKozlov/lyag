@@ -4,7 +4,9 @@
 @import './typography.scss';
 
 @import './common.scss';
+@import './form.scss';
 
+@import './components/section.scss';
 @import './components/btns.scss';
 @import './components/header.scss';
 @import './components/select-sity.scss';
@@ -12,3 +14,14 @@
 @import './components/social.scss';
 @import './components/first-screen.scss';
 @import './components/links-list.scss';
+@import './components/footer.scss';
+@import './components/modal.scss';
+
+//main-page
+@import './components/about.scss';
+@import './components/services.scss';
+@import './components/first-order.scss';
+@import './components/geo.scss';
+@import './components/promo.scss';
+@import './components/team.scss';
+@import './components/reviews.scss';

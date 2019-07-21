@@ -1,0 +1,25 @@
+.geo {
+  padding-top: 155px;
+  padding-bottom: 155px;
+  background-image: url(../images/bg/geo.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-weight: 700;
+}
+
+.geo__count {
+  font-size: 140px;
+  margin-bottom: 20px;
+  color: $col-bright-red;
+}
+
+.geo__header {
+  width: 280px;
+}
+
+.geo__btn {
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+}

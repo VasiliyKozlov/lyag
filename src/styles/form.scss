@@ -1,0 +1,62 @@
+.text-input {
+  border: none;
+  height: 70px;
+  padding: 20px 25px;
+  font-size: 15px;
+  color: $col-gray-light;
+  width: 100%;
+}
+
+//---radio
+.radio-input {
+  height: 60px;
+  padding: 20px;
+  background-color: $col-black25;
+  transition: background 0.3s;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  min-width: 120px;
+  width: 49%;
+  &.active {
+    background-color: $col-bright-red;
+  }
+  &:hover {
+    background-color: $col-bright-red;
+  }
+}
+
+.radio-input:focus {
+  background-color: #ff00ff;
+}
+
+.radio-input input {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.radio-input__decorator {
+  width: 14px;
+  height: 14px;
+  background-color: $col-white;
+  border-radius: 50%;
+}
+
+.radio-input input:checked ~ .radio-input__decorator {
+  width: 12px;
+  height: 12px;
+  border: 2px solid $col-white;
+  background-color: $col-bright-red;
+}
+
+.radio-input__text {
+  font-size: 16px;
+  font-weight: 300;
+  color: $col-white;
+}
+//---radio

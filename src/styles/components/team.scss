@@ -1,0 +1,20 @@
+.team {
+  padding-top: 90px;
+  padding-bottom: 410px;
+  background-image: url(../images/bg/team.png), url(../images/bg/team-angle1.svg), url(../images/bg/team-angle2.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 100%, 0% 0%, 100% 0%;
+  background-size: contain, 50%, 40%;
+}
+
+.team__header {
+  width: 240px;
+}
+
+// .team__bg {
+//   width: 370px;
+//   height: 370px;
+//   background-image: url(../images/bg/team-bg.svg);
+//   background-repeat: no-repeat;
+//   background-position: 50% 100%;
+// }

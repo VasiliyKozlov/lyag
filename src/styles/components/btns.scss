@@ -7,12 +7,26 @@
   border: none;
   cursor: pointer;
   text-transform: uppercase;
-  transition: background .3s;
+  transition: background 0.3s;
   &_red {
     color: $col-white;
     background-color: $col-bright-red;
     &:hover {
       background-color: $col-dark-red;
+    }
+  }
+  &_black {
+    color: $col-white;
+    background-color: $col-black50;
+    &:hover {
+      background-color: $col-black;
+    }
+  }
+  &_white {
+    color: $col-bright-red;
+    background-color: $col-white;
+    &:hover {
+      background-color: $col-dark-white;
     }
   }
 }

@@ -3,6 +3,7 @@
   background-image: url(../images/bg/first-screen.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  padding-top: 80px;
 }
 
 .first-screen__wrapper {
@@ -17,7 +18,6 @@
 }
 
 .first-screen__logo {
-  margin-top: 80px;
   margin-bottom: 170px;
 }
 
@@ -61,8 +61,8 @@
   transform: rotate(-90deg);
   transform-origin: 100% 100%;
   color: $col-white;
-  &:before{
-    content: "";
+  &:before {
+    content: '';
     transform: rotate(90deg);
     display: inline-block;
     background-image: url(../images/icons/arrow-select-down.svg);

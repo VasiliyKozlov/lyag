@@ -1,0 +1,39 @@
+.footer {
+  padding-top: 90px;
+  padding-bottom: 35px;
+  background-image: url(../images/bg/first-screen.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer__logo {
+  margin-bottom: 170px;
+}
+
+.footer__header {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.13;
+  color: $col-white;
+  text-transform: uppercase;
+  margin-bottom: 165px;
+}
+
+.footer__copy {
+  font-family: OpenSans;
+  font-size: 12px;
+  font-weight: 100;
+  line-height: 1.5;
+  color: $col-white;
+}
+
+.footer__copy-autor {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.78;
+  letter-spacing: -0.23px;
+  color: $col-white;
+  span {
+    color: $col-bright-red;
+  }
+}

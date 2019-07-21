@@ -24,9 +24,7 @@
           <div class="menu__header-logo">
             <img src="" alt="" />
           </div>
-          <div class="menu__header-close btn btn_red ">
-
-          </div>
+          <div class="menu__header-close btn btn_red "></div>
         </div>
         <nav class="menu__header-nav">
           <a href="" class="menu__header-nav-item">Главная</a>
@@ -107,14 +105,13 @@
       </div>
       <!--CONTENT  -->
 
-      <main class="main" >
-
+      <main class="main">
         <!--FIRST SCREEN  -->
-        <div class="first-screen">
+        <section class="first-screen">
           <div class="wrapper first-screen__wrapper">
             <div class="first-screen__left">
               <div class="first-screen__logo">
-                <img src="./images/logo.svg" alt="">
+                <img src="./images/logo.svg" alt="" />
               </div>
               <div class="first-screen__slogan">
                 Сеть лучших в россии массажных мастерских
@@ -125,8 +122,11 @@
             </div>
             <div class="first-screen__right">
               <div class="first-screen__price">
-                <div class="first-screen__price-item">1500<span>руб.</span> </div>
-                <div class="first-screen__price-for">Любой первый<br> массаж</div>
+                <div class="first-screen__price-item">1500<span>руб.</span></div>
+                <div class="first-screen__price-for">
+                  Любой первый<br />
+                  массаж
+                </div>
               </div>
               <div class="first-screen__order">
                 <div class="btn btn_red">записаться на первый массаж</div>
@@ -139,40 +139,273 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
         <!--FIRST SCREEN  -->
 
         <!--ABOUT US  -->
-        <div class="about">
-            <div class="about__wrapper wrapper">
-                <div class="about__video">
-                    <div class="about__video-control"></div>
-                    <div class="about__video-ext">
-                        <div class="about__video-ext-name">
-                            о ляг.спиной
-                        </div>
-                        <div class="about__video-ext-time">
-                            2:23 сек.
-                        </div>
-                    </div>
+        <section class="about">
+          <div class="about__wrapper wrapper">
+            <div class="about__video">
+              <div class="about__video-control">
+                <div class="about__video-control-btn"></div>
+                <div class="about__video-ext">
+                  <div class="about__video-ext-name">
+                    о ляг.спиной
+                  </div>
+                  <div class="about__video-ext-time">
+                    2:23 сек.
+                  </div>
                 </div>
-                <div class="about__text">
-                    <div class="head-sections">
-                        о нас
-                    </div>
-                    <h3 class="h3">
-                        Мы хотим размять всю планету
-                    </h3>
-                     <div class="about__text-p">
-                        Наша цель – сделать массаж
-                        неотъемлемой частью здорового образа жизни современного человека
-                     </div>
-                </div>
+              </div>
             </div>
-        </div>
+            <div class="about__text">
+              <div class="section__title">
+                о нас
+              </div>
+              <h2 class="section__header">
+                Мы хотим размять всю планету
+              </h2>
+              <div class="section__p">
+                Наша цель – сделать массаж неотъемлемой частью здорового образа жизни современного человека
+              </div>
+            </div>
+          </div>
+        </section>
         <!--ABOUT US  -->
+
+        <!-- OUR SERVICES -->
+        <section class="services">
+          <div class="services__poster">
+            <img src="" alt="" />
+          </div>
+          <div class="services__wrapper wrapper">
+            <div class="services__text">
+              <div class="section__title">
+                наши услуги
+              </div>
+              <h2 class="section__header">
+                В НАШЕМ АРСЕНАЛЕ САМЫЕ НУЖНЫЕ ВИДЫ МАССАЖА
+              </h2>
+              <div class="section__p">
+                Приходите первый раз, и наш мастер поможет выбрать подходящий вам массаж
+              </div>
+            </div>
+            <div class="services__slider"></div>
+          </div>
+        </section>
+        <!-- OUR SERVICES -->
+
+        <!-- FIRST ORDER FORM -->
+        <section class="first-order">
+          <div class="first-order__wrapper wrapper">
+            <h2 class="first-order__header">Записаться на первый массаж</h2>
+            <div class="section__p">
+              Наши менеджеры быстро свяжутся с вами и скоординируют по нужному вопросу
+            </div>
+            <form action="" class="first-order__form form">
+              <div class="first-order__form-wrapper">
+                <div class="first-order__form-input">
+                  <input type="text" name="name" placeholder="Имя" class="text-input" id="" />
+                </div>
+                <div class="first-order__form-input">
+                  <input type="text" name="phone" placeholder="Телефон" class="text-input" id="" />
+                </div>
+                <div class="first-order__form-input first-order__form-input-submit">
+                  <button class="btn btn_black">записаться на первый массаж</button>
+                </div>
+                <div class="first-order__form-footnote">Нажимая кнопку «Записаться на первый массаж» <a class="first-order__form-footnote-link" href="">я принимаю условия передачи информации</a></div>
+              </div>
+            </form>
+          </div>
+        </section>
+        <!-- FIRST ORDER FORM -->
+
+        <!-- GEO -->
+        <section class="geo">
+          <div class="geo__wrapper wrapper">
+            <div class="geo__count">5</div>
+            <div class="geo__header section__header">
+              <span class="section__header_red">мастерских</span><br />
+              в центре столиц нашей страны
+            </div>
+            <div class="geo__btn">
+              <div class="btn btn_white">смотреть все мастерские</div>
+            </div>
+          </div>
+        </section>
+        <!-- GEO -->
+
+        <!-- OUR PROMO -->
+        <section class="promo">
+          <div class="promo__wrapper wrapper">
+            <div class="section__title">
+              наши акции
+            </div>
+            <h2 class="section__header">
+              Мы дарим вам возможность еще выгоднее ходить на массаж
+            </h2>
+            <div class="section__p">
+              Регулярный массаж – выгодный массаж. Что может быть лучше?
+            </div>
+            <div class="slider promo__slider"></div>
+            <div class="promo__btn">
+              <div class="btn btn_white">смотреть все акции</div>
+            </div>
+          </div>
+        </section>
+        <!-- OUR PROMO -->
+
+        <!-- OUR TEAM -->
+        <section class="team">
+          <div class="team__bg"></div>
+          <div class="wrapper team__wrapper">
+            <div class="section__title">
+              наша команда
+            </div>
+            <h2 class="team__header section__header">
+              вами будут заниматься лучшие мастера страны
+            </h2>
+            <div class="section__p">
+              Наши мастера прошли серьезную школу массажа. Мы нашли лучших из лучших
+            </div>
+          </div>
+        </section>
+        <!-- OUR TEAM -->
+
+        <!-- REWIEWS -->
+        <section class="reviews">
+          <div class="reviews__wrapper wrapper">
+            <div class="section__title">
+              отзывы
+            </div>
+            <h2 class="section__header">
+              Про нас много говорят и нас действительно любят
+            </h2>
+            <div class="section__p">
+              Наши люди гордятся тем, что нашли такое место, как Ляг.Спиной, а мы рады тому, что дарим положительные эмоции
+            </div>
+            <div class="slider reviews__slider"></div>
+          </div>
+        </section>
+        <!-- REWIEWS -->
+
+        <!-- FIRST ORDER FORM -->
+        <section class="first-order">
+          <div class="first-order__wrapper wrapper">
+            <h2 class="first-order__header">Записаться на первый массаж</h2>
+            <div class="section__p">
+              Наши менеджеры быстро свяжутся с вами и скоординируют по нужному вопросу
+            </div>
+            <form action="" class="first-order__form form">
+              <div class="first-order__form-wrapper">
+                <div class="first-order__form-input">
+                  <input type="text" name="name" placeholder="Имя" class="text-input" id="" />
+                </div>
+                <div class="first-order__form-input">
+                  <input type="text" name="phone" placeholder="Телефон" class="text-input" id="" />
+                </div>
+                <div class="first-order__form-input first-order__form-input-submit">
+                  <button class="btn btn_black">записаться на первый массаж</button>
+                </div>
+                <div class="first-order__form-footnote">Нажимая кнопку «Записаться на первый массаж» <a class="first-order__form-footnote-link" href="">я принимаю условия передачи информации</a></div>
+              </div>
+            </form>
+          </div>
+        </section>
+        <!-- FIRST ORDER FORM -->
       </main>
-      <footer class="footer"></footer>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="footer__wrapper wrapper">
+          <div class="footer__logo">
+            <img src="./images/logo.svg" alt="" />
+          </div>
+          <h2 class="footer__header">
+            Сеть лучших в россии массажных мастерских
+          </h2>
+          <div class="footer__copy">
+            <div class="footer__copy-autor">Дизайн и разработка – <span>A. Ruzov</span></div>
+            © 2019 Ляг.Спиной. Все права защищены
+          </div>
+        </div>
+      </footer>
+      <!-- FOOTER -->
     </div>
+
+    <!-- MODAL FIRST ORDER FORM -->
+    <div class="modal ">
+      <div class="modal__overlay"></div>
+      <div class="modal__body modal__body_black">
+        <div class="modal__close btn btn_red"></div>
+        <h2 class="modal__header">
+          Записаться на первый массаж
+        </h2>
+        <div class="modal__p">Наши менеджеры быстро свяжутся с вами и скоординируют по нужному вопросу</div>
+        <form action="" class="first-order__form form">
+          <div class="first-order__form-wrapper">
+            <div class="first-order__form-input">
+              <input type="text" name="name" placeholder="Имя" class="text-input" id="" />
+            </div>
+            <div class="first-order__form-input">
+              <input type="text" name="phone" placeholder="Телефон" class="text-input" id="" />
+            </div>
+            <div class="first-order__form-input">
+              <input type="text" name="email" placeholder="Email" class="text-input" id="" />
+            </div>
+            <div class="first-order__form-input first-order__form-input-submit">
+              <button class="btn btn_red">записаться на первый массаж</button>
+            </div>
+            <div class="first-order__form-footnote">Нажимая кнопку «Записаться на первый массаж» <a class="first-order__form-footnote-link" href="">я принимаю условия передачи информации</a></div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- MODAL FIRST ORDER FORM -->
+
+    <!-- MODAL ORDER FORM -->
+    <div class="modal active">
+      <div class="modal__overlay"></div>
+      <div class="modal__body modal__body_black">
+        <div class="modal__close btn btn_red"></div>
+        <h2 class="modal__header">
+          Записаться на первый массаж
+        </h2>
+        <div class="modal__p">Наши менеджеры быстро свяжутся с вами и скоординируют по нужному вопросу</div>
+        <form action="" class="first-order__form form">
+          <div class="first-order__form-input first-order__form-radio-wrapper">
+            <div class="first-order__form-radio-wrapper-head">
+              Выбрать время продолжительности сеанса
+            </div>
+            <label class="radio-input">
+              <span class="radio-input__text">30 мин.</span>
+              <input type="radio" name="time" value="30" id="" />
+              <span class="radio-input__decorator"></span>
+            </label>
+            <label class="radio-input">
+              <span class="radio-input__text">60 мин.</span>
+              <input type="radio" name="time" value="60" id="" />
+              <span class="radio-input__decorator"></span>
+            </label>
+          </div>
+          <div class="first-order__form-wrapper">
+            <div class="first-order__form-input">
+              <input type="text" name="name" placeholder="Имя" class="text-input" id="" />
+            </div>
+            <div class="first-order__form-input">
+              <input type="text" name="phone" placeholder="Телефон" class="text-input" id="" />
+            </div>
+            <div class="first-order__form-input">
+              <input type="text" name="email" placeholder="Email" class="text-input" id="" />
+            </div>
+            <div class="first-order__form-input first-order__form-input-submit">
+              <button class="btn btn_red">записаться на первый массаж</button>
+            </div>
+            <div class="first-order__form-footnote">Нажимая кнопку «Записаться на первый массаж» <a class="first-order__form-footnote-link" href="">я принимаю условия передачи информации</a></div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- MODAL ORDER FORM -->
   </body>
 </html>

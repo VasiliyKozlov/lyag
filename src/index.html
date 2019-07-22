@@ -67,7 +67,7 @@
             </div>
 
             <!-- HEADER SOCIAL -->
-            <div class="header__social social">
+            <div class="social_header social">
               <a class="social__link social__link_fb" href="" alt="facebook"></a>
               <a class="social__link social__link_vk" href="" alt="vk"></a>
               <a class="social__link social__link_inst" href="" alt="instagram"></a>
@@ -85,7 +85,7 @@
             <!-- HEADER PHONE -->
 
             <!-- SELECT SITY -->
-            <div class="header__select-sity select-sity">
+            <div class="select-sity_header select-sity">
               <div class="select-sity__label"></div>
               <ul class="select-sity__list">
                 <li class="select-sity__item">санкт-петербург</li>
@@ -131,12 +131,7 @@
               <div class="first-screen__order">
                 <div class="btn btn_red">записаться на первый массаж</div>
               </div>
-              <div class="link-list link-list_first-screen">
-                <!-- <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a> -->
-              </div>
+              <div class="link-list link-list_first-screen"></div>
             </div>
           </div>
         </section>
@@ -325,8 +320,13 @@
             Сеть лучших в россии массажных мастерских
           </h2>
           <div class="footer__copy">
-            <div class="footer__copy-autor">Дизайн и разработка – <span>A. Ruzov</span></div>
-            © 2019 Ляг.Спиной. Все права защищены
+            <div class="footer__copy-left">
+              <div class="footer__copy-autor">Дизайн и разработка – <span>A. Ruzov</span></div>
+              © 2019 Ляг.Спиной. Все права защищены
+            </div>
+            <div class="footer__copy-right">
+              <div class="link-list link-list_footer"></div>
+            </div>
           </div>
         </div>
       </footer>
@@ -364,7 +364,7 @@
     <!-- MODAL FIRST ORDER FORM -->
 
     <!-- MODAL ORDER FORM -->
-    <div class="modal active">
+    <div class="modal ">
       <div class="modal__overlay"></div>
       <div class="modal__body modal__body_black">
         <div class="modal__close btn btn_red"></div>
@@ -393,7 +393,7 @@
           </div>
 
           <div class="order__form-radio-head">
-              Выбрать дополнительное время сеанса
+            Выбрать дополнительное время сеанса
           </div>
 
           <div class="order__form-input order__form-radio">
@@ -410,8 +410,8 @@
           </div>
 
           <div class="order__price">
-              <div class="order__price-title">Итого</div>
-              <div class="order__price-item">15 900<span>руб.</span></div>
+            <div class="order__price-title">Итого</div>
+            <div class="order__price-item">15 900<span>руб.</span></div>
           </div>
 
           <div class="order__form-wrapper">
@@ -433,5 +433,26 @@
       </div>
     </div>
     <!-- MODAL ORDER FORM -->
+
+    <!-- MODAL ORDER SUCCESS -->
+    <div class="modal ">
+      <div class="modal__overlay"></div>
+      <div class="modal__body modal__body_black">
+        <div class="modal__close btn btn_red"></div>
+        <div class="success">
+          <div class="success__img">
+            <div class="success__img-item"></div>
+          </div>
+          <div class="success__text">
+            <h2 class="modal__header">
+              Заявка отправлена
+            </h2>
+            <div class="modal__p">Вам скоро перезвонят и подробно всё расскажут</div>
+            <button class="btn btn_transperent success__btn">закрыть окно</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL ORDER SUCCESS -->
   </body>
 </html>

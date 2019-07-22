@@ -1,0 +1,23 @@
+.success {
+  display: flex;
+  flex-direction: column;
+}
+
+.success__img {
+  width: 100%;
+  height: 370px;
+}
+
+.success__img-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 340px;
+  background-color: $col-white;
+}
+
+.success__btn {
+  width: 100%;
+  height: 70px;
+}

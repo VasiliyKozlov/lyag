@@ -5,8 +5,8 @@
   justify-content: space-between;
   flex-wrap: nowrap;
 }
-.header__left{
-  max-width: 70px
+.header__left {
+  max-width: 70px;
 }
 
 .header__right {
@@ -46,10 +46,10 @@
   flex-wrap: nowrap;
   overflow: hidden;
   align-items: center;
-  transition: background .3s;
-  &:hover{
+  transition: background 0.3s;
+  &:hover {
     background-color: $col-bright-red;
-    .header__menu-btn-buter-line{
+    .header__menu-btn-buter-line {
       background-color: #fff;
     }
   }
@@ -70,5 +70,17 @@
   margin: 0 auto 3px;
   background-color: $col-black;
   display: block;
-  transition: background .3s;
+  transition: background 0.3s;
+}
+
+@media (min-width: 740px) {
+  .header__left {
+    max-width: none;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+  }
+  .header__right {
+    flex-grow: 0;
+  }
 }

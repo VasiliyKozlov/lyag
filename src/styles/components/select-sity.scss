@@ -1,4 +1,4 @@
-.select-sity{
+.select-sity {
   height: 70px;
   line-height: 70px;
   background-color: $col-black;
@@ -7,14 +7,16 @@
   font-size: 14px;
   position: relative;
   z-index: 9;
-  transition: background .3s;
+  transition: background 0.3s;
   position: relative;
-  display: none;
-  &_menu{
+  &_header {
+    display: none;
+  }
+  &_menu {
     display: block;
   }
-  &:after{
-    content: "";
+  &:after {
+    content: '';
     position: absolute;
     top: 50%;
     left: 90%;
@@ -25,23 +27,23 @@
     background-repeat: no-repeat;
     z-index: 12;
   }
-  &:hover{
+  &:hover {
     background-color: $col-gray-dark;
   }
-  &.active{
-    &:after{
+  &.active {
+    &:after {
       background-image: url(../images/icons/arrow-select.svg);
     }
-    .select-sity__list{
+    .select-sity__list {
       height: 140px;
     }
-    .select-sity__label{
-      display: none
+    .select-sity__label {
+      display: none;
     }
   }
 }
 
-.select-sity__list{
+.select-sity__list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -49,7 +51,7 @@
   overflow: hidden;
 }
 
-.select-sity__label{
+.select-sity__label {
   padding: 0 0 0 60px;
   height: 70px;
   line-height: 70px;
@@ -62,7 +64,7 @@
   background-position: 30px 50%;
 }
 
-.select-sity__item{
+.select-sity__item {
   margin: 0;
   padding: 0 0 0 60px;
   height: 70px;
@@ -75,8 +77,8 @@
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
-  transition: background .3s;
-  &:hover{
+  transition: background 0.3s;
+  &:hover {
     background-color: $col-black;
   }
 }

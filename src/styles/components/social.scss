@@ -10,6 +10,9 @@
     z-index: 9;
     display: block;
   }
+  &_header {
+    flex-flow: row;
+  }
 }
 
 .social__link {
@@ -19,8 +22,8 @@
   background-color: $col-gray-light;
   background-position: 50%;
   background-repeat: no-repeat;
-  transition: background .3s;
-  &:hover{
+  transition: background 0.3s;
+  &:hover {
     background-color: $col-bright-red;
   }
   &_fb {
@@ -34,5 +37,14 @@
   }
   &_tel {
     background-image: url(../images/icons/telegram.svg);
+  }
+}
+
+@media (min-width: 740px) {
+  .social_menu {
+    display: none;
+  }
+  .social_header {
+    display: flex;
   }
 }

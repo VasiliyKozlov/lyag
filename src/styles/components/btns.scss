@@ -7,7 +7,7 @@
   border: none;
   cursor: pointer;
   text-transform: uppercase;
-  transition: background 0.3s;
+  transition: background 0.3s, border 0.3s, color 0.3s;
   &_red {
     color: $col-white;
     background-color: $col-bright-red;
@@ -27,6 +27,16 @@
     background-color: $col-white;
     &:hover {
       background-color: $col-dark-white;
+    }
+  }
+  &_transperent {
+    color: $col-white;
+    border: 1px solid $col-white;
+    background-color: transparent;
+    &:hover {
+      color: $col-bright-red;
+      border: 1px solid $col-bright-red;
+      background-color: transparent;
     }
   }
 }

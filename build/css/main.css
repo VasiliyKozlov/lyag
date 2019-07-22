@@ -919,7 +919,8 @@ body {
   padding-top: 90px;
   padding-left: 30px;
   padding-right: 30px;
-  overflow: hidden; }
+  padding-bottom: 90px;
+  overflow-y: scroll; }
   .modal__body_black {
     background-color: #101010; }
 
@@ -929,7 +930,8 @@ body {
   text-transform: uppercase;
   line-height: 1.13;
   letter-spacing: normal;
-  color: #ffffff; }
+  color: #ffffff;
+  width: 60%; }
 
 .modal__p {
   font-family: OpenSans;
@@ -1009,52 +1011,84 @@ body {
 .services__poster {
   display: none; }
 
-.first-order {
+.order {
   padding-top: 90px;
   padding-bottom: 100px;
   background-color: #e10017; }
 
-.first-order__form-wrapper {
+.order__form-wrapper {
   display: flex;
   flex-flow: column; }
 
-.first-order__form-input {
+.order__form-input {
   height: 70px;
   margin-bottom: 10px; }
 
-.first-order__header {
+.order__header {
   font-size: 32px;
   margin-bottom: 15px;
   margin-top: 0;
   color: #ffffff;
   text-transform: uppercase; }
 
-.first-order__form-footnote {
+.order__form-footnote {
   font-family: OpenSans;
   font-size: 12px;
   font-weight: 300;
   font-style: italic;
   color: #ffffff;
-  margin-bottom: 10px; }
+  margin-bottom: 20px; }
 
-.first-order__form-footnote-link {
+.order__form-footnote-link {
   color: #ffffff;
   font-weight: 700; }
 
-.first-order__form-input-submit {
+.order__form-input-submit {
   order: 1; }
 
-.first-order__form-radio-wrapper {
+.order__form-radio {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-wrap: nowrap; }
+  flex-wrap: nowrap;
+  margin-bottom: 30px; }
 
-.first-order__form-radio-wrapper-head {
+.order__form-radio-head {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 300;
   line-height: 1.1;
+  color: #ffffff;
+  margin-bottom: 20px;
+  width: 60%; }
+
+.order__type {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-transform: uppercase; }
+
+.order__price {
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
+.order__price-title {
+  font-size: 20px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.1;
+  letter-spacing: normal;
   color: #ffffff; }
+
+.order__price-item {
+  color: #ff001b;
+  font-size: 60px; }
+  .order__price-item span {
+    margin-left: 3px;
+    font-size: 40px;
+    vertical-align: 22px; }
 
 .geo {
   padding-top: 155px;

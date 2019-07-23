@@ -459,6 +459,14 @@ body {
 .content {
   flex-grow: 1; }
 
+@media (min-width: 740px) {
+  .content {
+    flex-grow: 0; }
+  .z {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start; } }
+
 .text-input {
   border: none;
   height: 70px;
@@ -637,7 +645,9 @@ body {
 
 .header__menu-btn-txt {
   width: 0;
-  overflow: hidden; }
+  overflow: hidden;
+  font-size: 16px;
+  font-weight: 900; }
 
 .header__menu-btn-buter-line {
   height: 3px;
@@ -667,6 +677,15 @@ body {
   .header__phone-number {
     display: block;
     width: auto; } }
+
+@media (min-width: 940px) {
+  .header__menu-btn {
+    width: 125px;
+    justify-content: space-around; }
+  .header__menu-btn-txt {
+    width: auto; }
+  .header__menu-btn-buter {
+    margin: 0; } }
 
 .select-sity {
   height: 70px;
@@ -765,6 +784,15 @@ body {
   .menu.active {
     width: 100%; }
 
+.menu__header-logo {
+  background-color: #222222;
+  width: 100%;
+  height: 70px;
+  line-height: 80px;
+  padding-left: 25px;
+  margin-bottom: 60px;
+  display: none; }
+
 .menu__header-nav {
   padding-left: 60px; }
 
@@ -793,6 +821,10 @@ body {
   background-image: url(../images/close-menu.svg);
   background-position: 50% 50%;
   background-repeat: no-repeat; }
+  .menu__header-close span {
+    line-height: 70px;
+    padding-left: 60px;
+    display: none; }
 
 .menu__footer {
   color: #ffffff;
@@ -806,14 +838,50 @@ body {
   transform-origin: 100% 100%; }
 
 .menu__footer-copy {
-  display: none; }
+  display: none;
+  font-family: OpenSans;
+  font-size: 13px;
+  font-weight: 100;
+  color: #ffffff;
+  text-indent: 20px; }
 
 .menu__footer-autor {
-  font-size: 18px;
-  line-height: 70px;
-  text-indent: 20px; }
+  font-size: 18px; }
   .menu__footer-autor span {
     color: #ff001b; }
+
+@media (min-width: 740px) {
+  .menu {
+    position: relative;
+    height: 100vh; }
+    .menu.active {
+      width: 420px; }
+    .menu.active + .content {
+      margin-right: -240px; }
+  .menu__header-logo {
+    display: block; }
+  .menu__footer {
+    transform: rotate(0deg);
+    position: absolute;
+    width: auto;
+    top: auto;
+    right: auto;
+    left: 0;
+    bottom: 0;
+    background-color: transparent;
+    padding-left: 70px; }
+  .menu__footer-copy {
+    display: block;
+    text-indent: 0; }
+  .menu__footer-autor {
+    margin-bottom: 10px; }
+  .menu__header-nav {
+    padding-left: 70px; }
+  .menu__header-close {
+    width: 145px;
+    background-position: 25px 50%; }
+    .menu__header-close span {
+      display: block; } }
 
 .social {
   display: flex;

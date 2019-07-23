@@ -30,13 +30,13 @@ body {
   flex-grow: 1;
 }
 
-// @media (min-width: 740px) {
-//   .content {
-//     flex-grow: 0;
-//   }
-//   .z {
-//     display: flex;
-//     flex-flow: row;
-//     justify-content: space-between;
-//   }
-// }
+@media (min-width: 740px) {
+  .content {
+    flex-grow: 0;
+  }
+  .z {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+  }
+}

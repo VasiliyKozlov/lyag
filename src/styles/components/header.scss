@@ -39,7 +39,7 @@
 
 .header__phone-icon {
   display: block;
-  background-image: url('../images/icons/call.svg');
+  background-image: url("../images/icons/call.svg");
   background-repeat: no-repeat;
   width: 70px;
   height: 70px;
@@ -74,6 +74,8 @@
 .header__menu-btn-txt {
   width: 0;
   overflow: hidden;
+  font-size: 16px;
+  font-weight: 900;
 }
 
 .header__menu-btn-buter-line {
@@ -111,5 +113,20 @@
   .header__phone-number {
     display: block;
     width: auto;
+  }
+}
+
+@media (min-width: 940px) {
+  .header__menu-btn {
+    width: 125px;
+    justify-content: space-around
+  }
+
+  .header__menu-btn-txt{
+    width: auto;
+  }
+
+  .header__menu-btn-buter{
+    margin: 0
   }
 }

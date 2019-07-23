@@ -12,17 +12,29 @@
 .header__right {
   flex-grow: 1;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   flex-wrap: nowrap;
 }
 
 .header__order {
   flex-grow: 1;
   order: -1;
+  line-height: 70px;
 }
 
 .header__phone-number {
+  font-size: 20px;
+  color: $col-white;
+  line-height: 70px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: right;
+  text-decoration: none;
   display: none;
+  &:hover {
+    color: $col-white;
+    text-decoration: none;
+  }
 }
 
 .header__phone-icon {
@@ -81,6 +93,23 @@
     flex-wrap: nowrap;
   }
   .header__right {
-    flex-grow: 0;
+    flex-grow: 1;
+  }
+  .header__order {
+    order: 0;
+    max-width: 255px;
+  }
+}
+
+@media (min-width: 890px) {
+  .header__phone {
+    min-width: 175px;
+  }
+  .header__phone-icon {
+    display: none;
+  }
+  .header__phone-number {
+    display: block;
+    width: auto;
   }
 }

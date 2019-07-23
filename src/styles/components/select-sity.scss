@@ -82,3 +82,24 @@
     background-color: $col-black;
   }
 }
+
+@media (min-width: 740px) {
+  .select-sity {
+    background-color: $col-gray;
+  }
+
+  .select-sity__label {
+    border-left: 1px solid $col-gray-light;
+  }
+
+  .select-sity_menu {
+    display: none;
+  }
+  .select-sity_header {
+    display: block;
+    min-width: 225px;
+  }
+  .select-sity:after {
+    left: 80%;
+  }
+}

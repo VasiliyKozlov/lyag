@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: "Acrobat", sans-serif;
+  font-family: 'Acrobat', sans-serif;
   background-color: $col-black;
   height: 100%;
 }
@@ -29,3 +29,14 @@ body {
 .content {
   flex-grow: 1;
 }
+
+// @media (min-width: 740px) {
+//   .content {
+//     flex-grow: 0;
+//   }
+//   .z {
+//     display: flex;
+//     flex-flow: row;
+//     justify-content: space-between;
+//   }
+// }

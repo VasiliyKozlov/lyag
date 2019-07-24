@@ -4,7 +4,7 @@
 
 .about__wrapper {
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -58,4 +58,32 @@
   font-size: 13px;
   font-weight: 100;
   color: $col-white;
+}
+
+@media (min-width: 740px) {
+  .about__wrapper {
+    flex-direction: row;
+  }
+  .about__video {
+    max-width: 375px;
+    height: 285px;
+    margin-right: 45px;
+  }
+  .about__text {
+    order: 1;
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .about__wrapper {
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+
+  .about__video {
+    width: 475px;
+    height: 385px;
+    margin-right: 95px;
+  }
 }

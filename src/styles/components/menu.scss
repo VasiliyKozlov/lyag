@@ -13,6 +13,24 @@
   }
 }
 
+.menu__body {
+  position: relative;
+  z-index: 12;
+  min-height: 100%;
+}
+
+.menu__overlay {
+  overflow: hidden;
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+
 .menu__header-logo {
   background-color: $col-gray;
   width: 100%;
@@ -54,7 +72,8 @@
   background-image: url(../images/icons/close-menu.svg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  span {
+  &:after {
+    content: 'ЗАКРЫТЬ';
     line-height: 70px;
     padding-left: 60px;
     display: none;
@@ -92,13 +111,16 @@
 @media (min-width: 740px) {
   .menu {
     position: relative;
-    height: 100vh;
+    min-height: 100%;
     &.active {
       width: 420px;
+      .menu__overlay {
+        display: block;
+      }
     }
-  &.active + .content {
-    margin-right: -240px;
-  }
+    &.active + .content {
+      margin-right: -240px;
+    }
   }
   .menu__header-logo {
     display: block;
@@ -127,7 +149,7 @@
   .menu__header-close {
     width: 145px;
     background-position: 25px 50%;
-    span {
+    &:after {
       display: block;
     }
   }
@@ -135,7 +157,5 @@
 
 @media (min-width: 920px) {
   .menu {
-
-
   }
 }

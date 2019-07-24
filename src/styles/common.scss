@@ -14,8 +14,12 @@ body {
   height: 100%;
 }
 
+.no-overflow {
+  overflow: hidden;
+}
+
 .z {
-  min-height: 100%;
+  height: 100%;
   // display: flex;
   // flex-flow: row;
   // justify-content: space-between
@@ -24,6 +28,7 @@ body {
 .wrapper {
   width: 84%;
   margin: auto;
+  max-width: 1140px;
 }
 
 .content {
@@ -31,9 +36,6 @@ body {
 }
 
 @media (min-width: 740px) {
-  .content {
-    flex-grow: 0;
-  }
   .z {
     display: flex;
     flex-flow: row;

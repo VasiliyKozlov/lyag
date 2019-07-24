@@ -62,6 +62,7 @@
   background-image: url(../images/icons/gps.svg);
   background-repeat: no-repeat;
   background-position: 30px 50%;
+  cursor: pointer;
 }
 
 .select-sity__item {
@@ -77,6 +78,7 @@
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
+  cursor: pointer;
   transition: background 0.3s;
   &:hover {
     background-color: $col-black;

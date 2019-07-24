@@ -39,7 +39,7 @@
 
 .header__phone-icon {
   display: block;
-  background-image: url("../images/icons/call.svg");
+  background-image: url('../images/icons/call.svg');
   background-repeat: no-repeat;
   width: 70px;
   height: 70px;
@@ -59,6 +59,7 @@
   overflow: hidden;
   align-items: center;
   transition: background 0.3s;
+  cursor: pointer;
   &:hover {
     background-color: $col-bright-red;
     .header__menu-btn-buter-line {
@@ -119,14 +120,14 @@
 @media (min-width: 940px) {
   .header__menu-btn {
     width: 125px;
-    justify-content: space-around
+    justify-content: space-around;
   }
 
-  .header__menu-btn-txt{
+  .header__menu-btn-txt {
     width: auto;
   }
 
-  .header__menu-btn-buter{
-    margin: 0
+  .header__menu-btn-buter {
+    margin: 0;
   }
 }

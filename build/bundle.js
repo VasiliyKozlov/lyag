@@ -119,6 +119,30 @@ eval("\n/**\n * When source maps are enabled, `style-loader` uses a link element
 
 /***/ }),
 
+/***/ "./src/js/handlers/activateComponent.js":
+/*!**********************************************!*\
+  !*** ./src/js/handlers/activateComponent.js ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nvar activateComponent = function activateComponent(elem) {\n  if (elem.classList.contains('active')) {\n    elem.classList.remove('active');\n  } else {\n    elem.classList.add('active');\n  }\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (activateComponent);\n\n//# sourceURL=webpack:///./src/js/handlers/activateComponent.js?");
+
+/***/ }),
+
+/***/ "./src/js/handlers/activateOverflow.js":
+/*!*********************************************!*\
+  !*** ./src/js/handlers/activateOverflow.js ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nvar activateOverflow = function activateOverflow() {\n  if (document.body.classList.contains('no-overflow')) {\n    body.classList.remove('no-overflow');\n  } else {\n    body.classList.add('no-overflow');\n  }\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (activateOverflow);\n\n//# sourceURL=webpack:///./src/js/handlers/activateOverflow.js?");
+
+/***/ }),
+
 /***/ "./src/js/index.js":
 /*!*************************!*\
   !*** ./src/js/index.js ***!
@@ -127,7 +151,7 @@ eval("\n/**\n * When source maps are enabled, `style-loader` uses a link element
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles/styles.scss */ \"./src/styles/styles.scss\");\n/* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_styles_scss__WEBPACK_IMPORTED_MODULE_0__);\nconsole.log('--run');\n\nconsole.log('--run');\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles/styles.scss */ \"./src/styles/styles.scss\");\n/* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_styles_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _handlers_activateComponent__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./handlers/activateComponent */ \"./src/js/handlers/activateComponent.js\");\n/* harmony import */ var _handlers_activateOverflow__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./handlers/activateOverflow */ \"./src/js/handlers/activateOverflow.js\");\n\n\n\nvar body = document.body;\nvar menu = document.querySelector('.menu');\nvar menuOpen = document.querySelector('.header__menu-btn');\nvar menuClose = document.querySelector('.menu__header-close'); //const menuClose = document.querySelector('.menu__header-close');\n\nmenuOpen.addEventListener('click', function (e) {\n  Object(_handlers_activateComponent__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(menu);\n  Object(_handlers_activateOverflow__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n});\nmenuClose.addEventListener('click', function (e) {\n  Object(_handlers_activateComponent__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(menu);\n  Object(_handlers_activateOverflow__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n});\n\n//# sourceURL=webpack:///./src/js/index.js?");
 
 /***/ }),
 

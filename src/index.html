@@ -10,46 +10,46 @@
   <body>
     <div class="z">
       <!-- MENU -->
-      <div class="menu active">
-        <div class="menu__header">
-
-          <!-- SELECT SITY -->
-          <div class="select-sity select-sity_menu active">
-            <div class="select-sity__label">Москва</div>
-            <ul class="select-sity__list">
-              <li class="select-sity__item">санкт-петербург</li>
-              <li class="select-sity__item">Москва</li>
-            </ul>
+      <div class="menu ">
+        <div class="menu__overlay"></div>
+        <div class="menu__body">
+          <div class="menu__header">
+            <!-- SELECT SITY -->
+            <div class="select-sity select-sity_menu active">
+              <div class="select-sity__label">Москва</div>
+              <ul class="select-sity__list">
+                <li class="select-sity__item">санкт-петербург</li>
+                <li class="select-sity__item">Москва</li>
+              </ul>
+            </div>
+            <!-- SELECT SITY -->
+            <div class="menu__header-logo">
+              <img src="./images/icons/logo-menu.svg" alt="" />
+            </div>
+            <div class="menu__header-close btn btn_red "></div>
           </div>
-          <!-- SELECT SITY -->
-          <div class="menu__header-logo">
-            <img src="./images/icons/logo-menu.svg" alt="" />
+          <nav class="menu__header-nav">
+            <a href="" class="menu__header-nav-item">Главная</a>
+            <a href="" class="menu__header-nav-item">Услуги</a>
+            <a href="" class="menu__header-nav-item">Акции</a>
+            <a href="" class="menu__header-nav-item">Мастерские</a>
+            <a href="" class="menu__header-nav-item">Подарочный сертификат</a>
+            <a href="" class="menu__header-nav-item">Услуги для бизнеса</a>
+            <a href="" class="menu__header-nav-item">Контакты</a>
+          </nav>
+          <!-- MENU SOCIAL -->
+          <div class="social social_menu">
+            <a class="social__link social__link_fb" href="" alt="facebook"></a>
+            <a class="social__link social__link_vk" href="" alt="vk"></a>
+            <a class="social__link social__link_inst" href="" alt="instagram"></a>
+            <a class="social__link social__link_tel" href="" alt="telegram"></a>
           </div>
-          <div class="menu__header-close btn btn_red ">
-            <span>ЗАКРЫТЬ</span>
-          </div>
-        </div>
-        <nav class="menu__header-nav">
-          <a href="" class="menu__header-nav-item">Главная</a>
-          <a href="" class="menu__header-nav-item">Услуги</a>
-          <a href="" class="menu__header-nav-item">Акции</a>
-          <a href="" class="menu__header-nav-item">Мастерские</a>
-          <a href="" class="menu__header-nav-item">Подарочный сертификат</a>
-          <a href="" class="menu__header-nav-item">Услуги для бизнеса</a>
-          <a href="" class="menu__header-nav-item">Контакты</a>
-        </nav>
-        <!-- MENU SOCIAL -->
-        <div class="social social_menu">
-          <a class="social__link social__link_fb" href="" alt="facebook"></a>
-          <a class="social__link social__link_vk" href="" alt="vk"></a>
-          <a class="social__link social__link_inst" href="" alt="instagram"></a>
-          <a class="social__link social__link_tel" href="" alt="telegram"></a>
-        </div>
-        <!-- MENU SOCIAL -->
-        <div class="menu__footer">
-          <div class="menu__footer-autor">Дизайн и разработка – <span>A. Ruzov</span></div>
-          <div class="menu__footer-copy">
-            © 2019 Ляг.Спиной. Все права защищены
+          <!-- MENU SOCIAL -->
+          <div class="menu__footer">
+            <div class="menu__footer-autor">Дизайн и разработка – <span>A. Ruzov</span></div>
+            <div class="menu__footer-copy">
+              © 2019 Ляг.Спиной. Все права защищены
+            </div>
           </div>
         </div>
       </div>
@@ -169,8 +169,8 @@
 
           <!-- OUR SERVICES -->
           <section class="services">
-            <div class="services__poster">
-              <img src="" alt="" />
+            <div class="wrapper">
+              <div class="services__poster"></div>
             </div>
             <div class="services__wrapper wrapper">
               <div class="services__text">
@@ -455,5 +455,7 @@
       </div>
     </div>
     <!-- MODAL ORDER SUCCESS -->
+
+    <script src="../build/bundle.js"></script>
   </body>
 </html>

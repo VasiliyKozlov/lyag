@@ -8,3 +8,21 @@
   height: 70px;
   line-height: 70px;
 }
+
+@media (min-width: 740px) {
+  .promo__lead{
+    max-width: 550px;
+  }
+
+  .promo__btn{
+    max-width: 290px;
+    margin: auto
+  }
+}
+
+@media (min-width: 1080px) {
+  .promo__wrapper {
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+}

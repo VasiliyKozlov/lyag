@@ -37,3 +37,24 @@
     color: $col-bright-red;
   }
 }
+
+
+@media (min-width: 740px) {
+  .reviews__lead {
+    max-width: 380px;
+  }
+  .footer__logo{
+    margin-bottom: 65px
+  }
+  .footer__header{
+    margin-bottom: 65px
+  }
+}
+
+@media (min-width: 1080px) {
+  .footer__wrapper {
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+
+}

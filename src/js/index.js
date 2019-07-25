@@ -2,7 +2,7 @@ import '../styles/styles.scss';
 import activateComponent from './handlers/activateComponent';
 import activateOverflow from './handlers/activateOverflow';
 
-const body = document.body;
+
 const menu = document.querySelector('.menu');
 const menuOpen = document.querySelector('.header__menu-btn');
 const menuClose = document.querySelector('.menu__header-close');

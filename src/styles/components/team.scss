@@ -11,10 +11,22 @@
   width: 240px;
 }
 
-// .team__bg {
-//   width: 370px;
-//   height: 370px;
-//   background-image: url(../images/bg/team-bg.svg);
-//   background-repeat: no-repeat;
-//   background-position: 50% 100%;
-// }
+@media (min-width: 740px) {
+  .team {
+    background-image: url(../images/bg/team.png), url(../images/bg/team-bg.svg);
+    background-position: 90% 100%, 100% 0%;
+    background-size: none;
+    padding-bottom: 185px;
+  }
+  .team__header, .team__txt{
+     width: 300px;
+  }
+
+}
+
+@media (min-width: 1080px) {
+  .team__wrapper {
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+}

@@ -23,5 +23,6 @@
     "svgo-loader": "^2.2.1",
     "webpack": "^4.35.3",
     "webpack-cli": "^3.3.6"
-  }
+  },
+  "dependencies": {}
 }

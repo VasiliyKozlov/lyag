@@ -23,3 +23,35 @@
   height: 70px;
   line-height: 70px;
 }
+
+
+
+@media (min-width: 740px) {
+  .geo {
+    padding-top: 300px;
+  }
+
+  .geo__wrapper{
+    position: relative;
+    width: 350px;
+    padding-left: 150px
+  }
+
+  .geo__count{
+    position: absolute;
+    font-size: 349px;
+    top: -240px;
+    left: 0px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .geo__wrapper {
+    padding-left: 215px;
+    padding-right: 65px;
+    width: 510px
+  }
+  .geo__count{
+    left: 60px;
+  }
+}

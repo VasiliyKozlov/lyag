@@ -2,3 +2,16 @@
   padding-top: 90px;
   padding-bottom: 90px;
 }
+
+@media (min-width: 740px) {
+  .reviews__lead {
+    max-width: 380px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .reviews__wrapper {
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+}

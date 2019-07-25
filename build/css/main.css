@@ -1095,6 +1095,19 @@ body {
   .footer__copy-autor span {
     color: #ff001b; }
 
+@media (min-width: 740px) {
+  .reviews__lead {
+    max-width: 380px; }
+  .footer__logo {
+    margin-bottom: 65px; }
+  .footer__header {
+    margin-bottom: 65px; } }
+
+@media (min-width: 1080px) {
+  .footer__wrapper {
+    padding-left: 65px;
+    padding-right: 65px; } }
+
 .modal {
   position: fixed;
   top: 0;
@@ -1135,6 +1148,12 @@ body {
   color: #ffffff;
   margin-bottom: 40px; }
 
+.modal__overlay {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8); }
+
 .modal__close {
   width: 70px;
   height: 70px;
@@ -1145,6 +1164,16 @@ body {
   background-image: url(../images/close-menu.svg);
   background-position: 50% 50%;
   background-repeat: no-repeat; }
+
+@media (min-width: 820px) {
+  .modal__body {
+    width: 760px;
+    height: auto;
+    padding-top: 60px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 60px;
+    z-index: 12; } }
 
 .about {
   padding-top: 90px; }
@@ -1219,20 +1248,46 @@ body {
     height: 385px;
     margin-right: 95px; } }
 
-.services {
-  padding-top: 90px; }
+.services__wrapper {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column; }
 
 .services__poster {
-  display: none; }
-
-.services__poster {
-  display: block;
+  display: none;
   width: 100%;
   height: 250px;
   background-image: url(../images/logo-large.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-size: cover; }
+  background-size: cover;
+  margin-bottom: 120px; }
+
+.services__all-link {
+  height: 70px;
+  line-height: 70px; }
+
+@media (min-width: 740px) {
+  .services__poster {
+    display: block; }
+  .services__wrapper {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    flex-direction: row; }
+  .services__text {
+    max-width: 340px;
+    margin-right: 45px; } }
+
+@media (min-width: 1080px) {
+  .services__wrapper {
+    padding-left: 65px;
+    padding-right: 65px; }
+  .services__text {
+    width: 475px;
+    height: 385px;
+    margin-right: 95px; } }
 
 .order {
   padding-top: 90px;
@@ -1241,7 +1296,7 @@ body {
 
 .order__form-wrapper {
   display: flex;
-  flex-flow: column; }
+  flex-direction: column; }
 
 .order__form-input {
   height: 70px;
@@ -1313,6 +1368,25 @@ body {
     font-size: 40px;
     vertical-align: 22px; }
 
+@media (min-width: 740px) {
+  .order__lead {
+    max-width: 335px; }
+  .order__form-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap; }
+  .order__form-input-submit {
+    order: 0; }
+  .order__form-input {
+    width: 31%;
+    margin-right: 10px; }
+  .order__form-footnote {
+    width: 100%; } }
+
+@media (min-width: 1080px) {
+  .order__wrapper {
+    padding-left: 65px;
+    padding-right: 65px; } }
+
 .geo {
   padding-top: 155px;
   padding-bottom: 155px;
@@ -1335,6 +1409,27 @@ body {
   height: 70px;
   line-height: 70px; }
 
+@media (min-width: 740px) {
+  .geo {
+    padding-top: 300px; }
+  .geo__wrapper {
+    position: relative;
+    width: 350px;
+    padding-left: 150px; }
+  .geo__count {
+    position: absolute;
+    font-size: 349px;
+    top: -240px;
+    left: 0px; } }
+
+@media (min-width: 1080px) {
+  .geo__wrapper {
+    padding-left: 215px;
+    padding-right: 65px;
+    width: 510px; }
+  .geo__count {
+    left: 60px; } }
+
 .promo {
   padding-top: 90px;
   padding-bottom: 90px; }
@@ -1343,6 +1438,18 @@ body {
   width: 100%;
   height: 70px;
   line-height: 70px; }
+
+@media (min-width: 740px) {
+  .promo__lead {
+    max-width: 550px; }
+  .promo__btn {
+    max-width: 290px;
+    margin: auto; } }
+
+@media (min-width: 1080px) {
+  .promo__wrapper {
+    padding-left: 65px;
+    padding-right: 65px; } }
 
 .team {
   padding-top: 90px;
@@ -1355,9 +1462,32 @@ body {
 .team__header {
   width: 240px; }
 
+@media (min-width: 740px) {
+  .team {
+    background-image: url(../images/team.png), url(../images/team-bg.svg);
+    background-position: 90% 100%, 100% 0%;
+    background-size: none;
+    padding-bottom: 185px; }
+  .team__header, .team__txt {
+    width: 300px; } }
+
+@media (min-width: 1080px) {
+  .team__wrapper {
+    padding-left: 65px;
+    padding-right: 65px; } }
+
 .reviews {
   padding-top: 90px;
   padding-bottom: 90px; }
+
+@media (min-width: 740px) {
+  .reviews__lead {
+    max-width: 380px; } }
+
+@media (min-width: 1080px) {
+  .reviews__wrapper {
+    padding-left: 65px;
+    padding-right: 65px; } }
 
 .success {
   display: flex;

@@ -1,3 +1,4 @@
+const body = document.body;
 const activateOverflow = () => {
   if (document.body.classList.contains('no-overflow')) {
     body.classList.remove('no-overflow');

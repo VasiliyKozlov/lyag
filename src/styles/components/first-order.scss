@@ -71,7 +71,7 @@
   margin-bottom: 30px;
 }
 
-.order__price-title{
+.order__price-title {
   font-size: 20px;
   font-weight: 600;
   font-style: normal;
@@ -81,7 +81,7 @@
   color: $col-white;
 }
 
-.order__price-item{
+.order__price-item {
   color: $col-bright-red;
   font-size: 60px;
   span {
@@ -91,28 +91,36 @@
   }
 }
 
-
 @media (min-width: 740px) {
-  .order__lead{
-    max-width: 335px
+  .order__lead {
+    max-width: 335px;
   }
 
-  .order__form-wrapper{
+  .order__form-wrapper_fo {
     flex-direction: row;
     flex-wrap: wrap;
   }
   .order__form-input-submit {
     order: 0;
   }
-  .order__form-input{
+  .order__form-input_fo {
     width: 31%;
-    margin-right: 10px
+    margin-right: 10px;
   }
-  .order__form-footnote{
-    width: 100%
+  .order__form-footnote {
+    width: 100%;
   }
 }
-
+@media (min-width: 820px) {
+  .order__form-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .order__form-input_modal {
+    width: 48%;
+    margin-right: 10px;
+  }
+}
 @media (min-width: 1080px) {
   .order__wrapper {
     padding-left: 65px;

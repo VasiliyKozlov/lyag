@@ -65,6 +65,10 @@
 
 
 @media (min-width: 820px) {
+  .modal.active {
+    display: flex;
+    align-content: center
+  }
   .modal__body {
     width: 760px;
     height: auto;

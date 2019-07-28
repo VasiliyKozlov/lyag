@@ -1761,6 +1761,17 @@ body {
   background-position: 50% 50%; }
 
 @media (min-width: 740px) {
+  .promo__slider-cell {
+    height: 200px;
+    width: 60%; }
+  .promo__slider-cell-head {
+    font-size: 32px; }
+  .promo__slider-cell-icon {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    background-image: url(../images/promoIcon-white.svg);
+    width: 80px;
+    height: 80px; }
   .promo__lead {
     max-width: 550px; }
   .promo__btn {

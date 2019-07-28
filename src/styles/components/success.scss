@@ -21,3 +21,29 @@
   width: 100%;
   height: 70px;
 }
+
+@media (min-width: 820px) {
+  .success {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .success__text {
+    width: 287px;
+    height: 340px;
+    .modal__header {
+      margin-top: 0;
+    }
+    .modal__p {
+      margin-bottom: 105px;
+    }
+  }
+  .success__img {
+    width: 287px;
+    height: 340px;
+    margin-right: 50px;
+    background-color: $col-white;
+  }
+  .success__img-item {
+    position: relative;
+  }
+}

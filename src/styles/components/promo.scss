@@ -9,14 +9,65 @@
   line-height: 70px;
 }
 
+.promo__slider {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.promo__slider-cell {
+  background-color: $col-bright-red;
+  height: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 30px;
+  align-items: center;
+  width: 80%;
+  margin-right: 20px;
+}
+
+.promo__slider-cell-head {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  width: 45%;
+  color: $col-white;
+  font-weight: 700;
+}
+
+.promo__slider-cell-icon {
+  width: 60px;
+  height: 60px;
+  min-width: 60px;
+  background-color: $col-white;
+  border-radius: 50%;
+  background-image: url(../images/icons/prompIcon.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
 @media (min-width: 740px) {
-  .promo__lead{
+  .promo__lead {
     max-width: 550px;
   }
 
-  .promo__btn{
+  .promo__btn {
     max-width: 290px;
-    margin: auto
+    margin: auto;
+  }
+  .promo__slider .flickity-button {
+    display: block;
+  }
+  .promo__slider .flickity-prev-next-button.previous {
+    top: -120px;
+    right: 70px;
+    left: auto;
+  }
+
+  .promo__slider .flickity-prev-next-button.next {
+    top: -120px;
+    right: 0;
+    left: auto;
   }
 }
 

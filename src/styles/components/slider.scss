@@ -1,0 +1,52 @@
+// .slider {
+//   overflow: hidden;
+// }
+
+.slider .flickity-page-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  outline: none;
+}
+
+.slider .dot {
+  margin: 0 15px;
+  width: 8px;
+  height: 8px;
+  background-color: $col-black25;
+}
+
+.slider .dot.is-selected {
+  background-color: $col-bright-red;
+}
+
+.slider .flickity-button {
+  width: 70px;
+  height: 70px;
+  background-color: $col-white;
+  position: absolute;
+  border: none;
+  display: none;
+  border-radius: 0;
+  transform: translateY(0);
+}
+
+.slider .flickity-button-icon {
+  width: 25px;
+  height: 25px;
+  fill: $col-bright-red;
+  left: 30%;
+  top: 30%;
+}
+
+@media (min-width: 840px) {
+  .slider .flickity-page-dots {
+    margin-top: 25px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .slider .flickity-page-dots {
+    display: none;
+  }
+}

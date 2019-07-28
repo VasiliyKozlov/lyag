@@ -1,10 +1,10 @@
-
-.services__wrapper{
+.services__wrapper {
   padding-top: 90px;
   padding-bottom: 90px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  position: relative;
 }
 
 .services__poster {
@@ -18,37 +18,329 @@
   margin-bottom: 120px;
 }
 
-.services__all-link{
-  height:  70px;
+.services__all-link {
+  height: 70px;
   line-height: 70px;
 }
 
-@media (min-width: 740px) {
+.services__slider-cell {
+  width: 100%;
+}
+.services__slider-cell-wrapper {
+  background-color: $col-black50;
+  padding: 43px 51px;
+  width: 100%;
+}
 
+.services__slider-head {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.06;
+  color: $col-white;
+  margin-bottom: 20px;
+}
+
+.services__slider-text {
+  font-family: OpenSans;
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 1.87;
+  color: $col-white;
+  margin-bottom: 54px;
+}
+
+.services__slider-form-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.services__slider-form-radio-label {
+  height: 60px;
+  padding: 20px 15px;
+  background-color: $col-black25;
+  transition: background 0.3s;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 70px;
+  &.active {
+    background-color: $col-white;
+    .services__slider-form-radio-text {
+      color: $col-black;
+    }
+  }
+  &:hover {
+    background-color: $col-bright-red;
+  }
+}
+
+.services__slider-form-radio-label_add {
+  background-color: transparent;
+  border: 1px solid $col-black25;
+}
+
+.services__slider-form-radio-text {
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+  color: $col-white;
+}
+
+.services__slider-form-time-item {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.services__slider-form-time-item-add {
+  font-family: OpenSans;
+  font-size: 13px;
+  font-weight: 300;
+  font-style: italic;
+  color: $col-white;
+  display: block;
+  width: 200px;
+  position: absolute;
+  top: -30px;
+  right: 0;
+  text-align: right;
+}
+
+.services__slider-form-radio {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.services__slider-form-price {
+  font-size: 70px;
+  letter-spacing: -3.5px;
+  color: $col-white;
+  span {
+    font-size: 30px;
+    letter-spacing: -1.5px;
+    color: $col-white;
+    vertical-align: 30px;
+  }
+}
+
+.services__slider-form-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services__slider-form-submit {
+  height: 70px;
+  width: 45%;
+}
+
+.services__slider {
+  position: relative;
+  outline: none;
+  margin-bottom: 160px;
+}
+
+.services__slider .flickity-button {
+  width: 70px;
+  height: 70px;
+  background-color: $col-white;
+  position: absolute;
+  border: none;
+  display: none;
+  border-radius: 0;
+  transform: translateY(0);
+  right: -70px;
+}
+
+.services__slider .flickity-button-icon {
+  width: 25px;
+  height: 25px;
+  fill: $col-bright-red;
+}
+
+.services__slider-wrapper {
+  overflow: hidden;
+}
+
+.services__slider-form {
+  display: none;
+}
+.services__submit-mobile {
+  height: 70px;
+}
+
+.services__slider .flickity-page-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.services__slider .dot {
+  margin: 0 15px;
+  width: 8px;
+  height: 8px;
+  background-color: $col-black25;
+}
+
+.services__slider .dot.is-selected {
+  background-color: $col-bright-red;
+}
+
+.services__all-link {
+  position: absolute;
+  bottom: 90px;
+  left: 0;
+}
+
+@media (min-width: 740px) {
   .services__poster {
     display: block;
   }
-  .services__wrapper{
-    padding-top: 120px;
-    padding-bottom: 120px;
-    flex-direction: row;
-  }
-  .services__text{
-    max-width: 340px;
+
+  .services__text {
+    max-width: 280px;
     margin-right: 45px;
   }
 }
 
+@media (min-width: 840px) {
+  .services__slider .flickity-page-dots {
+    margin-top: 25px;
+  }
+  .services__all-link {
+    position: static;
+  }
+  .services__submit-mobile {
+    display: none;
+  }
+  .services__wrapper {
+    flex-direction: row;
+  }
+
+  .services__slider-cell-wrapper {
+    background-color: $col-black50;
+    padding: 23px 25px;
+  }
+
+  .services__wrapper {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .services__slider-form {
+    display: block;
+  }
+
+  .services__slider-form-radio-plus {
+    font-size: 24px;
+    color: $col-bright-red;
+  }
+
+  .services__slider {
+    width: 375px;
+    height: 417px;
+    margin-bottom: 0;
+  }
+
+  .services__slider-wrapper {
+    width: 375px;
+    height: 417px;
+    overflow: hidden;
+  }
+
+  .services__slider-cell-wrapper {
+    width: 375px;
+  }
+
+  .services__slider-form-time {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .services__text {
+    max-width: 320px;
+    margin-right: 45px;
+  }
+}
 
 @media (min-width: 1080px) {
+  .services__slider-form-radio-label {
+    width: 80px;
+  }
+  .services__slider {
+    width: 415px;
+    height: 417px;
+  }
+
+  .services__slider-wrapper {
+    width: 415px;
+    height: 417px;
+    overflow: hidden;
+  }
+
+  .services__slider-cell-wrapper {
+    width: 415px;
+  }
+
+  .services__slider-wrapper {
+    max-width: 545px;
+  }
+  .services__slider-cell {
+    width: 545px;
+  }
   .services__wrapper {
     padding-left: 65px;
     padding-right: 65px;
   }
 
   .services__text {
-    width: 475px;
+    // width: 475px;
     height: 385px;
-    margin-right: 95px;
+    // margin-right: 95px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .services__slider {
+    width: 475px;
+    height: 417px;
+  }
+
+  .services__slider-wrapper {
+    width: 475px;
+    height: 417px;
+    overflow: hidden;
+  }
+
+  .services__slider-cell-wrapper {
+    width: 475px;
+  }
+  .services__slider-cell-wrapper {
+    background-color: $col-black50;
+    padding: 43px 51px;
+  }
+  .services__slider-wrapper {
+    width: 545px;
+  }
+  .services__slider .flickity-button {
+    right: -70px;
+    left: auto;
+  }
+
+  .services__slider .flickity-button {
+    display: block;
+  }
+
+  .services__slider .flickity-prev-next-button.previous {
+    top: 0;
+  }
+
+  .services__slider .flickity-prev-next-button.next {
+    top: 70px;
   }
 }

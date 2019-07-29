@@ -75,6 +75,9 @@
   .promo__slider .flickity-button {
     display: block;
   }
+  .promo__slider .flickity-page-dots {
+    display: none;
+  }
   .promo__slider .flickity-prev-next-button.previous {
     top: -120px;
     right: 70px;

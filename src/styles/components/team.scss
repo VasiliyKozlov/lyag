@@ -1,6 +1,6 @@
 .team {
   padding-top: 90px;
-  padding-bottom: 410px;
+  padding-bottom: 300px;
   background-image: url(../images/bg/team.png), url(../images/bg/team-angle1.svg), url(../images/bg/team-angle2.svg);
   background-repeat: no-repeat;
   background-position: 50% 100%, 0% 0%, 100% 0%;
@@ -11,6 +11,17 @@
   width: 240px;
 }
 
+@media (min-width: 450px) {
+  .team {
+    padding-bottom: 410px;
+  }
+}
+@media (min-width: 520px) {
+  .team {
+    background-size: 520px, 50%, 40%;
+  }
+}
+
 @media (min-width: 740px) {
   .team {
     background-image: url(../images/bg/team.png), url(../images/bg/team-bg.svg);
@@ -18,13 +29,16 @@
     background-size: none;
     padding-bottom: 185px;
   }
-  .team__header, .team__txt{
-     width: 300px;
+  .team__header,
+  .team__txt {
+    width: 300px;
   }
-
 }
 
 @media (min-width: 1080px) {
+  .team {
+    background-position: 80% 100%, 85% 0%;
+  }
   .team__wrapper {
     padding-left: 65px;
     padding-right: 65px;

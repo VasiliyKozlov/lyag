@@ -1,0 +1,57 @@
+.salons__wrapper {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  width: 100%;
+}
+.salons__head {
+  display: flex;
+  flex-direction: column;
+}
+
+.salons__header {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.13;
+  color: $col-white;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.salons__choise-city {
+  background-color: $col-black50;
+  padding-top: 36px;
+  padding-bottom: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.salons__choise-city-btn {
+  height: 70px;
+  line-height: 70px;
+}
+
+.salons__select-sity {
+  margin-bottom: 40px;
+}
+
+.salons__list {
+  width: 84%;
+  margin: auto;
+}
+
+.salons__list-item {
+  margin-bottom: 20px;
+  background-color: $col-black50;
+  display: flex;
+  flex-direction: column;
+}
+
+.salons__list-item-img {
+  height: 40%;
+  width: 100%;
+  img {
+    min-width: 100%;
+  }
+}

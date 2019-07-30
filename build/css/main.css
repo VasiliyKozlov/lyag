@@ -696,30 +696,23 @@ body {
   line-height: 70px;
   background-color: #000000;
   color: #ffffff;
-  font-weight: 300px;
+  font-weight: 300;
   font-size: 14px;
   position: relative;
   z-index: 9;
-  transition: background 0.3s;
-  position: relative; }
+  transition: background 0.3s; }
   .select-sity_header {
     display: none; }
   .select-sity_menu {
     display: block; }
-  .select-sity:after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 90%;
-    margin-top: -7px;
-    width: 14px;
-    height: 9px;
-    background-image: url(../images/arrow-select-down.svg);
-    background-repeat: no-repeat;
-    z-index: 12; }
   .select-sity:hover {
     background-color: #303030; }
-  .select-sity.active:after {
+  .select-sity_transperent {
+    background-color: transparent;
+    border: 1px solid #222222; }
+    .select-sity_transperent .select-sity__btn {
+      background-color: #ff001b; }
+  .select-sity.active .select-sity__btn {
     background-image: url(../images/arrow-select.svg); }
   .select-sity.active .select-sity__list {
     height: 140px; }
@@ -732,6 +725,18 @@ body {
   list-style: none;
   height: 0;
   overflow: hidden; }
+
+.select-sity__btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url(../images/arrow-select-down.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: transparent;
+  width: 70px;
+  height: 70px;
+  z-index: 20; }
 
 .select-sity__label {
   padding: 0 0 0 60px;
@@ -2003,4 +2008,53 @@ body {
     background-color: #ffffff; }
   .success__img-item {
     position: relative; } }
+
+.salons__wrapper {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  width: 100%; }
+
+.salons__head {
+  display: flex;
+  flex-direction: column; }
+
+.salons__header {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.13;
+  color: #ffffff;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  padding-left: 30px;
+  padding-right: 30px; }
+
+.salons__choise-city {
+  background-color: #101010;
+  padding-top: 36px;
+  padding-bottom: 60px;
+  padding-left: 30px;
+  padding-right: 30px; }
+
+.salons__choise-city-btn {
+  height: 70px;
+  line-height: 70px; }
+
+.salons__select-sity {
+  margin-bottom: 40px; }
+
+.salons__list {
+  width: 84%;
+  margin: auto; }
+
+.salons__list-item {
+  margin-bottom: 20px;
+  background-color: #101010;
+  display: flex;
+  flex-direction: column; }
+
+.salons__list-item-img {
+  height: 40%;
+  width: 100%; }
+  .salons__list-item-img img {
+    min-width: 100%; }
 

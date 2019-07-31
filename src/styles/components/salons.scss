@@ -47,6 +47,7 @@
   background-color: $col-black50;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .salons__list-item-img {
@@ -120,4 +121,82 @@
   height: 70px;
   width: 84%;
   margin: 40px auto;
+}
+
+@media (min-width: 740px) {
+  .salons__wrapper{
+    width: 84%;
+  }
+
+  .salons__list-item-link{
+    display: none;
+  }
+
+  .salons__head{
+    flex-direction: row;
+  }
+  .salons__header{
+    font-size: 50px;
+    line-height: 1.08;
+    max-width: 265px;
+    margin-right: 60px;
+  }
+  .salons__choise-city{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .section__title{
+    width: 100%
+  }
+  .salons__select-sity{
+    width: 50%
+  }
+
+  .salons__choise-city-btn{
+    width: 45%
+  }
+
+  .salons__list-item{
+    flex-direction: row;
+    height: 220px;
+    &::after{
+      content: '';
+      position: absolute;
+      right: 40px;
+      top: 50%;
+      width: 70px;
+      height: 70px;
+      background-image: url(../images/icons/promoIcon-white.svg);
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      transform: translateY(-35px);
+      border: 1px solid $col-gray-light;
+      border-radius: 50%;
+    }
+  }
+
+  .salons__list-item-img{
+    width: 304px;
+    height: 220px;
+    margin-right: 70px;
+  }
+  .salons__list-pagination{
+    display: none;
+  }
+
+  .salons__list-item-city{
+    font-size: 14px
+  }
+
+ .salons__list-item-metro{
+   font-size: 24px;
+   margin-bottom: 20px
+ }
+ .salons__list-item-street{
+   font-size: 15px;
+   max-width: 250px
+ }
 }

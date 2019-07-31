@@ -1106,7 +1106,9 @@ body {
   .footer__logo {
     margin-bottom: 65px; }
   .footer__header {
-    margin-bottom: 65px; } }
+    margin-bottom: 65px;
+    font-size: 50px;
+    width: 470px; } }
 
 @media (min-width: 1080px) {
   .footer__wrapper {
@@ -2050,7 +2052,8 @@ body {
   margin-bottom: 20px;
   background-color: #101010;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  position: relative; }
 
 .salons__list-item-img {
   height: 40%;
@@ -2115,13 +2118,73 @@ body {
   width: 84%;
   margin: 40px auto; }
 
+@media (min-width: 740px) {
+  .salons__wrapper {
+    width: 84%; }
+  .salons__list-item-link {
+    display: none; }
+  .salons__head {
+    flex-direction: row; }
+  .salons__header {
+    font-size: 50px;
+    line-height: 1.08;
+    max-width: 265px;
+    margin-right: 60px; }
+  .salons__choise-city {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .section__title {
+    width: 100%; }
+  .salons__select-sity {
+    width: 50%; }
+  .salons__choise-city-btn {
+    width: 45%; }
+  .salons__list-item {
+    flex-direction: row;
+    height: 220px; }
+    .salons__list-item::after {
+      content: '';
+      position: absolute;
+      right: 40px;
+      top: 50%;
+      width: 70px;
+      height: 70px;
+      background-image: url(../images/promoIcon-white.svg);
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      transform: translateY(-35px);
+      border: 1px solid #3c3c3c;
+      border-radius: 50%; }
+  .salons__list-item-img {
+    width: 304px;
+    height: 220px;
+    margin-right: 70px; }
+  .salons__list-pagination {
+    display: none; }
+  .salons__list-item-city {
+    font-size: 14px; }
+  .salons__list-item-metro {
+    font-size: 24px;
+    margin-bottom: 20px; }
+  .salons__list-item-street {
+    font-size: 15px;
+    max-width: 250px; } }
+
+.advantages__wrapper {
+  padding-top: 90px; }
+
 .advantages__list {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  padding-bottom: 90px; }
 
 .advantages__list-item {
   padding: 30px;
-  position: relative; }
+  position: relative;
+  background-color: #101010; }
 
 .advantages__list-item-num {
   position: absolute;
@@ -2135,10 +2198,13 @@ body {
   background-color: #ff001b; }
 
 .advantages__list-item-head {
+  margin-top: 70px;
   font-size: 24px;
   font-weight: 700;
   line-height: 1.42;
-  color: #ffffff; }
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 15px; }
 
 .advantages__list-item-text {
   font-family: OpenSans;
@@ -2146,4 +2212,24 @@ body {
   font-weight: 300;
   line-height: 1.71;
   color: #ffffff; }
+
+@media (min-width: 740px) {
+  .advantages__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 84%;
+    margin: auto;
+    padding-bottom: 120px; }
+  .advantages__list-item {
+    width: 33%; }
+  .advantages__wrapper {
+    padding-top: 120px; }
+  .advantages__header {
+    max-width: 550px;
+    font-size: 40px; }
+  .advantages__list-item-head {
+    font-size: 32px; }
+  .advantages__list-item-text {
+    font-size: 15px; } }
 

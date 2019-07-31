@@ -3,6 +3,7 @@
   padding-bottom: 90px;
   width: 100%;
 }
+
 .salons__head {
   display: flex;
   flex-direction: column;
@@ -51,7 +52,72 @@
 .salons__list-item-img {
   height: 40%;
   width: 100%;
+  margin-bottom: 30px;
   img {
     min-width: 100%;
   }
+}
+
+.salons__list-item-adress {
+  padding: 30px 40px 44px;
+}
+
+.salons__list-item-city {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.26px;
+  color: $col-bright-red;
+  text-transform: uppercase;
+}
+
+.salons__list-item-metro {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: $col-white;
+  margin-bottom: 20px;
+}
+
+.salons__list-item-street {
+  font-family: OpenSans;
+  font-size: 14px;
+  line-height: 1.71;
+  color: $col-white;
+}
+
+.salons__list-item-link {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.28px;
+  color: $col-bright-red;
+  display: block;
+  text-decoration: none;
+  border-top: 1px solid $col-gray;
+  height: 70px;
+  line-height: 70px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-transform: uppercase;
+  position: relative;
+  &:after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-10px) rotate(-90deg);
+    position: absolute;
+    background-image: url(../images/icons/arrow-select-down-red.svg);
+    background-repeat: no-repeat;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.salons__list-pagination {
+  height: 70px;
+  width: 84%;
+  margin: 40px auto;
 }

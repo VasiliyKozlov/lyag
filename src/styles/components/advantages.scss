@@ -1,0 +1,39 @@
+.advantages {
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages__list-item {
+  padding: 30px;
+  position: relative;
+}
+
+.advantages__list-item-num {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  color: $col-white;
+  line-height: 40px;
+  text-align: center;
+  left: 30px;
+  top: 0;
+  background-color: $col-bright-red;
+}
+
+.advantages__list-item-head {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.42;
+  color: $col-white;
+}
+
+.advantages__list-item-text {
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.71;
+  color: $col-white;
+}

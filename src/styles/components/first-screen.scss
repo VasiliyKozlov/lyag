@@ -59,6 +59,15 @@
   line-height: 70px;
 }
 
+.first-screen__btn {
+  height: 70px;
+  line-height: 70px;
+  display: flex;
+  .btn {
+    max-width: 235px;
+  }
+}
+
 .first-screen__footnote {
   position: absolute;
   top: 70px;
@@ -83,10 +92,26 @@
     padding-top: 180px;
     position: relative;
   }
+  .first-screen__content-header {
+    font-size: 50px;
+  }
   .first-screen__wrapper {
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
+  }
+
+  .first-screen__btn {
+    width: 290px;
+  }
+
+  .first-screen_head {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .first-screen__content {
+    max-width: 475px;
   }
 
   .first-screen__slogan {

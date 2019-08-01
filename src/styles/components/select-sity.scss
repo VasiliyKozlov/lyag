@@ -107,6 +107,16 @@
 @media (min-width: 740px) {
   .select-sity {
     background-color: $col-gray;
+    &_transperent {
+      background-color: transparent;
+      border: 1px solid $col-gray;
+      .select-sity__btn {
+        background-color: $col-bright-red;
+      }
+      .select-sity__label {
+        border-left: none;
+      }
+    }
   }
 
   .select-sity__label {

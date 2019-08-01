@@ -772,6 +772,13 @@ body {
 @media (min-width: 740px) {
   .select-sity {
     background-color: #222222; }
+    .select-sity_transperent {
+      background-color: transparent;
+      border: 1px solid #222222; }
+      .select-sity_transperent .select-sity__btn {
+        background-color: #ff001b; }
+      .select-sity_transperent .select-sity__label {
+        border-left: none; }
   .select-sity__label {
     border-left: 1px solid #3c3c3c; }
   .select-sity_menu {
@@ -1003,6 +1010,13 @@ body {
   height: 70px;
   line-height: 70px; }
 
+.first-screen__btn {
+  height: 70px;
+  line-height: 70px;
+  display: flex; }
+  .first-screen__btn .btn {
+    max-width: 235px; }
+
 .first-screen__footnote {
   position: absolute;
   top: 70px;
@@ -1024,10 +1038,19 @@ body {
   .first-screen {
     padding-top: 180px;
     position: relative; }
+  .first-screen__content-header {
+    font-size: 50px; }
   .first-screen__wrapper {
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start; }
+  .first-screen__btn {
+    width: 290px; }
+  .first-screen_head {
+    flex-direction: column;
+    justify-content: flex-start; }
+  .first-screen__content {
+    max-width: 475px; }
   .first-screen__slogan {
     display: block; }
   .first-screen__logo {
@@ -2035,7 +2058,8 @@ body {
   padding-top: 36px;
   padding-bottom: 60px;
   padding-left: 30px;
-  padding-right: 30px; }
+  padding-right: 30px;
+  margin-bottom: 60px; }
 
 .salons__choise-city-btn {
   height: 70px;
@@ -2120,11 +2144,14 @@ body {
 
 @media (min-width: 740px) {
   .salons__wrapper {
-    width: 84%; }
+    width: 84%;
+    max-width: 1140px; }
   .salons__list-item-link {
     display: none; }
   .salons__head {
-    flex-direction: row; }
+    flex-direction: row;
+    padding-left: 65px;
+    padding-right: 65px; }
   .salons__header {
     font-size: 50px;
     line-height: 1.08;
@@ -2173,6 +2200,9 @@ body {
     font-size: 15px;
     max-width: 250px; } }
 
+.advantages {
+  background-color: #101010; }
+
 .advantages__wrapper {
   padding-top: 90px; }
 
@@ -2183,8 +2213,7 @@ body {
 
 .advantages__list-item {
   padding: 30px;
-  position: relative;
-  background-color: #101010; }
+  position: relative; }
 
 .advantages__list-item-num {
   position: absolute;
@@ -2220,7 +2249,8 @@ body {
     justify-content: space-between;
     width: 84%;
     margin: auto;
-    padding-bottom: 120px; }
+    padding-bottom: 120px;
+    max-width: 1140px; }
   .advantages__list-item {
     width: 33%; }
   .advantages__wrapper {
@@ -2231,5 +2261,13 @@ body {
   .advantages__list-item-head {
     font-size: 32px; }
   .advantages__list-item-text {
-    font-size: 15px; } }
+    font-size: 15px; }
+  .advantages__p {
+    max-width: 200px; } }
+
+@media (min-width: 1080px) {
+  .advantages__list,
+  .advantages__wrapper {
+    padding-left: 65px;
+    padding-right: 65px; } }
 

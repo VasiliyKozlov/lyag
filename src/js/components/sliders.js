@@ -1,5 +1,7 @@
 import Flickity from 'flickity';
 
+const advantages = document.querySelector('.advantages__list');
+const advantagesSlider = document.querySelector('.advantages__slider');
 const seviceSlider = document.querySelector('.services__slider');
 const promoSlider = document.querySelector('.promo__slider');
 const reviewsSlider = document.querySelector('.reviews__slider');
@@ -20,4 +22,18 @@ const flktyPromo = new Flickity(promoSlider, {
 const flktyReview = new Flickity(reviewsSlider, {
   cellAlign: 'left',
   contain: true
+});
+
+window.onload = async function() {
+  if (window.innerWidth < 740) {
+    await advantages.classList.add('advantages__slider');
+    return true;
+  } else if (window.innerWidth < 740 && advantagesSlider.classList.contains('advantages__slider')) {
+    advantagesSlider.classList.remove('advantages__slider');
+  }
+}.then(() => {
+  new Flickity(advantagesSlider, {
+    cellAlign: 'left',
+    contain: true
+  });
 });

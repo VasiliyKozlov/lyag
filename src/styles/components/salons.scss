@@ -26,6 +26,7 @@
   padding-bottom: 60px;
   padding-left: 30px;
   padding-right: 30px;
+  margin-bottom: 60px;
 }
 
 .salons__choise-city-btn {
@@ -124,45 +125,50 @@
 }
 
 @media (min-width: 740px) {
-  .salons__wrapper{
+  .salons__wrapper {
     width: 84%;
+    max-width: 1140px;
   }
 
-  .salons__list-item-link{
+  .salons__list-item-link {
     display: none;
   }
 
-  .salons__head{
+  .salons__head {
     flex-direction: row;
+    padding-left: 65px;
+    padding-right: 65px;
   }
-  .salons__header{
+
+  .salons__header {
     font-size: 50px;
     line-height: 1.08;
     max-width: 265px;
     margin-right: 60px;
   }
-  .salons__choise-city{
+
+  .salons__choise-city {
     flex-grow: 1;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .section__title{
-    width: 100%
+  .section__title {
+    width: 100%;
   }
-  .salons__select-sity{
-    width: 50%
-  }
-
-  .salons__choise-city-btn{
-    width: 45%
+  .salons__select-sity {
+    width: 50%;
   }
 
-  .salons__list-item{
+  .salons__choise-city-btn {
+    width: 45%;
+  }
+
+  .salons__list-item {
     flex-direction: row;
     height: 220px;
-    &::after{
+    &::after {
       content: '';
       position: absolute;
       right: 40px;
@@ -178,25 +184,25 @@
     }
   }
 
-  .salons__list-item-img{
+  .salons__list-item-img {
     width: 304px;
     height: 220px;
     margin-right: 70px;
   }
-  .salons__list-pagination{
+  .salons__list-pagination {
     display: none;
   }
 
-  .salons__list-item-city{
-    font-size: 14px
+  .salons__list-item-city {
+    font-size: 14px;
   }
 
- .salons__list-item-metro{
-   font-size: 24px;
-   margin-bottom: 20px
- }
- .salons__list-item-street{
-   font-size: 15px;
-   max-width: 250px
- }
+  .salons__list-item-metro {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .salons__list-item-street {
+    font-size: 15px;
+    max-width: 250px;
+  }
 }

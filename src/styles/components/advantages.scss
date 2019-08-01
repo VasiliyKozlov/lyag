@@ -1,3 +1,6 @@
+.advantages {
+  background-color: $col-black50;
+}
 .advantages__wrapper {
   padding-top: 90px;
 }
@@ -11,7 +14,6 @@
 .advantages__list-item {
   padding: 30px;
   position: relative;
-  background-color: $col-black50;
 }
 
 .advantages__list-item-num {
@@ -52,6 +54,7 @@
     width: 84%;
     margin: auto;
     padding-bottom: 120px;
+    max-width: 1140px;
   }
 
   .advantages__list-item {
@@ -66,10 +69,21 @@
     max-width: 550px;
     font-size: 40px;
   }
-  .advantages__list-item-head{
+  .advantages__list-item-head {
     font-size: 32px;
   }
   .advantages__list-item-text {
     font-size: 15px;
+  }
+  .advantages__p {
+    max-width: 200px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .advantages__list,
+  .advantages__wrapper {
+    padding-left: 65px;
+    padding-right: 65px;
   }
 }

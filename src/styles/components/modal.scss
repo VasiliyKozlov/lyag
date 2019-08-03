@@ -26,6 +26,10 @@
   &_black {
     background-color: $col-black50;
   }
+  &_salon {
+    padding: 0;
+    overflow-y: scroll
+  }
 }
 
 .modal__header {
@@ -67,6 +71,14 @@
   background-repeat: no-repeat;
 }
 
+.modal__red-order-form{
+  background-color: $col-bright-red;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
 @media (min-width: 820px) {
   .modal__overlay {
     position: absolute;
@@ -87,12 +99,29 @@
     padding-bottom: 60px;
     z-index: 12;
     overflow-y: visible;
+    &_salon {
+      overflow-y: scroll;
+      overflow-x: visible;
+    }
   }
   .modal__close {
     right: -70px;
   }
+  .modal_long{
+    .modal__close {
+      right: 0;
+    } 
+  }
   .modal__p {
     width: 340px;
     margin-bottom: 50px;
+  }
+  .modal__form-two {
+    .order__form-input{
+      width: 48%;
+    }
+    .order__form-input-submit{
+      width: 100%
+    }
   }
 }

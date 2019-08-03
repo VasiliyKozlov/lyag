@@ -290,24 +290,67 @@
       <!--CONTENT  -->
 
      <!-- MODAL SALON -->
-     <div class="modal ">
+     <div class="modal modal_long ">
         <div class="modal__overlay"></div>
-        <div class="modal__body modal__body_black">
+        <div class="modal__body modal__body_salon modal__body_black">
           <div class="modal__close btn btn_red"></div>
           <div class="salons__modal-head">
               <div class="salons__modal-head-adr">
                   <div class="salons__modal-head-adr-city">Москва</div>
-                  Турчанинов переулок, дом 3, строение 1
+                  <div class="salons__modal-head-adr-street">Турчанинов переулок, дом 3, строение 1</div>
               </div>
               <div class="salons__modal-head-metro">
                 Парк Культуры
               </div>
           </div>
-          <div class="salons__modal-videos salons__videos-slider">
-              <div class="salons__modal-videos-item"></div>
+          <div class="salons__modal-videos salons__videos-slider slider">
+              <div class="salons__modal-videos-item video">
+                <img src="./images/salon-example.jpg" alt="">
+                <div class="video__control">
+                    <div class="video__control-btn"></div>
+                    <div class="video__ext">
+                      <div class="video__ext-name">
+                        о ляг.спиной
+                      </div>
+                      <div class="video__ext-time">
+                        2:23 сек.
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="salons__modal-videos-item video">
+                  <img src="./images/salon-example.jpg" alt="">
+                  <div class="video__control">
+                      <div class="video__control-btn"></div>
+                      <div class="video__ext">
+                        <div class="video__ext-name">
+                          о ляг.спиной
+                        </div>
+                        <div class="video__ext-time">
+                          2:23 сек.
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="salons__modal-videos-item video">
+                    <img src="./images/salon-example.jpg" alt="">
+                    <div class="video__control">
+                        <div class="video__control-btn"></div>
+                        <div class="video__ext">
+                          <div class="video__ext-name">
+                            о ляг.спиной
+                          </div>
+                          <div class="video__ext-time">
+                            2:23 сек.
+                          </div>
+                        </div>
+                      </div>
+                  </div>
           </div>
           <div class="salons__modal-adv">
-            <div class="salons__modal-adv-plus">Парковка в 1 минуте от мастерской (60 руб. — час)</div>
+            <div class="salons__modal-adv-plus">Парковка в 1 минуте от мастерской <br>(60 руб. — час)</div>
             <div class="salons__modal-adv-count">
               <div class="salons__modal-adv-count-item">
                 2
@@ -320,16 +363,52 @@
             </div>
           </div>
           <div class="salons__modal-how-find">
-            <div class="salons__modal-how-find-slider"> 
+            <div class="salons__modal-how-find salons__modal-how-find-slider slider"> 
               <div class="salons__modal-how-find-item">
+                  <span class="salons__modal-how-find-point"></span>
+                  <div class="salons__modal-how-find-head">Выходим из метро</div>
+                  <div class="salons__modal-how-find-body">Поднимаемся по экскалатору, поварачиваем налево и поднимаемся на ул. Сретенка к храму «Живоначальной Троицы В Листах»</div>
+              </div>
+              <div class="salons__modal-how-find-item">
+                  <span class="salons__modal-how-find-point"></span>
+                  <div class="salons__modal-how-find-head">Выходим из метро</div>
+                  <div class="salons__modal-how-find-body">Поднимаемся по экскалатору, поварачиваем налево и поднимаемся на ул. Сретенка к храму «Живоначальной Троицы В Листах»</div>
+              </div>
+              <div class="salons__modal-how-find-item">
+                  <span class="salons__modal-how-find-point"></span>
+                  <div class="salons__modal-how-find-head">Выходим из метро</div>
+                  <div class="salons__modal-how-find-body">Поднимаемся по экскалатору, поварачиваем налево и поднимаемся на ул. Сретенка к храму «Живоначальной Троицы В Листах»</div>
+              </div>
+              <div class="salons__modal-how-find-item">
+                  <span class="salons__modal-how-find-point"></span>
                   <div class="salons__modal-how-find-head">Выходим из метро</div>
                   <div class="salons__modal-how-find-body">Поднимаемся по экскалатору, поварачиваем налево и поднимаемся на ул. Сретенка к храму «Живоначальной Троицы В Листах»</div>
               </div>
             </div>
-            <div class="btn btn_transperent">смотреть на карте</div>
-            <div class="salons__modal-how-find-video"></div>
+            <div class="salons__modal-how-find-btn btn btn_transperent">смотреть на карте</div>
+            <div class="salons__modal-how-find-video video">
+              <div class="salons__modal-how-find-video-header video__header">
+                  Как добраться до салона
+              </div>
+                <img src="./images/salon-example.jpg" alt="">
+                <div class="video__control">
+                    <div class="video__control-btn"></div>
+                    <div class="video__ext">
+                      <div class="video__ext-name">
+                        о ляг.спиной
+                      </div>
+                      <div class="video__ext-time">
+                        2:23 сек.
+                      </div>
+                    </div>
+                  </div>
+            </div>
           </div>
-          <div class="modal__first-order-form">
+          <div class="salons__order-form modal__red-order-form modal__form-two">
+            <div class="modal__header">Записаться 
+                на первый массаж</div>
+                <p class="modal__p">Наши менеджеры быстро свяжутся с вами 
+                    и скоординируют по нужному вопросу</p>   
             <form action="" class="order__form form">
                 <div class="order__form-wrapper order__form-wrapper_fo">
                   <div class="order__form-input order__form-input_fo">
@@ -348,128 +427,7 @@
         </div>
       </div>
      <!-- MODAL SALON --> 
-    <!-- MODAL FIRST ORDER FORM -->
-    <div class="modal active">
-      <div class="modal__overlay"></div>
-      <div class="modal__body modal__body_black">
-        <div class="modal__close btn btn_red"></div>
-        <h2 class="modal__header">
-          Записаться на первый массаж
-        </h2>
-        <div class="modal__p">Наши менеджеры быстро свяжутся с вами и скоординируют по нужному вопросу</div>
-        <form action="" class="order__form form">
-          <div class="order__form-wrapper">
-            <div class="order__form-input order__form-input_modal">
-              <input type="text" name="name" placeholder="Имя" class="text-input" id="" />
-            </div>
-            <div class="order__form-input order__form-input_modal">
-              <input type="text" name="phone" placeholder="Телефон" class="text-input" id="" />
-            </div>
-            <div class="order__form-input order__form-input_modal">
-              <input type="text" name="email" placeholder="Email" class="text-input" id="" />
-            </div>
-            <div class="order__form-input order__form-input_modal order__form-input-submit">
-              <button class="btn btn_red">записаться на первый массаж</button>
-            </div>
-            <div class="order__form-footnote">Нажимая кнопку «Записаться на первый массаж» <a class="order__form-footnote-link" href="">я принимаю условия передачи информации</a></div>
-          </div>
-        </form>
-      </div>
-    </div>
-    <!-- MODAL FIRST ORDER FORM -->
-
-    <!-- MODAL ORDER FORM -->
-    <div class="modal ">
-      <div class="modal__overlay"></div>
-      <div class="modal__body modal__body_black">
-        <div class="modal__close btn btn_red"></div>
-        <h2 class="modal__header">
-          Записаться на массаж
-        </h2>
-        <div class="modal__p">Наши менеджеры быстро свяжутся с вами и скоординируют по нужному вопросу</div>
-        <form action="" class="order__form form">
-          <div class="order__type">классический</div>
-
-          <div class="order__form-radio-head">
-            Выбрать время продолжительности сеанса
-          </div>
-
-          <div class="order__form-input order__form-radio">
-            <label class="radio-input">
-              <span class="radio-input__text">30 мин.</span>
-              <input type="radio" name="time" value="30" id="" />
-              <span class="radio-input__decorator"></span>
-            </label>
-            <label class="radio-input">
-              <span class="radio-input__text">60 мин.</span>
-              <input type="radio" name="time" value="60" id="" />
-              <span class="radio-input__decorator"></span>
-            </label>
-          </div>
-
-          <div class="order__form-radio-head">
-            Выбрать дополнительное время сеанса
-          </div>
-
-          <div class="order__form-input order__form-radio">
-            <label class="radio-input">
-              <span class="radio-input__text">30 мин.</span>
-              <input type="radio" name="addtime" value="30" id="" />
-              <span class="radio-input__decorator"></span>
-            </label>
-            <label class="radio-input">
-              <span class="radio-input__text">60 мин.</span>
-              <input type="radio" name="addtime" value="60" id="" />
-              <span class="radio-input__decorator"></span>
-            </label>
-          </div>
-
-          <div class="order__price">
-            <div class="order__price-title">Итого</div>
-            <div class="order__price-item">15 900<span>руб.</span></div>
-          </div>
-
-          <div class="order__form-wrapper">
-            <div class="order__form-input">
-              <input type="text" name="name" placeholder="Имя" class="text-input" id="" />
-            </div>
-            <div class="order__form-input">
-              <input type="text" name="phone" placeholder="Телефон" class="text-input" id="" />
-            </div>
-            <div class="order__form-input">
-              <input type="text" name="email" placeholder="Email" class="text-input" id="" />
-            </div>
-            <div class="order__form-input order__form-input-submit">
-              <button class="btn btn_red">записаться на первый массаж</button>
-            </div>
-            <div class="order__form-footnote">Нажимая кнопку «Записаться на первый массаж» <a class="order__form-footnote-link" href="">я принимаю условия передачи информации</a></div>
-          </div>
-        </form>
-      </div>
-    </div>
-    <!-- MODAL ORDER FORM -->
-
-    <!-- MODAL ORDER SUCCESS -->
-    <div class="modal ">
-      <div class="modal__overlay"></div>
-      <div class="modal__body modal__body_black">
-        <div class="modal__close btn btn_red"></div>
-        <div class="success">
-          <div class="success__img">
-            <div class="success__img-item"></div>
-          </div>
-          <div class="success__text">
-            <h2 class="modal__header">
-              Заявка отправлена
-            </h2>
-            <div class="modal__p">Вам скоро перезвонят и подробно всё расскажут</div>
-            <button class="btn btn_transperent success__btn">закрыть окно</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- MODAL ORDER SUCCESS -->
-
+    
     <script src="../build/bundle.js"></script>
   </body>
 </html>

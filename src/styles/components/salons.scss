@@ -103,7 +103,7 @@
   text-transform: uppercase;
   position: relative;
   &:after {
-    content: '';
+    content: "";
     width: 20px;
     height: 20px;
     right: 20px;
@@ -122,6 +122,167 @@
   height: 70px;
   width: 84%;
   margin: 40px auto;
+}
+
+.salons__modal-head {
+  height: 70px;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: relative;
+}
+
+.salons__modal-head-adr {
+  position: absolute;
+  top: 520px;
+  left: 30px;
+  width: calc(100% - 60px);
+  border-bottom: 1px solid $col-gray-light;
+}
+
+.salons__modal-head-adr-city {
+  height: 35px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 14px;
+  color: $col-white;
+  background-color: $col-bright-red;
+  line-height: 35px;
+  text-align: center;
+  position: absolute;
+}
+
+.salons__modal-head-adr-street {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: -0.3px;
+  color: $col-white;
+  margin-top: 60px;
+  max-width: 275px;
+  padding-bottom: 30px;
+}
+
+.salons__modal-head-metro {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: $col-white;
+  line-height: 70px;
+  &:before {
+    content: "";
+    background-image: url(../images/icons/metro.svg);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 15px;
+    display: inline-block;
+    margin-right: 15px;
+  }
+}
+
+.salons__modal-videos .flickity-button,
+.salons__modal-videos .flickity-page-dots {
+  display: none;
+}
+
+.salons__modal-videos-item {
+  height: 420px;
+  margin-bottom: 170px;
+  overflow: hidden;
+}
+
+.salons__modal-adv {
+  padding: 30px;
+}
+
+.salons__modal-adv-plus {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: $col-bright-red;
+  max-width: 275px;
+  margin-bottom: 30px;
+}
+
+.salons__modal-adv-count {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.salons__modal-adv-count-item {
+  font-size: 120px;
+  color: $col-white;
+  display: flex;
+  transform-origin: 50%;
+  font-weight: 700;
+  margin-right: 30px;
+  span {
+    font-size: 18px;
+    text-transform: uppercase;
+    transform: rotate(-90deg) translateY(50px);
+  }
+}
+
+.salons__modal-how-find-slider .flickity-button,
+.salons__modal-how-find-slider .flickity-page-dots {
+  display: none;
+}
+
+.salons__modal-how-find {
+  margin-bottom: 40px;
+}
+
+.salons__modal-how-find-item {
+  padding-top: 30px;
+  border-top: 1px solid $col-gray-light;
+  position: relative;
+  width: 80%;
+  padding-right: 60px;
+  padding-left: 60px;
+  margin-top: 10px;
+}
+
+.salons__modal-how-find-video {
+  height: 310px;
+  overflow: hidden;
+}
+
+.salons__modal-how-find-video-header {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  text-transform: uppercase;
+}
+
+.salons__modal-how-find-point {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -10px;
+  left: 30px;
+  border: 4px solid $col-bright-red;
+  border-radius: 50%;
+}
+
+.salons__modal-how-find-head {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: $col-white;
+}
+
+.salons__modal-how-find-body {
+  font-size: 14px;
+  line-height: 1.71;
+  color: $col-white;
+}
+
+.salons__modal-how-find-btn {
+  height: 70px;
+  line-height: 70px;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
 }
 
 @media (min-width: 740px) {
@@ -169,7 +330,7 @@
     flex-direction: row;
     height: 220px;
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       right: 40px;
       top: 50%;
@@ -204,5 +365,84 @@
   .salons__list-item-street {
     font-size: 15px;
     max-width: 250px;
+  }
+
+  .salons__modal-videos-item {
+    margin-bottom: 0;
+  }
+
+  .salons__modal-videos .flickity-button {
+    display: block;
+    top: auto;
+    bottom: 60px;
+    &.next {
+      right: 60px;
+    }
+    &.previous {
+      left: auto;
+      right: 130px;
+    }
+  }
+  .salons__modal-head {
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .salons__modal-head-adr {
+    position: static;
+    width: 50%;
+    border-bottom: none;
+  }
+
+  .salons__modal-adv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .salons__modal-adv-plus{
+    margin-bottom: 0;
+    font-size: 24px;
+    width: 190px;
+  }
+  .salons__modal-adv-count{
+    max-width: 250px;
+  }
+  .salons__modal-head-metro{
+    font-size: 28px;
+  }
+  .salons__modal-how-find-slider .flickity-button{
+    display: block;
+    bottom: -110px;
+    top: auto;
+    &.next {
+      right: auto;
+      left: 70px;
+    }
+    &.previous {
+      left: 0;
+      right: auto;
+    }
+  }
+
+  .salons__modal-how-find-btn{
+    margin-right: 0;
+    width: 60%;
+  }
+
+  .salons__modal-how-find-video {
+    height: 400px;
+    margin-left: -70px;
+    width: calc(100% + 140px);
+  }
+  .salons__modal-how-find{
+    margin-bottom: 0;
+  }
+  .salons__order-form{
+    margin-left: -70px;
+    width: calc(100% + 140px);
+    padding-left: 70px;
+    padding-right: 70px;
   }
 }

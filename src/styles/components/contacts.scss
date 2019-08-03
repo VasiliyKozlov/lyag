@@ -10,3 +10,38 @@
     height: 70px;
     line-height: 70px;
 }
+
+.addresses{
+    padding-top: 120px;
+}
+
+.addresess__city{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.42;
+  color: $col-bright-red;
+  margin-bottom: 30px;
+}
+
+.adresess__info-text{
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: -0.3px;
+  color: $col-white;
+}
+
+.adresess__info{
+    display: flex;
+    flex-direction: column;
+}
+
+.adresess__info-item{
+    margin-bottom: 20px;
+}
+
+.adresess__info-deck{
+  font-size: 13px;
+  font-weight: 300;
+  color: $col-white;
+}

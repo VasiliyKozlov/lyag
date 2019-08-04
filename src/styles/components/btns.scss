@@ -39,4 +39,39 @@
       background-color: transparent;
     }
   }
+  &_instagram {
+    position: relative;
+    background: linear-gradient(
+      to bottom,
+      #4b5ed7 0%,
+      #5155d2 4%,
+      #6045c8 10%,
+      #673cc1 15%,
+      #7239ba 21%,
+      #773cb4 24%,
+      #893aa7 37%,
+      #ab348e 56%,
+      #b0368b 57%,
+      #b23883 59%,
+      #c04178 63%,
+      #d1515e 72%,
+      #d6585c 75%,
+      #e2644b 82%,
+      #e96f3e 90%,
+      #ed7739 94%,
+      #f2823a 100%
+    );
+    &:before {
+      content: '';
+      background-image: url(../images/icons/inst.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 50%;
+      left: 35px;
+      transform: translateY(-10px);
+    }
+  }
 }

@@ -40,6 +40,128 @@
   }
 }
 
+.our-social__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.our-social__item {
+  display: block;
+  background-color: $col-black50;
+  margin-bottom: 10px;
+  position: relative;
+  &_sm {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 20px;
+    &:after {
+      content: '';
+      width: 20px;
+      height: 20px;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-10px) rotate(-90deg);
+      position: absolute;
+      background-image: url(../images/icons/arrow-select-down-red.svg);
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.our-social__item-head {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.25;
+  color: $col-white;
+  display: none;
+  margin: 30px 0 0 40px;
+  &_mobile {
+    display: block;
+    margin-bottom: 25px;
+  }
+}
+
+.our-social__item-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.our-social__subscribers-count {
+  font-size: 80px;
+  font-weight: 600;
+  letter-spacing: -3.81px;
+  color: $col-bright-red;
+  display: block;
+  margin-left: 40px;
+}
+
+.our-social__subscribers-txt {
+  font-family: OpenSans;
+  font-size: 13px;
+  font-style: italic;
+  line-height: 1.54;
+  color: $col-white;
+  display: block;
+  margin-bottom: 30px;
+  margin-left: 40px;
+  max-width: 195px;
+}
+
+.our-social__subscribers {
+  order: -1;
+}
+
+.our-social__btn {
+  height: 70px;
+  line-height: 70px;
+  display: block;
+  text-decoration: none;
+  color: $col-white;
+}
+
+.our-social__item-icon {
+  height: 60px;
+  width: 60px;
+  margin-right: 20px;
+  &_vk {
+    background-color: #5082ba;
+    background-image: url(../images/icons/vk.svg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 22px 13px;
+  }
+  &_fb {
+    background-color: #4267b2;
+    background-image: url(../images/icons/fb.svg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 10px 19px;
+  }
+  &_g {
+    background-color: #dd4b39;
+    background-image: url(../images/icons/google+.svg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+  }
+}
+
+.our-social__social-name {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: $col-white;
+  display: block;
+}
+
+.our-social__subscribers-count-sm {
+  font-family: OpenSans;
+  font-size: 14px;
+  line-height: 2;
+  color: $col-white;
+}
+
 @media (min-width: 740px) {
   .social_menu {
     display: none;

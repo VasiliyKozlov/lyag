@@ -14,24 +14,21 @@
   &_menu {
     display: block;
   }
-  // &:after {
-  //   content: '';
-  //   position: absolute;
-  //   top: 50%;
-  //   left: 90%;
-  //   margin-top: -7px;
-  //   width: 14px;
-  //   height: 9px;
-  //   background-image: url(../images/icons/arrow-select-down.svg);
-  //   background-repeat: no-repeat;
-  //   z-index: 12;
-  // }
   &:hover {
     background-color: $col-gray-dark;
   }
   &_transperent {
     background-color: transparent;
     border: 1px solid $col-gray;
+    .select-sity__btn {
+      background-color: $col-bright-red;
+    }
+  }
+  &_black {
+    background-color: $col-black;
+    .select-sity__label {
+      background-color: $col-black;
+    }
     .select-sity__btn {
       background-color: $col-bright-red;
     }

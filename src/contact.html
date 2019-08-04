@@ -108,15 +108,15 @@
         <main class="main">
          <!--FIRST SCREEN  -->
         <section class="first-screen-contact">
-          <div class="wrapper first-screen__wrapper first-screen_contact">
-            <div class="first-screen__content">
-              <div class=" section__title">
+          <div class="wrapper ">
+            <div class="first-screen__contact">
+              <div class="first-screen__content-title section__title">
                   наши мастерские
                 </div>
                 <h2 class="first-screen__content-header section__header">
                   Наши мастерские в столицах россии
                 </h2>
-                <div class="section__p">
+                <div class="first-screen__content-header-p section__p">
                   Наши мастерские расположены в Москве и Санкт-Петербурге
                 </div>
                 <div class="first-screen__content-btn btn btn_red">перезвоните мне</div> 
@@ -134,6 +134,9 @@
                         <div class="adresess__info-deck">По любым вопросам</div>
                       </div>
                     </div>
+                    <a href="" class="adresess__link">
+                      смотреть салоны на карте 
+                    </a>
                   </div>
                   <div class="addresess__block">
                     <div class="addresess__city">Санкт-Петербург</div>
@@ -141,16 +144,19 @@
                       <div class="adresess__info-item">
                         <div class="adresess__info-text">
                             +7 987 654 32 10
-                            <span>Работаем с 10:00 до 22:00</span>
                         </div>
+                        <div class="adresess__info-deck">Работаем с 10:00 до 22:00</div>
                       </div>
                       <div class="adresess__info-item">
                         <div class="adresess__info-text">
                           info@lyag.ru
-                          <span>По любым вопросам</span>  
                         </div>
+                        <div class="adresess__info-deck">По любым вопросам</div>
                       </div>
                     </div>
+                    <a href="" class="adresess__link">
+                      смотреть салоны на карте 
+                    </a>
                   </div>
                 </div>
                 <!-- addresses -->
@@ -161,13 +167,11 @@
         </section>
         <!--FIRST SCREEN  -->
         <!--MAP  -->
-
-        <!--MAP  -->
         <section class="map">
           <div class="wrapper map__wrapper">
             <div class="map__item"></div>
             <!-- SELECT SITY -->
-            <div class="select-sity select-sity_menu active">
+            <div class=" select-sity select-sity_black map__select-sity">
               <div class="select-sity__btn"></div>
               <div class="select-sity__label">Москва</div>
               <ul class="select-sity__list">
@@ -182,16 +186,33 @@
             </div>
           </div>
         </section>
+        <!--MAP  -->
+
         <!-- MANAGER -->  
         <section class="manager">
           <div class="wrapper manager__wrapper">
             <div class="manager__person">
-              <div class="manager__person-photo"></div>
-              <div class="manager__person-name"></div>
+              <div class="manager__person-photo">
+                <img src="./images/manager-example.png" alt="">
+              </div>
+              <div class="manager__person-name">
+                Джамиля Мухамедрад
+                <span class="manager__person-position">Управляющий администратор</span>
+              </div>
+              <div class="manager__person-email">
+                <div class="section__header">Контакты управляющего администратора</div>
+                <div class="manager__person-email-txt">
+                  info@lyag.ru
+                  <span>По любым вопросам</span>
+                </div>
+                <div class="manager__person-btn">
+                  <button class="btn btn_red">оставить заявку на обратную связь</button>
+                </div>  
+              </div> 
             </div>
             <div class="manager__desk">
-              <p>Если у вас возник вопрос 
-                  или предложение к нам по сервису, звоните или пишите нашему специалисту</p>
+              <div class="manager__desk__header ">Если у вас возник вопрос 
+                  или предложение к нам по сервису, звоните или пишите нашему специалисту</div>
               <div class="manager__desk-email">
                   info@lyag.ru
                   <span>По любым вопросам</span>
@@ -206,52 +227,58 @@
         <!-- OUR SOCIAL -->
           <section class="our-social">
               <div class="wrapper our-social__wrapper">
+                <h2 class="our-social__header section__header">Наши социальные сети</h2>    
                   <div class="our-social__list">
-                    <a href="" class="our-social__item our-social_large">
+                    <div class="our-social__item our-social_large">
                       <div class="our-social__item-block">
-                        <div class="our-social__item-head">
-                            Наш instagram
+                        <div class="our-social__item-head our-social__item-head_mobile">
+                            instagram
                         </div> 
-                        <div class="our-social__btn">
-                          <button class="btn btn_instagram">подписаться на аккаунт</button>
+                        <div class="our-social__item-head our-social__item-head_decktop">
+                            Наш<br>instagram
                         </div> 
-                        <div class="our-social__subscribers">
-                          <span class="our-social__subscribers-count">16 286</span>
-                          <span>
-                              человек уже присоединились
-                              к нашей движухи
-                          </span>
-                        </div>
+                        <div class="our-social__item-body">
+                          <a href="" class="btn our-social__btn our-social__btn btn btn_instagram">
+                            подписаться на аккаунт
+                          </a> 
+                          <div class="our-social__subscribers">
+                            <span class="our-social__subscribers-count">16 286</span>
+                            <span class="our-social__subscribers-txt">
+                                человек уже присоединились
+                                к нашей движухи
+                            </span>
+                          </div>
                       </div>
-                      <div class="our-social__item-block">
-                        <img src="" alt="">
                       </div>
-                    </a>
-                    <a href="" class="our-social__item">
-                        <div class="our-social__item-block">
-                          <img src="" alt="">
+                      <div class="our-social__item-image">
+                        <img src="./images/inst-phone.png" alt="">
+                      </div>
+                    </div>
+                    <div  class="our-social__item our-social__item_sm">
+                        <div class="our-social__item-icon our-social__item-icon_vk">
                         </div>
                         <div class="our-social__item-block">
-                            <span class="our-social__subscribers-count">2343 подписчика</span>
+                            <span class="our-social__social-name">Vkontakte</span>
+                            <span class="our-social__subscribers-count-sm">2343 подписчика</span>
                         </div>
-                    </a>
-                    <a href="" class="our-social__item">
-                        <div class="our-social__item-block">
-                            <img src="" alt="">
+                    </div>
+                    <div class="our-social__item our-social__item_sm">
+                        <div class="our-social__item-icon our-social__item-icon_fb">
                           </div>
                           <div class="our-social__item-block">
-                              <span class="our-social__subscribers-count">2343 подписчика</span>
-                          </div>
-                    </a>
-                    <a href="" class="our-social__item">
-                        <div class="our-social__item-block">
-                            <img src="" alt="">
-                          </div>
-                          <div class="our-social__item-block">
-                              <span class="our-social__subscribers-count">2343 подписчика</span>
+                              <span class="our-social__social-name">Facebook</span>
+                              <span class="our-social__subscribers-count-sm">2343 подписчика</span>
                           </div>
                     </div>
-                  </a>
+                    <div class="our-social__item our-social__item_sm">
+                        <div class="our-social__item-icon our-social__item-icon_g">
+                          </div>
+                          <div class="our-social__item-block">
+                              <span class="our-social__social-name">Google+</span>
+                              <span class="our-social__subscribers-count-sm">2343 подписчика</span>
+                          </div>
+                    </div>
+                  </div>
               </div>
           </section> 
         <!-- OUR SOCIAL -->

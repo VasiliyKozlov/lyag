@@ -476,7 +476,8 @@ body {
   padding: 20px 25px;
   font-size: 15px;
   color: #3c3c3c;
-  width: 100%; }
+  width: 100%;
+  outline: none; }
 
 .radio-input {
   height: 60px;
@@ -487,6 +488,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: nowrap;
   min-width: 120px;
   width: 49%; }
@@ -522,6 +524,67 @@ body {
   font-weight: 300;
   color: #ffffff; }
 
+.number-input {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.number-input__value {
+  background-color: #1b1b1b;
+  height: 60px;
+  padding: 15px 20px;
+  border: none;
+  width: 100%;
+  outline: none; }
+
+.number-input__plus,
+.number-input__minus {
+  display: none; }
+
+.number-input__note {
+  display: none; }
+
+@media (min-width: 740px) {
+  .radio-input {
+    height: 85px; }
+  .radio-input__decorator {
+    width: 25px;
+    height: 25px;
+    background-color: #ffffff;
+    border-radius: 50%; }
+  .radio-input__text {
+    font-size: 24px;
+    font-weight: 300;
+    color: #ffffff; }
+  .radio-input input:checked ~ .radio-input__decorator {
+    width: 25px;
+    height: 25px;
+    border: 4px solid #ffffff;
+    background-color: #ff001b; }
+  .number-input__value {
+    width: 60px;
+    font-size: 45px; }
+  .number-input__plus,
+  .number-input__minus {
+    font-size: 46px;
+    color: #ffffff;
+    transition: color .3s;
+    display: block;
+    margin: 0 10px; }
+    .number-input__plus:hover,
+    .number-input__minus:hover {
+      color: #ff001b; }
+  .number-input__note {
+    display: block;
+    font-family: OpenSans;
+    font-size: 13px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.54;
+    color: #ffffff;
+    max-width: 160px;
+    margin-left: 20px; } }
+
 .section__title {
   font-family: Acrobat;
   font-size: 18px;
@@ -549,6 +612,10 @@ body {
   line-height: 30px;
   color: #ffffff;
   margin-bottom: 60px; }
+
+@media (min-width: 740px) {
+  .section__header {
+    font-size: 50px; } }
 
 .btn {
   font-weight: 900;
@@ -3104,6 +3171,145 @@ body {
 @media (min-width: 1080px) {
   .action__wrapper,
   .first-screen-action {
+    padding-left: 65px;
+    padding-right: 65px; } }
+
+.first-screen-gift {
+  padding-top: 90px;
+  padding-top: 90px; }
+
+.first-screen-gift__wrapper {
+  display: flex;
+  flex-direction: column; }
+
+.first-screen-gift__block {
+  margin-bottom: 40px; }
+
+.first-screen-gift__city-choise {
+  background-color: #101010;
+  padding: 35px 40px; }
+
+.first-screen-gift__select-city {
+  margin-bottom: 10px; }
+
+.first-screen-gift__choise-city-btn {
+  height: 70px;
+  line-height: 70px;
+  width: 100%; }
+
+.order-sert {
+  padding-bottom: 90px; }
+
+.order-sert__inputs-header {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.1;
+  letter-spacing: normal;
+  color: #ffffff;
+  margin-bottom: 20px;
+  margin-top: 40px; }
+
+.order-sert__inputs-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .order-sert__inputs-wrapper .radio-input {
+    min-width: 250px; }
+  .order-sert__inputs-wrapper label {
+    width: 49%;
+    margin-bottom: 10px; }
+
+.order-sert__inputs-btn {
+  display: none; }
+
+.order-sert__total-info {
+  display: none; }
+
+.order-sert__total-price-header {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.1;
+  color: #ffffff;
+  margin-top: 40px;
+  margin-bottom: 20px; }
+
+.order-sert__total-price-old {
+  font-size: 26px;
+  color: #ffffff;
+  opacity: 0.3;
+  text-decoration: line-through; }
+  .order-sert__total-price-old span {
+    margin-left: 5px;
+    vertical-align: 10px;
+    font-size: 16px; }
+
+.order-sert__total-price-new {
+  font-size: 60px;
+  color: #ff001b; }
+  .order-sert__total-price-new span {
+    margin-left: 5px;
+    vertical-align: 26px;
+    font-size: 28px; }
+
+.order-sert__total-price-btn {
+  height: 70px; }
+
+.order-sert__total-price-note {
+  font-family: OpenSans;
+  font-size: 13px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.54;
+  color: #ffffff;
+  max-width: 250px;
+  margin-bottom: 40px;
+  margin-top: 20px; }
+
+@media (min-width: 740px) {
+  .order-sert__inputs-header {
+    font-size: 28px; }
+  .first-screen-gift__block:first-child {
+    width: 49%; }
+  .first-screen-gift__block:last-child {
+    width: 49%; }
+  .first-screen-gift__wrapper {
+    justify-content: space-between;
+    flex-direction: row; }
+  .first-screen-gift__select-city {
+    margin-bottom: 20px; }
+  .order-sert__form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .order-sert__total {
+    min-width: 350px;
+    margin-left: 30px; }
+  .order-sert__total-price-header {
+    display: none; }
+  .order-sert__total-info {
+    display: block; }
+  .order-sert__total-info {
+    background-color: #222222; }
+  .order-sert__total-info-head {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.33;
+    letter-spacing: -0.3px;
+    color: #ffffff;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-bottom: 1px solid #3c3c3c;
+    margin-bottom: 40px; } }
+
+@media (min-width: 1080px) {
+  .order-sert,
+  .first-screen-gift {
     padding-left: 65px;
     padding-right: 65px; } }
 

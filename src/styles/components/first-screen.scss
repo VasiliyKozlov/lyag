@@ -88,6 +88,12 @@
 }
 
 @media (min-width: 790px) {
+  .first-screen__btn-line {
+    .btn {
+      min-width: 220px;
+      margin-right: 20px;
+    }
+  }
   .first-screen {
     padding-top: 180px;
     position: relative;

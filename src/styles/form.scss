@@ -12,7 +12,7 @@
 .radio-input {
   height: 60px;
   padding: 20px;
-  background-color: $col-black25;
+  background-color: $col-black50;
   transition: background 0.3s;
   position: relative;
   display: flex;
@@ -27,7 +27,19 @@
   }
   &:hover {
     background-color: $col-bright-red;
+    .radio-input__sale {
+      color: $col-white;
+    }
   }
+}
+
+.radio-input__sale {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.33;
+  letter-spacing: -0.3px;
+  color: $col-bright-red;
+  transition: color 0.3s;
 }
 
 .radio-input:focus {
@@ -62,33 +74,44 @@
   color: $col-white;
 }
 //---radio
-.number-input{
+
+//---number
+.number-input {
   display: flex;
   flex-direction: row;
-  align-items: center
+  align-items: center;
+  background-color: $col-black50;
+  height: 70px;
 }
 
-.number-input__value{
-  background-color: $col-black25;
-  height: 60px;
+.number-input__value {
+  height: 70px;
   padding: 15px 20px;
-  border: none; 
+  border: none;
   width: 100%;
   outline: none;
+  background-color: $col-black50;
 }
 
 .number-input__plus,
-.number-input__minus{
+.number-input__minus {
+  display: none;
+  cursor: pointer;
+}
+
+.number-input__note {
   display: none;
 }
 
-.number-input__note{
-  display: none;
-}
-
-@media(min-width: 740px) {
-  .radio-input {
+@media (min-width: 740px) {
+  .radio-input,
+  .number-input,
+  .text-input {
     height: 85px;
+  }
+
+  .number-input {
+    max-width: 340px;
   }
 
   .radio-input__decorator {
@@ -103,7 +126,7 @@
     font-weight: 300;
     color: $col-white;
   }
-  
+
   .radio-input input:checked ~ .radio-input__decorator {
     width: 25px;
     height: 25px;
@@ -111,24 +134,24 @@
     background-color: $col-bright-red;
   }
 
-  .number-input__value{
+  .number-input__value {
     width: 60px;
     font-size: 45px;
   }
 
   .number-input__plus,
-  .number-input__minus{
+  .number-input__minus {
     font-size: 46px;
     color: $col-white;
-    transition: color .3s;
+    transition: color 0.3s;
     display: block;
     margin: 0 10px;
-    &:hover{
+    &:hover {
       color: $col-bright-red;
     }
   }
 
-  .number-input__note{
+  .number-input__note {
     display: block;
     font-family: OpenSans;
     font-size: 13px;
@@ -139,6 +162,4 @@
     max-width: 160px;
     margin-left: 20px;
   }
-
-  
 }

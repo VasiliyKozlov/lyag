@@ -111,161 +111,232 @@
         <!--FIRST SCREEN  -->
         <section class="first-screen">
             <div class="wrapper first-screen__wrapper first-screen_head">
-              <div class="first-screen__content">
-                <div class=" section__title">
-                    наши мастерские
+              <h2 class=" section__header">
+                  наши услуги
+              </h2>
+              <div class="section__p">
+                  В нашем арсенале самые нужные виды массажа
+              </div>
+              <div class="first-screen__btn first-screen__btn-line">
+                  <button class="btn btn_red">записаться на массаж</button>  
+                  <button class="btn btn_white">заказать абонемент</button>  
+                  <div class="link-list link-list_first-screen"></div>
                   </div>
-                  <h2 class="first-screen__content-header section__header">
-                      Наши мастрерские, 
-                      в которых мы чиним 
-                      ваши тела
-                  </h2>
-                  <div class="section__p">
-                      Мы находимся недалеко от кольцевых станций метро, 
-                      чтобы вам было максимально удобно до нас добраться
-                  </div>
-                  <div class="first-screen__btn ">
-                      <button class="btn btn_red">записаться на первый массаж</button>  
-                      <div class="link-list link-list_first-screen"></div>
-                  </div>
-                  
-                </div>
             </div>
           </section>
           <!--FIRST SCREEN  -->
-         <!-- OUR SALONS -->
-         <section class="salons">
-           <div class="salons__wrapper wrapper">
-          <div class="section-head">
-              <h2 class="section-head__header">Наши прекрасные салоны</h2>
-              <div class="section-head__choise-city">
-              <div class="section__title">
-                  город
-              </div>
-                <!-- SELECT SITY -->
-                <div class=" select-sity section-head__select-sity select-sity_transperent">
-                  <div class="select-sity__btn"></div>
-                  <div class="select-sity__label">Москва</div>
-                  <ul class="select-sity__list">
-                    <li class="select-sity__item">санкт-петербург</li>
-                    <li class="select-sity__item">Москва</li>
-                  </ul>
+         <!-- SERVICES LIST -->
+          <section class="services-list">
+            <div class="wrapper services-list__wrapper">
+              <h2 class="section__header services-list__header">Выберите услугу</h2>
+              <div class="services__list">
+                <div class="services__item">
+                  <div class="services__item-block">
+                      <div class="services__item-header">Любой первый массаж</div>
+                      <div class="services__item-p">Для тех, кто ещё не лежал спиной. 
+                          Любой полноценный массаж</div>
+                       <div class="services__item-time">
+                          <div class="services__slider-form-time">
+                              <div class="services__slider-form-time-item">
+                                <label class="services__slider-form-radio-label active">
+                                  <input type="radio" name="time" id="" class="services__slider-form-radio">
+                                  <span class="services__slider-form-radio-text">30 мин.</span>
+                                </label>
+                             
+                                <label class="services__slider-form-radio-label">
+                                    <input type="radio" name="time" id="" class="services__slider-form-radio">
+                                    <span class="services__slider-form-radio-text">60 мин.</span>
+                                </label>
+                              </div>
+                              <div class="services__slider-form-radio-plus">+</div>
+                              <div class="services__slider-form-time-item ">
+                                <label class="services__slider-form-radio-label services__slider-form-radio-label_add">
+                                  <input type="radio" name="addtime" id="" class="services__slider-form-radio">
+                                  <span class="services__slider-form-radio-text">15 мин.</span>
+                                </label>
+                                  
+                                  <label class="services__slider-form-radio-label services__slider-form-radio-label_add">
+                                      <input type="radio" name="addtime" id="" class="services__slider-form-radio">
+                                      <span class="services__slider-form-radio-text">30 мин.</span>
+                                  </label>
+                                  <div class="services__slider-form-time-item-add services__slider-form-time-item-add_bottom">Дополнительное время</div>
+                              </div>
+                              <!-- <div class="services__item-time-note">Кроме «Массаж в 4 руки» и «Black Room»</div> -->
+                            </div>
+                       </div>
+
+                  </div>
+                  <div class="services__item-block">
+                      <div class="services__item-total">
+                        <div class="services__item-total-time">60 <span>мин.</span></div>
+                        <div class="services__item-total-price">1500 <span>руб.</span></div>
+                      </div> 
+                      <div class="services__item-total-btn">
+                        <button class="btn btn_red">записаться на массаж</button>
+                      </div>
+                  </div>
                 </div>
-                <!-- SELECT SITY -->
-                <div class="section-head__choise-city-btn">
-                  <button class="btn btn_transperent">показать</button>
-                </div>
               </div>
-          </div>
-          <div class="salons__list">
-            <div class="salons__list-item">
-              <div class="salons__list-item-img">
-                <img src="images/salon-example.jpg" alt="">
-              </div>
-              <div class="salons__list-item-adress">
-                <div class="salons__list-item-city">Москва</div>
-                <div class="salons__list-item-metro">м. Парк Культуры</div>
-                <div class="salons__list-item-street">Турчанинов переулок, дом 3, строение 1</div>
-              </div>
-              <a href="" class="salons__list-item-link">подробнее о салоне</a>
             </div>
-            <div class="salons__list-item">
-              <div class="salons__list-item-img">
-                <img src="images/salon-example.jpg" alt="">
+          </section>
+         <!-- SERVICES LIST -->
+
+         <!-- SERVIS ORDER -->
+         <section class="servis-order">
+           <div class="wrapper servis-order__wrapper">
+              <div class="section-head">
+
+                  <div class="section-head__header">заказать абонемент
+                    <p>В нашем арсенале самые нужные виды массажа</p>
+                  </div>
+                  
+                  <div class="section-head__choise-city">
+                  <div class="section__title">
+                      город
+                  </div>
+                    <!-- SELECT SITY -->
+                    <div class=" select-sity section-head__select-sity select-sity_transperent">
+                      <div class="select-sity__btn"></div>
+                      <div class="select-sity__label">Москва</div>
+                      <ul class="select-sity__list">
+                        <li class="select-sity__item">санкт-петербург</li>
+                        <li class="select-sity__item">Москва</li>
+                      </ul>
+                    </div>
+                    <!-- SELECT SITY -->
+                    <div class="section-head__choise-city-btn">
+                      <button class="btn btn_transperent">показать</button>
+                    </div>
+                  </div>
               </div>
-              <div class="salons__list-item-adress">
-                <div class="salons__list-item-city">Москва</div>
-                <div class="salons__list-item-metro">м. Парк Культуры</div>
-                <div class="salons__list-item-street">Турчанинов переулок, дом 3, строение 1</div>
-              </div>
-              <a href="" class="salons__list-item-link">подробнее о салоне</a>
-            </div>
-          </div>
-          <div class="salons__list-pagination">
-            <button class="btn btn_transperent">показать ещё</button>
-          </div>
-        </div>
+           </div> 
          </section>
-         <!-- OUR SALONS -->
-         <!-- OUR ADVANTAGES -->
-         <section class="advantages">
-            <div class="advantages__wrapper wrapper">
-              <div class="section__header advantages__header">Мы заботимся о вашем комфорте до и после массажа</div>
-              <div class="section__p advantages__p">Для вашего удобства всегда под рукой файлы,
-                  которые сэкономят время поиска</div>
+         <!--ORDER FORM  -->
+        <section class="order-sert">
+            <div class="order-sert__wrapper wrapper">
+              <form action="" class="order-sert__form">
+               
+                  <div class="order-sert__inputs">
+                    
+                    <div class="order-sert__inputs-section">
+                      <div class="order-sert__inputs-header">Выбрать массаж</div>
+                      <div class="order-sert__inputs-wrapper">
+                          <label class="radio-input">
+                            <span class="radio-input__text">Классический</span>
+                            <input type="radio" name="type-massage" value="classic" id="" />
+                            <span class="radio-input__decorator"></span>
+                          </label>
+                          <label class="radio-input">
+                            <span class="radio-input__text">Спортивный</span>
+                            <input type="radio" name="type-massage" value="sport" id="" />
+                            <span class="radio-input__decorator"></span>
+                          </label>
+                          <label class="radio-input">
+                            <span class="radio-input__text">Антицеллюлитный</span>
+                            <input type="radio" name="type-massage" value="cellulite" id="" />
+                            <span class="radio-input__decorator"></span>
+                          </label>
+                          <label class="radio-input">
+                            <span class="radio-input__text">Расслабляющий</span>
+                            <input type="radio" name="type-massage" value="relux" id="" />
+                            <span class="radio-input__decorator"></span>
+                          </label>
+                      </div>
+                    </div> 
+                    <div class="order-sert__inputs-section">
+                      <div class="order-sert__inputs-header">Выбрать количество сеансов</div>
+                      <div class="order-sert__inputs-wrapper"> 
+                      <label class="radio-input">
+                          <span class="radio-input__sale">5%</span>  
+                        <span class="radio-input__text">5 <span>сеансов</span> </span>
+                          <input type="radio" name="massage-time" value="5s" id="" />
+                          <span class="radio-input__decorator"></span>
+                        </label>
+                        <label class="radio-input">
+                          <span class="radio-input__sale">10%</span>
+                          <span class="radio-input__text">10 <span>сеансов</span></span>
+                          <input type="radio" name="massage-time" value="60" id="" />
+                          <span class="radio-input__decorator"></span>
+                        </label>
+                      </div>
+                    </div> 
+                    <div class="order-sert__inputs-section">
+                      <div class="order-sert__inputs-header">Выбрать время продолжительности сеанса</div>
+                      <div class="order-sert__inputs-wrapper">
+                        <label class="radio-input">
+                          <span class="radio-input__text">30 мин.</span>
+                          <input type="radio" name="massage-time" value="30" id="" />
+                          <span class="radio-input__decorator"></span>
+                        </label>
+                        <label class="radio-input">
+                          <span class="radio-input__text">60 мин.</span>
+                          <input type="radio" name="massage-time" value="60" id="" />
+                          <span class="radio-input__decorator"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="order-sert__inputs-section">
+                      <div class="order-sert__inputs-header">Выбрать тип абонемента</div>
+                      <div class="order-sert__inputs-wrapper"> 
+                        <label class="radio-input">
+                          <span class="radio-input__text">Электронный</span>
+                          <input type="radio" name="type-sert" value="ellectronic" id="" />
+                          <span class="radio-input__decorator"></span>
+                        </label>
+                        <label class="radio-input">
+                          <span class="radio-input__text">Печатный формат</span>
+                          <input type="radio" name="time" value="print" id="" />
+                          <span class="radio-input__decorator"></span>
+                        </label>
+                      </div>
+                    </div> 
+                  </div>
+                  <!--TOTAL  -->
+                  <div class="order-sert__total">
+                    <div class="order-sert__total-info">
+                      <div class="order-sert__total-info-head">
+                        Основные данные
+                      </div>
+                      <div class="order-sert__total-info-list">
+                      
+                        <div class="order-sert__total-info-item">
+                          <div class="order-sert__total-info-item-head">Вид массажа</div>
+                          <div class="order-sert__total-info-item-type">Антицеллюлитный</div>
+                        </div>
+                        <div class="order-sert__total-info-item">
+                          <div class="order-sert__total-info-item-head">Количество сеансов</div>
+                          <div class="order-sert__total-info-item-type">5 сеансов</div>
+                        </div>
+                        <div class="order-sert__total-info-item">
+                          <div class="order-sert__total-info-item-head">Продолжительности сеанса</div>
+                          <div class="order-sert__total-info-item-type">60 минут</div>
+                        </div>
+                        <div class="order-sert__total-info-item">
+                          <div class="order-sert__total-info-item-head">Тип абонемента</div>
+                          <div class="order-sert__total-info-item-type">Электронный</div>
+                        </div>
+                    
+                      </div>
+                    </div>
+                    <div class="order-sert__total-price">
+                      <div class="order-sert__total-price-header">Итоговая стоимость абонемента</div>
+                      <div class="order-sert__total-price-old">18 900<span>руб.</span> </div>
+                      <div class="order-sert__total-price-new">18 900<span>руб.</span> </div>
+                      <div class="order-sert__total-price-note">Абонемент на 5 сеансов действует 
+                          45 дней, на 10 сеансов - 90 дней</div>
+                          <div class="order-sert__total-price-btn">
+                            <button class="btn btn_red">оплатить онлайн</button>
+                          </div>
+                    </div>
+                  </div>
+                  <!--TOTAL  -->
+           
+              </form>
             </div>
-            <div class="advantages__list">
-              <div class="advantages__list-item">
-                <div class="advantages__list-item-num">01</div>
-                <div class="advantages__list-item-head">Парковка</div>
-                <div class="advantages__list-item-text">Для вашего удобства всегда
-                  под рукой файлы, которые сэкономят время поиска</div>
-              </div>
-
-              <div class="advantages__list-item">
-                <div class="advantages__list-item-num">02</div>
-                <div class="advantages__list-item-head">Близко к метро</div>
-                <div class="advantages__list-item-text">Для вашего удобства всегда
-                  под рукой файлы, которые сэкономят время поиска</div>
-              </div>
-
-              <div class="advantages__list-item">
-                <div class="advantages__list-item-num">03</div>
-                <div class="advantages__list-item-head">Развлечения</div>
-                <div class="advantages__list-item-text">Для вашего удобства всегда
-                  под рукой файлы, которые сэкономят время поиска</div>
-              </div>
-
-              <div class="advantages__list-item">
-                <div class="advantages__list-item-num">04</div>
-                <div class="advantages__list-item-head">Любой способ оплаты</div>
-                <div class="advantages__list-item-text">Для вашего удобства всегда
-                  под рукой файлы, которые сэкономят время поиска</div>
-              </div>
-
-              <div class="advantages__list-item">
-                <div class="advantages__list-item-num">05</div>
-                <div class="advantages__list-item-head">чай, печеньки</div>
-                <div class="advantages__list-item-text">Для вашего удобства всегда
-                  под рукой файлы, которые сэкономят время поиска</div>
-              </div>
-
-              <div class="advantages__list-item">
-                <div class="advantages__list-item-num">06</div>
-                <div class="advantages__list-item-head">Хорошая музыка</div>
-                <div class="advantages__list-item-text">Для вашего удобства всегда
-                  под рукой файлы, которые сэкономят время поиска</div>
-              </div>
-            </div>
-         </section>
-         <!-- OUR ADVANTAGES -->
-
-         <!-- FIRST ORDER FORM -->
-         <section class="order">
-          <div class="order__wrapper wrapper">
-            <div class="order__lead">
-              <h2 class="order__header">Записаться на первый массаж</h2>
-              <div class="section__p">
-                Наши менеджеры быстро свяжутся с вами и скоординируют по нужному вопросу
-              </div>
-            </div>
-            <form action="" class="order__form form">
-              <div class="order__form-wrapper order__form-wrapper_fo">
-                <div class="order__form-input order__form-input_fo">
-                  <input type="text" name="name" placeholder="Имя" class="text-input" id="" />
-                </div>
-                <div class="order__form-input order__form-input_fo">
-                  <input type="text" name="phone" placeholder="Телефон" class="text-input" id="" />
-                </div>
-                <div class="order__form-input order__form-input_fo order__form-input-submit">
-                  <button class="btn btn_black">записаться на первый массаж</button>
-                </div>
-                <div class="order__form-footnote">Нажимая кнопку «Записаться на первый массаж» <a class="order__form-footnote-link" href="">я принимаю условия передачи информации</a></div>
-              </div>
-            </form>
-          </div>
-        </section>
-        <!-- FIRST ORDER FORM -->
+          </section>
+          <!--ORDER FORM  -->
+         
+         <!-- SERVIS ORDER -->
         </main>
 
         <!-- FOOTER -->

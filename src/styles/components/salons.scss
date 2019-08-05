@@ -4,40 +4,6 @@
   width: 100%;
 }
 
-.salons__head {
-  display: flex;
-  flex-direction: column;
-}
-
-.salons__header {
-  font-size: 32px;
-  font-weight: bold;
-  line-height: 1.13;
-  color: $col-white;
-  margin-bottom: 40px;
-  text-transform: uppercase;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.salons__choise-city {
-  background-color: $col-black50;
-  padding-top: 36px;
-  padding-bottom: 60px;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin-bottom: 60px;
-}
-
-.salons__choise-city-btn {
-  height: 70px;
-  line-height: 70px;
-}
-
-.salons__select-sity {
-  margin-bottom: 40px;
-}
-
 .salons__list {
   width: 84%;
   margin: auto;
@@ -103,7 +69,7 @@
   text-transform: uppercase;
   position: relative;
   &:after {
-    content: "";
+    content: '';
     width: 20px;
     height: 20px;
     right: 20px;
@@ -169,7 +135,7 @@
   color: $col-white;
   line-height: 70px;
   &:before {
-    content: "";
+    content: '';
     background-image: url(../images/icons/metro.svg);
     background-repeat: no-repeat;
     width: 20px;
@@ -295,42 +261,15 @@
     display: none;
   }
 
-  .salons__head {
-    flex-direction: row;
-    padding-left: 65px;
-    padding-right: 65px;
-  }
-
-  .salons__header {
-    font-size: 50px;
-    line-height: 1.08;
-    max-width: 265px;
-    margin-right: 60px;
-  }
-
-  .salons__choise-city {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
   .section__title {
     width: 100%;
-  }
-  .salons__select-sity {
-    width: 50%;
-  }
-
-  .salons__choise-city-btn {
-    width: 45%;
   }
 
   .salons__list-item {
     flex-direction: row;
     height: 220px;
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       right: 40px;
       top: 50%;
@@ -401,18 +340,18 @@
     justify-content: space-between;
     align-items: center;
   }
-  .salons__modal-adv-plus{
+  .salons__modal-adv-plus {
     margin-bottom: 0;
     font-size: 24px;
     width: 190px;
   }
-  .salons__modal-adv-count{
+  .salons__modal-adv-count {
     max-width: 250px;
   }
-  .salons__modal-head-metro{
+  .salons__modal-head-metro {
     font-size: 28px;
   }
-  .salons__modal-how-find-slider .flickity-button{
+  .salons__modal-how-find-slider .flickity-button {
     display: block;
     bottom: -110px;
     top: auto;
@@ -426,7 +365,7 @@
     }
   }
 
-  .salons__modal-how-find-btn{
+  .salons__modal-how-find-btn {
     margin-right: 0;
     width: 60%;
   }
@@ -436,10 +375,10 @@
     margin-left: -70px;
     width: calc(100% + 140px);
   }
-  .salons__modal-how-find{
+  .salons__modal-how-find {
     margin-bottom: 0;
   }
-  .salons__order-form{
+  .salons__order-form {
     margin-left: -70px;
     width: calc(100% + 140px);
     padding-left: 70px;

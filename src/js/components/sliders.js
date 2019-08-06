@@ -36,17 +36,18 @@ const flktyHowFind = new Flickity(howFindSlider, {
   contain: true
 });
 
-
-window.onload = async function() {
-  if (window.innerWidth < 740) {
-    await advantages.classList.add('advantages__slider');
-    return true;
-  } else if (window.innerWidth < 740 && advantagesSlider.classList.contains('advantages__slider')) {
-    advantagesSlider.classList.remove('advantages__slider');
-  }
-}.then(() => {
-  new Flickity(advantagesSlider, {
-    cellAlign: 'left',
-    contain: true
-  });
-});
+// function addSlider(){
+//   return new Promise((resolve, reject) => {
+//
+//     img.onload = () => resolve(img.height)
+//     img.onerror = reject
+//     img.src = src
+//   })
+// }
+//
+// .then(() => {
+//   new Flickity(advantagesSlider, {
+//     cellAlign: 'left',
+//     contain: true
+//   });
+// });

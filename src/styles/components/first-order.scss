@@ -96,20 +96,28 @@
     max-width: 335px;
   }
 
+  .order__form-input{
+    height: 85px;
+  }
+
   .order__form-wrapper_fo {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
   .order__form-input-submit {
     order: 0;
   }
   .order__form-input_fo {
-    width: 31%;
+    width: 32%;
     margin-right: 10px;
   }
   .order__form-footnote {
     width: 100%;
     margin-top: 10px;
+  }
+  .order__form-input-submit_fi{
+    flex-grow: 1;
   }
 }
 @media (min-width: 820px) {

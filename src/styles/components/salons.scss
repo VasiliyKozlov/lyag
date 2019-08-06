@@ -158,6 +158,7 @@
 
 .salons__modal-adv {
   padding: 30px;
+  background-color: $col-black50;
 }
 
 .salons__modal-adv-plus {
@@ -195,6 +196,7 @@
 
 .salons__modal-how-find {
   margin-bottom: 40px;
+  background-color: $col-black50;
 }
 
 .salons__modal-how-find-item {
@@ -331,8 +333,8 @@
 
   .salons__modal-how-find-video {
     height: 400px;
-    margin-left: -70px;
-    width: calc(100% + 140px);
+    margin-left: -30px;
+    width: calc(100% + 60px);
   }
   .salons__modal-how-find {
     margin-bottom: 0;

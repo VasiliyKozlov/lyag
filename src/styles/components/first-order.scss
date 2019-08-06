@@ -96,8 +96,11 @@
     max-width: 335px;
   }
 
-  .order__form-input{
+  .order__form-input {
     height: 85px;
+  }
+  .order__form-input_tr {
+    width: 49%;
   }
 
   .order__form-wrapper_fo {
@@ -105,6 +108,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
   .order__form-input-submit {
     order: 0;
   }
@@ -116,7 +120,7 @@
     width: 100%;
     margin-top: 10px;
   }
-  .order__form-input-submit_fi{
+  .order__form-input-submit_fi {
     flex-grow: 1;
   }
 }

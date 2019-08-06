@@ -2104,6 +2104,8 @@ body {
     max-width: 335px; }
   .order__form-input {
     height: 85px; }
+  .order__form-input_tr {
+    width: 49%; }
   .order__form-wrapper_fo {
     flex-direction: row;
     flex-wrap: wrap;

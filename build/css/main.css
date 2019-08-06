@@ -1413,13 +1413,20 @@ body {
   right: 0;
   bottom: 0;
   z-index: 11;
-  display: none; }
+  height: 100%;
+  display: none;
+  overflow-y: auto;
+  overflow-x: hidden; }
 
 .modal.active {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column; }
+
+.modal_long.active {
+  justify-content: flex-start;
+  padding-top: 80px; }
 
 .modal__body {
   width: 100%;
@@ -1457,7 +1464,8 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.8);
-  display: none; }
+  display: none;
+  min-height: 100%; }
 
 .modal__close {
   width: 70px;
@@ -1484,9 +1492,9 @@ body {
     left: 0;
     overflow: hidden;
     width: 100vw;
-    height: 100vh;
     background-color: rgba(0, 0, 0, 0.8);
-    display: block; }
+    display: block;
+    min-height: calc(100% + 220px); }
   .modal__body {
     width: 760px;
     height: auto;
@@ -1494,15 +1502,9 @@ body {
     padding-left: 70px;
     padding-right: 70px;
     padding-bottom: 60px;
-    z-index: 12;
-    overflow-y: visible; }
-    .modal__body_salon {
-      overflow-y: scroll;
-      overflow-x: visible; }
+    z-index: 12; }
   .modal__close {
     right: -70px; }
-  .modal_long .modal__close {
-    right: 0; }
   .modal__p {
     width: 340px;
     margin-bottom: 50px; }
@@ -1669,6 +1671,9 @@ body {
     height: 385px;
     margin-right: 95px; } }
 
+.services {
+  padding-bottom: 90px; }
+
 .services__wrapper {
   padding-top: 90px;
   padding-bottom: 90px;
@@ -1688,7 +1693,7 @@ body {
   background-image: url(../images/logo-large.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-size: cover;
+  background-size: contain;
   margin-bottom: 120px; }
 
 .services__all-link {

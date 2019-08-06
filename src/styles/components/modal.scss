@@ -5,14 +5,25 @@
   right: 0;
   bottom: 0;
   z-index: 11;
+  height: 100%;
   display: none;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
-.modal.active {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+.modal {
+  &.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &_long {
+    &.active {
+      justify-content: flex-start;
+      padding-top: 80px;
+    }
+  }
 }
 
 .modal__body {
@@ -28,7 +39,7 @@
   }
   &_salon {
     padding: 0;
-    overflow-y: scroll
+    overflow-y: scroll;
   }
 }
 
@@ -57,6 +68,7 @@
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.8);
   display: none;
+  min-height: 100%;
 }
 
 .modal__close {
@@ -71,7 +83,7 @@
   background-repeat: no-repeat;
 }
 
-.modal__red-order-form{
+.modal__red-order-form {
   background-color: $col-bright-red;
   padding-top: 90px;
   padding-bottom: 90px;
@@ -86,9 +98,9 @@
     left: 0;
     overflow: hidden;
     width: 100vw;
-    height: 100vh;
     background-color: rgba(0, 0, 0, 0.8);
     display: block;
+    min-height: calc(100% + 220px);
   }
   .modal__body {
     width: 760px;
@@ -98,30 +110,20 @@
     padding-right: 70px;
     padding-bottom: 60px;
     z-index: 12;
-    overflow-y: visible;
-    &_salon {
-      overflow-y: scroll;
-      overflow-x: visible;
-    }
   }
   .modal__close {
     right: -70px;
-  }
-  .modal_long{
-    .modal__close {
-      right: 0;
-    } 
   }
   .modal__p {
     width: 340px;
     margin-bottom: 50px;
   }
   .modal__form-two {
-    .order__form-input{
+    .order__form-input {
       width: 48%;
     }
-    .order__form-input-submit{
-      width: 100%
+    .order__form-input-submit {
+      width: 100%;
     }
   }
 }

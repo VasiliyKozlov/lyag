@@ -669,7 +669,7 @@ body {
 
 @media (min-width: 740px) {
   .section__header {
-    font-size: 50px; }
+    font-size: 40px; }
   .section-head__select-sity {
     width: 50%; }
   .section-head {
@@ -858,7 +858,8 @@ body {
   .select-sity_header {
     display: none; }
   .select-sity_menu {
-    display: block; }
+    display: block;
+    width: calc(100% - 70px); }
   .select-sity:hover {
     background-color: #303030; }
   .select-sity_transperent {
@@ -876,15 +877,18 @@ body {
     background-image: url(../images/arrow-select.svg); }
   .select-sity.active .select-sity__list {
     height: 140px; }
-  .select-sity.active .select-sity__label {
-    display: none; }
 
 .select-sity__list {
   margin: 0;
   padding: 0;
   list-style: none;
   height: 0;
-  overflow: hidden; }
+  overflow: hidden;
+  transition: height 0.3s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; }
 
 .select-sity__btn {
   position: absolute;
@@ -909,7 +913,8 @@ body {
   background-image: url(../images/gps.svg);
   background-repeat: no-repeat;
   background-position: 30px 50%;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: all 0.3s; }
 
 .select-sity__item {
   margin: 0;
@@ -1897,6 +1902,8 @@ body {
   margin-top: 10px; }
 
 @media (min-width: 740px) {
+  .services__header {
+    font-size: 40px; }
   .services-list__header {
     margin-bottom: 60px; }
   .services__slider-form-radio-label {

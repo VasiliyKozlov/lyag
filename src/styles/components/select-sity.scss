@@ -13,6 +13,7 @@
   }
   &_menu {
     display: block;
+    width: calc(100% - 70px);
   }
   &:hover {
     background-color: $col-gray-dark;
@@ -40,9 +41,9 @@
     .select-sity__list {
       height: 140px;
     }
-    .select-sity__label {
-      display: none;
-    }
+    // .select-sity__label {
+    //   display: none;
+    // }
   }
 }
 
@@ -52,6 +53,11 @@
   list-style: none;
   height: 0;
   overflow: hidden;
+  transition: height 0.3s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .select-sity__btn {
@@ -79,6 +85,7 @@
   background-repeat: no-repeat;
   background-position: 30px 50%;
   cursor: pointer;
+  transition: all 0.3s;
 }
 
 .select-sity__item {

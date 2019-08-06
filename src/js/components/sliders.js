@@ -36,16 +36,33 @@ const flktyHowFind = new Flickity(howFindSlider, {
   contain: true
 });
 
-// function addSlider(){
-//   return new Promise((resolve, reject) => {
-//
-//     img.onload = () => resolve(img.height)
-//     img.onerror = reject
-//     img.src = src
-//   })
-// }
-//
-// .then(() => {
+const addSlider = callback => {
+  window.onload = function() {
+    if (window.innerWidth < 960) {
+      advantages.classList.add('advantages__slider');
+      advantages.classList.add('slider');
+      callback();
+    } else if (window.innerWidth > 960 && advantages.classList.contains('advantages__slider')) {
+      advantages.classList.remove('advantages__slider');
+    }
+  };
+};
+
+addSlider(() => {
+  new Flickity(document.querySelector('.advantages__slider'), {
+    cellAlign: 'left',
+    contain: true
+  });
+});
+
+// window.onload = async function() {
+//   if (window.innerWidth < 740) {
+//     await advantages.classList.add('advantages__slider');
+//     return true;
+//   } else if (window.innerWidth < 740 && advantagesSlider.classList.contains('advantages__slider')) {
+//     advantagesSlider.classList.remove('advantages__slider');
+//   }
+// }.then(() => {
 //   new Flickity(advantagesSlider, {
 //     cellAlign: 'left',
 //     contain: true

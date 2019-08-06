@@ -66,6 +66,7 @@
   padding-left: 30px;
   padding-right: 30px;
   margin-bottom: 60px;
+  width: 100%;
 }
 
 .section-head__choise-city-btn {
@@ -77,6 +78,9 @@
   .section__header {
     font-size: 40px;
   }
+}
+
+@media (min-width: 980px) {
   .section-head__select-sity {
     width: 50%;
   }
@@ -87,7 +91,7 @@
   }
 
   .section-head__header {
-    font-size: 50px;
+    font-size: 38px;
     line-height: 1.08;
     max-width: 265px;
     margin-right: 60px;
@@ -101,5 +105,11 @@
   }
   .section-head__choise-city-btn {
     width: 45%;
+  }
+}
+
+@media (min-width: 1180px) {
+  .section-head__header {
+    font-size: 50px;
   }
 }

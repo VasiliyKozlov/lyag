@@ -14,6 +14,11 @@
 .advantages__list-item {
   padding: 30px;
   position: relative;
+  width: 66%;
+}
+
+.advantages__slider .flickity-page-dots {
+  bottom: 30px;
 }
 
 .advantages__list-item-num {
@@ -44,9 +49,25 @@
   font-weight: 300;
   line-height: 1.71;
   color: $col-white;
+  max-width: 350px;
 }
 
 @media (min-width: 740px) {
+  .advantages__wrapper {
+    padding-top: 120px;
+  }
+
+  .advantages__header {
+    max-width: 550px;
+    font-size: 40px;
+  }
+
+  .advantages__p {
+    max-width: 200px;
+  }
+}
+
+@media (min-width: 960px) {
   .advantages__list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -60,24 +81,6 @@
   .advantages__list-item {
     width: 33%;
   }
-
-  .advantages__wrapper {
-    padding-top: 120px;
-  }
-
-  .advantages__header {
-    max-width: 550px;
-    font-size: 40px;
-  }
-  .advantages__list-item-head {
-    font-size: 32px;
-  }
-  .advantages__list-item-text {
-    font-size: 15px;
-  }
-  .advantages__p {
-    max-width: 200px;
-  }
 }
 
 @media (min-width: 1080px) {
@@ -85,5 +88,11 @@
   .advantages__wrapper {
     padding-left: 65px;
     padding-right: 65px;
+  }
+  .advantages__list-item-head {
+    font-size: 32px;
+  }
+  .advantages__list-item-text {
+    font-size: 15px;
   }
 }

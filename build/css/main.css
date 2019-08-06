@@ -1693,8 +1693,7 @@ body {
   background-image: url(../images/logo-large.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-size: contain;
-  margin-bottom: 120px; }
+  background-size: contain; }
 
 .services__all-link {
   height: 70px;

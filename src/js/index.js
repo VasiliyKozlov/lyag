@@ -3,3 +3,4 @@ import '../styles/styles.scss';
 import './components/sliders';
 import './components/menu';
 import './components/select';
+import './components/order-info';

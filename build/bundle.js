@@ -318,6 +318,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _han
 
 /***/ }),
 
+/***/ "./src/js/components/order-info.js":
+/*!*****************************************!*\
+  !*** ./src/js/components/order-info.js ***!
+  \*****************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _handlers_activateComponent__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../handlers/activateComponent */ \"./src/js/handlers/activateComponent.js\");\n\nvar point = document.querySelector('.order-sert__total-info-head');\npoint.addEventListener('click', function (e) {\n  Object(_handlers_activateComponent__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(e.currentTarget.closest('.order-sert__total-info')); // if (e.target.classList.contains('select-sity__item')) {\n  //   item.querySelector('.select-sity__label').innerHTML = e.target.innerHTML;\n  // }\n});\n\n//# sourceURL=webpack:///./src/js/components/order-info.js?");
+
+/***/ }),
+
 /***/ "./src/js/components/select.js":
 /*!*************************************!*\
   !*** ./src/js/components/select.js ***!
@@ -374,7 +386,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nvar body = document.body;\n\n
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles/styles.scss */ \"./src/styles/styles.scss\");\n/* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_styles_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_sliders__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/sliders */ \"./src/js/components/sliders.js\");\n/* harmony import */ var _components_menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/menu */ \"./src/js/components/menu.js\");\n/* harmony import */ var _components_select__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/select */ \"./src/js/components/select.js\");\n //import '../../node_modules/flickity/dist/flickity.min.css';\n\n\n\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles/styles.scss */ \"./src/styles/styles.scss\");\n/* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_styles_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_sliders__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/sliders */ \"./src/js/components/sliders.js\");\n/* harmony import */ var _components_menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/menu */ \"./src/js/components/menu.js\");\n/* harmony import */ var _components_select__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/select */ \"./src/js/components/select.js\");\n/* harmony import */ var _components_order_info__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/order-info */ \"./src/js/components/order-info.js\");\n //import '../../node_modules/flickity/dist/flickity.min.css';\n\n\n\n\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
 
 /***/ }),
 

@@ -3466,6 +3466,17 @@ body {
     margin-top: 90px; }
   .order-sert__total-info {
     background-color: #222222; }
+    .order-sert__total-info.active .order-sert__total-info-head::after {
+      content: '';
+      transform: rotate(180deg) translateY(2px); }
+    .order-sert__total-info.active .order-sert__total-info-head span::after {
+      content: '';
+      display: none; }
+    .order-sert__total-info.active .order-sert__total-info-list {
+      height: 484px;
+      padding: 40px 50px; }
+      .order-sert__total-info.active .order-sert__total-info-list_servises {
+        height: 354px; }
   .order-sert__total-info-head {
     font-size: 24px;
     font-weight: 300;
@@ -3476,9 +3487,33 @@ body {
     padding-top: 20px;
     padding-left: 50px;
     padding-right: 50px;
-    border-bottom: 1px solid #3c3c3c; }
+    border-bottom: 1px solid #3c3c3c;
+    position: relative;
+    transform-origin: 50% 50%; }
+    .order-sert__total-info-head span::after {
+      content: '';
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: #ff001b;
+      display: inline-block;
+      vertical-align: 5px;
+      vertical-align: 12px;
+      margin-left: 7px; }
+    .order-sert__total-info-head::after {
+      content: '';
+      background-image: url(../images/arrow-select-down-red.svg);
+      width: 14px;
+      height: 9px;
+      position: absolute;
+      top: 50%;
+      right: 30px;
+      transform: translateY(-5px); }
   .order-sert__total-info-list {
-    padding: 40px 50px; }
+    padding: 0 50px;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s; }
   .order-sert__total-info-item {
     margin-bottom: 15px; }
   .order-sert__total-info-item-head {

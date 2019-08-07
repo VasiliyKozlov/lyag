@@ -306,6 +306,18 @@ eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!\n * Un
 
 /***/ }),
 
+/***/ "./src/js/components/forms.js":
+/*!************************************!*\
+  !*** ./src/js/components/forms.js ***!
+  \************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _handlers_activateComponent__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../handlers/activateComponent */ \"./src/js/handlers/activateComponent.js\");\n\nvar radio = document.querySelector('.radio-input');\nradio.addEventListener('click', function (e) {\n  Object(_handlers_activateComponent__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(e.currentTarget);\n});\n\n//# sourceURL=webpack:///./src/js/components/forms.js?");
+
+/***/ }),
+
 /***/ "./src/js/components/menu.js":
 /*!***********************************!*\
   !*** ./src/js/components/menu.js ***!
@@ -386,7 +398,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nvar body = document.body;\n\n
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles/styles.scss */ \"./src/styles/styles.scss\");\n/* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_styles_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_sliders__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/sliders */ \"./src/js/components/sliders.js\");\n/* harmony import */ var _components_menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/menu */ \"./src/js/components/menu.js\");\n/* harmony import */ var _components_select__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/select */ \"./src/js/components/select.js\");\n/* harmony import */ var _components_order_info__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/order-info */ \"./src/js/components/order-info.js\");\n //import '../../node_modules/flickity/dist/flickity.min.css';\n\n\n\n\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles/styles.scss */ \"./src/styles/styles.scss\");\n/* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_styles_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_sliders__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/sliders */ \"./src/js/components/sliders.js\");\n/* harmony import */ var _components_menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/menu */ \"./src/js/components/menu.js\");\n/* harmony import */ var _components_select__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/select */ \"./src/js/components/select.js\");\n/* harmony import */ var _components_order_info__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/order-info */ \"./src/js/components/order-info.js\");\n/* harmony import */ var _components_forms__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/forms */ \"./src/js/components/forms.js\");\n //import '../../node_modules/flickity/dist/flickity.min.css';\n\n\n\n\n\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
 
 /***/ }),
 

@@ -3375,12 +3375,15 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  align-items: center; }
   .order-sert__inputs-wrapper .radio-input {
     min-width: 250px; }
   .order-sert__inputs-wrapper label {
     width: 100%;
     margin-bottom: 10px; }
+  .order-sert__inputs-wrapper_nowrap {
+    flex-wrap: nowrap; }
 
 .order-sert__inputs-btn {
   display: none; }
@@ -3428,6 +3431,15 @@ body {
   margin-bottom: 40px;
   margin-top: 20px; }
 
+.order-sert__inputs-note {
+  font-family: OpenSans;
+  font-size: 13px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.54;
+  color: #ffffff;
+  margin-left: 35px; }
+
 @media (min-width: 740px) {
   .order-sert__inputs-section {
     margin-bottom: 60px; }
@@ -3436,13 +3448,17 @@ body {
     height: 85px;
     max-width: 250px; }
   .order-sert__input-promo {
-    width: 65%; }
+    width: 65%;
+    margin-right: 10px; }
+  .order-sert__input-s {
+    max-width: 30%;
+    font-size: 32px; }
   .order-sert__total-price {
     background-color: #101010;
     padding: 40px; }
   .order-sert__inputs-header {
     font-size: 28px;
-    max-width: 45%; }
+    max-width: 55%; }
   .first-screen-gift__block:first-child {
     width: 49%; }
   .first-screen-gift__block:last-child {
@@ -3473,10 +3489,8 @@ body {
       content: '';
       display: none; }
     .order-sert__total-info.active .order-sert__total-info-list {
-      height: 484px;
+      max-height: 804px;
       padding: 40px 50px; }
-      .order-sert__total-info.active .order-sert__total-info-list_servises {
-        height: 354px; }
   .order-sert__total-info-head {
     font-size: 24px;
     font-weight: 300;
@@ -3511,9 +3525,9 @@ body {
       transform: translateY(-5px); }
   .order-sert__total-info-list {
     padding: 0 50px;
-    height: 0;
+    max-height: 0;
     overflow: hidden;
-    transition: all 0.3s; }
+    transition: all .3s; }
   .order-sert__total-info-item {
     margin-bottom: 15px; }
   .order-sert__total-info-item-head {

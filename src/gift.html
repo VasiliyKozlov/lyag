@@ -150,7 +150,8 @@
         <section class="order-sert">
           <div class="order-sert__wrapper wrapper">
             <form action="" class="order-sert__form">
-             
+             <!-- <div class="order-sert__tab-panel"></div>
+                   -->
                 <div class="order-sert__inputs">
                   <div class="order-sert__inputs-section">
                     <div class="order-sert__inputs-header">Выбрать вид сертификата</div>
@@ -167,88 +168,106 @@
                         </label>
                     </div>
                   </div>
-                  <div class="order-sert__inputs-section">
-                    <div class="order-sert__inputs-header">Выбрать массаж</div>
-                    <div class="order-sert__inputs-wrapper">
-                        <label class="radio-input">
-                          <span class="radio-input__text">Классический</span>
-                          <input type="radio" name="type-massage" value="classic" id="" />
-                          <span class="radio-input__decorator"></span>
-                        </label>
-                        <label class="radio-input">
-                          <span class="radio-input__text">Спортивный</span>
-                          <input type="radio" name="type-massage" value="sport" id="" />
-                          <span class="radio-input__decorator"></span>
-                        </label>
-                        <label class="radio-input">
-                          <span class="radio-input__text">Антицеллюлитный</span>
-                          <input type="radio" name="type-massage" value="cellulite" id="" />
-                          <span class="radio-input__decorator"></span>
-                        </label>
-                        <label class="radio-input">
-                          <span class="radio-input__text">Расслабляющий</span>
-                          <input type="radio" name="type-massage" value="relux" id="" />
-                          <span class="radio-input__decorator"></span>
-                        </label>
-                        <label class="radio-input">
-                          <span class="radio-input__text">Массаж в 4 руки</span>
-                          <input type="radio" name="type-massage" value="4hand" id="" />
-                          <span class="radio-input__decorator"></span>
-                        </label>
-                        <label class="radio-input">
-                          <span class="radio-input__text">Black Room</span>
-                          <input type="radio" name="type-massage" value="blackroom" id="" />
-                          <span class="radio-input__decorator"></span>
-                        </label>
-                    </div>
-                  </div> 
-                  <div class="order-sert__inputs-section">
-                    <div class="order-sert__inputs-header">Выбрать количество сеансов</div>
-                      <div class="number-input">
-                        <div class="number-input__minus">-</div>
-                        <input type="text" name="countSession" placeholder="0 " class="number-input__value">
-                        <div class="number-input__plus">+</div>
-                        <div class="number-input__note">Укажите нужное количество сеансов</div>
+                  <div style="display: none" class="order-sert__tab-panel">
+                    <div class="order-sert__inputs-section">
+                      <div class="order-sert__inputs-header">Выбрать массаж</div>
+                      <div class="order-sert__inputs-wrapper">
+                          <label class="radio-input">
+                            <span class="radio-input__text">Классический</span>
+                            <input type="radio" name="type-massage" value="classic" id="" />
+                            <span class="radio-input__decorator"></span>
+                          </label>
+                          <label class="radio-input">
+                            <span class="radio-input__text">Спортивный</span>
+                            <input type="radio" name="type-massage" value="sport" id="" />
+                            <span class="radio-input__decorator"></span>
+                          </label>
+                          <label class="radio-input">
+                            <span class="radio-input__text">Антицеллюлитный</span>
+                            <input type="radio" name="type-massage" value="cellulite" id="" />
+                            <span class="radio-input__decorator"></span>
+                          </label>
+                          <label class="radio-input">
+                            <span class="radio-input__text">Расслабляющий</span>
+                            <input type="radio" name="type-massage" value="relux" id="" />
+                            <span class="radio-input__decorator"></span>
+                          </label>
+                          <label class="radio-input">
+                            <span class="radio-input__text">Массаж в 4 руки</span>
+                            <input type="radio" name="type-massage" value="4hand" id="" />
+                            <span class="radio-input__decorator"></span>
+                          </label>
+                          <label class="radio-input">
+                            <span class="radio-input__text">Black Room</span>
+                            <input type="radio" name="type-massage" value="blackroom" id="" />
+                            <span class="radio-input__decorator"></span>
+                          </label>
                       </div>
-                  </div> 
-                  <div class="order-sert__inputs-section">
-                    <div class="order-sert__inputs-header">Выбрать время продолжительности сеанса</div>
-                    <div class="order-sert__inputs-wrapper">
-                      <label class="radio-input">
-                        <span class="radio-input__text">30 мин.</span>
-                        <input type="radio" name="massage-time" value="30" id="" />
-                        <span class="radio-input__decorator"></span>
-                      </label>
-                      <label class="radio-input">
-                        <span class="radio-input__text">60 мин.</span>
-                        <input type="radio" name="massage-time" value="60" id="" />
-                        <span class="radio-input__decorator"></span>
-                      </label>
+                    </div> 
+                    <div class="order-sert__inputs-section">
+                      <div class="order-sert__inputs-header">Выбрать количество сеансов</div>
+                        <div class="number-input">
+                          <div class="number-input__minus">-</div>
+                          <input type="text" name="countSession" placeholder="0 " class="number-input__value">
+                          <div class="number-input__plus">+</div>
+                          <div class="number-input__note">Укажите нужное количество сеансов</div>
+                        </div>
+                    </div> 
+                    <div class="order-sert__inputs-section">
+                      <div class="order-sert__inputs-header">Выбрать время продолжительности сеанса</div>
+                      <div class="order-sert__inputs-wrapper">
+                        <label class="radio-input">
+                          <span class="radio-input__text">30 мин.</span>
+                          <input type="radio" name="massage-time" value="30" id="" />
+                          <span class="radio-input__decorator"></span>
+                        </label>
+                        <label class="radio-input">
+                          <span class="radio-input__text">60 мин.</span>
+                          <input type="radio" name="massage-time" value="60" id="" />
+                          <span class="radio-input__decorator"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="order-sert__inputs-section">
+                      <div class="order-sert__inputs-header">Выбрать тип сертификата</div>
+                      <div class="order-sert__inputs-wrapper"> 
+                        <label class="radio-input">
+                          <span class="radio-input__text">Электронный</span>
+                          <input type="radio" name="type-sert" value="ellectronic" id="" />
+                          <span class="radio-input__decorator"></span>
+                        </label>
+                        <label class="radio-input">
+                          <span class="radio-input__text">Печатный формат</span>
+                          <input type="radio" name="time" value="print" id="" />
+                          <span class="radio-input__decorator"></span>
+                        </label>
+                      </div>
+                    </div> 
+                    <div class="order-sert__inputs-section">
+                      
+                      <div class="order-sert__inputs-header">Введите промокод и получите дополнительную скидку</div>
+                      <div class="order-sert__inputs-wrapper order-sert__inputs-wrapper_nowrap">
+                        <input type="text" class="text-input order-sert__input-promo" placeholder="Промокод">
+                        <button class="order-sert__inputs-btn btn btn_transperent">применить</button>
+                      </div>
+                    </div> 
+                  </div>
+                  <div class="order-sert__tab-panel">
+                    <div class="order-sert__inputs-section">
+                      <div class="order-sert__inputs-header">Выбрать количество сеансов</div>
+                      <div class="order-sert__inputs-wrapper order-sert__inputs-wrapper_nowrap">
+                        <input type="text" class="text-input order-sert__input-s" placeholder="555 000">
+                        <div class="order-sert__inputs-note">2 500 руб. – минимальная сумма на которую можно сделать сертификат</div>
+                      </div>
+                    </div>
+                    <div class="order-sert__inputs-section">
+                      <div class="order-sert__inputs-header">Введите промокод и получите дополнительную скидку</div>
+                      <div class="order-sert__inputs-wrapper order-sert__inputs-wrapper_nowrap">
+                        <input type="text" class="text-input order-sert__input-promo" placeholder="Промокод">
+                        <button class="order-sert__inputs-btn btn btn_transperent">применить</button>
+                      </div>
                     </div>
                   </div>
-                  <div class="order-sert__inputs-section">
-                    <div class="order-sert__inputs-header">Выбрать тип сертификата</div>
-                    <div class="order-sert__inputs-wrapper"> 
-                      <label class="radio-input">
-                        <span class="radio-input__text">Электронный</span>
-                        <input type="radio" name="type-sert" value="ellectronic" id="" />
-                        <span class="radio-input__decorator"></span>
-                      </label>
-                      <label class="radio-input">
-                        <span class="radio-input__text">Печатный формат</span>
-                        <input type="radio" name="time" value="print" id="" />
-                        <span class="radio-input__decorator"></span>
-                      </label>
-                    </div>
-                  </div> 
-                  <div class="order-sert__inputs-section">
-                    
-                      <div class="order-sert__inputs-header">Введите промокод и получите дополнительную скидку</div>
-                    <div class="order-sert__inputs-wrapper">
-                      <input type="text" class="text-input order-sert__input-promo" placeholder="Промокод">
-                      <button class="order-sert__inputs-btn btn btn_transperent">применить</button>
-                    </div>
-                  </div> 
                 </div>
                 <!--TOTAL  -->
                 <div class="order-sert__total">

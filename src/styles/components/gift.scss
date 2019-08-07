@@ -48,12 +48,16 @@
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: center;
   .radio-input {
     min-width: 250px;
   }
   label {
     width: 100%;
     margin-bottom: 10px;
+  }
+  &_nowrap {
+    flex-wrap: nowrap;
   }
 }
 
@@ -112,6 +116,16 @@
   margin-top: 20px;
 }
 
+.order-sert__inputs-note{
+  font-family: OpenSans;
+  font-size: 13px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.54;
+  color: $col-white;
+  margin-left: 35px;
+}
+
 @media (min-width: 740px) {
   .order-sert__inputs-section {
     margin-bottom: 60px;
@@ -123,6 +137,11 @@
   }
   .order-sert__input-promo {
     width: 65%;
+    margin-right: 10px;
+  }
+  .order-sert__input-s {
+    max-width: 30%;
+    font-size: 32px;
   }
   .order-sert__total-price {
     background-color: $col-black50;
@@ -130,7 +149,7 @@
   }
   .order-sert__inputs-header {
     font-size: 28px;
-    max-width: 45%;
+    max-width: 55%;
   }
   .first-screen-gift__block:first-child {
     width: 49%;
@@ -177,11 +196,8 @@
         }
       }
       .order-sert__total-info-list {
-        height: 484px;
+        max-height: 804px;
         padding: 40px 50px;
-        &_servises {
-          height: 354px;
-        }
       }
     }
   }
@@ -224,9 +240,9 @@
 
   .order-sert__total-info-list {
     padding: 0 50px;
-    height: 0;
+    max-height: 0;
     overflow: hidden;
-    transition: all 0.3s;
+    transition: all .3s;
   }
 
   .order-sert__total-info-item {

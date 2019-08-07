@@ -414,7 +414,6 @@
     width: 545px;
   }
   .services__wrapper,
-  .order-sert__wrapper,
   .services-list__wrapper {
     padding-left: 65px;
     padding-right: 65px;
@@ -431,6 +430,11 @@
   .services__slider {
     width: 475px;
     height: 417px;
+  }
+
+  .order-sert__wrapper {
+    padding-left: 65px;
+    padding-right: 65px;
   }
 
   .services__slider-wrapper {

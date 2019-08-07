@@ -2004,7 +2004,6 @@ body {
   .services__slider-cell {
     width: 545px; }
   .services__wrapper,
-  .order-sert__wrapper,
   .services-list__wrapper {
     padding-left: 65px;
     padding-right: 65px; }
@@ -2015,6 +2014,9 @@ body {
   .services__slider {
     width: 475px;
     height: 417px; }
+  .order-sert__wrapper {
+    padding-left: 65px;
+    padding-right: 65px; }
   .services__slider-wrapper {
     width: 475px;
     height: 417px;
@@ -3377,7 +3379,7 @@ body {
   .order-sert__inputs-wrapper .radio-input {
     min-width: 250px; }
   .order-sert__inputs-wrapper label {
-    width: 49%;
+    width: 100%;
     margin-bottom: 10px; }
 
 .order-sert__inputs-btn {
@@ -3491,8 +3493,11 @@ body {
     letter-spacing: -0.25px;
     color: #ffffff; } }
 
+@media (min-width: 1060px) {
+  .order-sert__inputs-wrapper label {
+    width: 49%; } }
+
 @media (min-width: 1080px) {
-  .order-sert,
   .first-screen-gift {
     padding-left: 65px;
     padding-right: 65px; } }

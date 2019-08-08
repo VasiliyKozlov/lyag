@@ -1,10 +1,9 @@
 import activateComponent from './../handlers/activateComponent';
 const radios = document.querySelectorAll('input[type="radio"]');
 const panels = document.querySelectorAll('.order-sert__tab-panel[data-tab]');
+const inputNum = document.querySelector('.number-input__value');
 
-document.body.addEventListener('click', e => {
-  if (!e.target.closest('.radio-input')) return;
-
+const radioInputHandler = function(e) {
   if (e.target.name) {
     let form = e.target.closest('form');
 
@@ -24,7 +23,38 @@ document.body.addEventListener('click', e => {
           elem.classList.remove('active');
         }
       });
-      console.log();
     }
   }
+}
+
+const numberInputHandler = (e) => {
+  const action = e.target.dataset.action;  
+  //if(!action) return;
+  console.log(inputNum.value);
+  
+  switch(action) {
+    case 'plus': 
+      inputNum.value++;
+      break;
+    case 'minus': 
+      if(+inputNum.value === 0) return;
+      inputNum.value--;
+      break;
+    default: 
+      return;
+  }
+  
+  
+}
+
+document.body.addEventListener('click', e => {
+  if (e.target.closest('.radio-input')) {
+    radioInputHandler(e)
+  }
+
+  if (e.target.closest('.number-input')) {
+    numberInputHandler(e)
+  }
 });
+
+

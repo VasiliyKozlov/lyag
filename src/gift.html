@@ -150,25 +150,24 @@
         <section class="order-sert">
           <div class="order-sert__wrapper wrapper">
             <form action="" class="order-sert__form">
-             <!-- <div class="order-sert__tab-panel"></div>
-                   -->
+            
                 <div class="order-sert__inputs">
                   <div class="order-sert__inputs-section">
                     <div class="order-sert__inputs-header">Выбрать вид сертификата</div>
                     <div class="order-sert__inputs-wrapper">
-                        <label class="radio-input">
+                        <label class="radio-input radio-input_type active">
                           <span class="radio-input__text">Стандартный</span>
-                          <input type="radio" name="typeof-sert" value="standart" id="" />
+                          <input type="radio" name="typeof-sert" checked value="standart" id="" />
                           <span class="radio-input__decorator"></span>
                         </label>
-                        <label class="radio-input">
+                        <label class="radio-input radio-input_type">
                           <span class="radio-input__text">По номиналу</span>
-                          <input type="radio" name="typeof-sert" value="nominal" id="" />
+                          <input type="radio" name="typeof-sert"  value="nominal" id="" />
                           <span class="radio-input__decorator"></span>
                         </label>
                     </div>
                   </div>
-                  <div style="display: none" class="order-sert__tab-panel">
+                  <div data-tab="standart" class="order-sert__tab-panel active">
                     <div class="order-sert__inputs-section">
                       <div class="order-sert__inputs-header">Выбрать массаж</div>
                       <div class="order-sert__inputs-wrapper">
@@ -179,7 +178,7 @@
                           </label>
                           <label class="radio-input">
                             <span class="radio-input__text">Спортивный</span>
-                            <input type="radio" name="type-massage" value="sport" id="" />
+                            <input type="radio" class="radio-input__type" name="type-massage" value="sport" id="" />
                             <span class="radio-input__decorator"></span>
                           </label>
                           <label class="radio-input">
@@ -243,8 +242,7 @@
                         </label>
                       </div>
                     </div> 
-                    <div class="order-sert__inputs-section">
-                      
+                    <div tab-data="nominal" class="order-sert__inputs-section">
                       <div class="order-sert__inputs-header">Введите промокод и получите дополнительную скидку</div>
                       <div class="order-sert__inputs-wrapper order-sert__inputs-wrapper_nowrap">
                         <input type="text" class="text-input order-sert__input-promo" placeholder="Промокод">
@@ -252,7 +250,7 @@
                       </div>
                     </div> 
                   </div>
-                  <div class="order-sert__tab-panel">
+                  <div data-tab="nominal" class="order-sert__tab-panel">
                     <div class="order-sert__inputs-section">
                       <div class="order-sert__inputs-header">Выбрать количество сеансов</div>
                       <div class="order-sert__inputs-wrapper order-sert__inputs-wrapper_nowrap">

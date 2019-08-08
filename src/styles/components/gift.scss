@@ -116,7 +116,7 @@
   margin-top: 20px;
 }
 
-.order-sert__inputs-note{
+.order-sert__inputs-note {
   font-family: OpenSans;
   font-size: 13px;
   font-weight: 300;
@@ -124,6 +124,13 @@
   line-height: 1.54;
   color: $col-white;
   margin-left: 35px;
+}
+
+.order-sert__tab-panel {
+  display: none;
+  &.active {
+    display: block;
+  }
 }
 
 @media (min-width: 740px) {
@@ -242,7 +249,7 @@
     padding: 0 50px;
     max-height: 0;
     overflow: hidden;
-    transition: all .3s;
+    transition: all 0.3s;
   }
 
   .order-sert__total-info-item {

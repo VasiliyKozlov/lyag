@@ -3440,6 +3440,11 @@ body {
   color: #ffffff;
   margin-left: 35px; }
 
+.order-sert__tab-panel {
+  display: none; }
+  .order-sert__tab-panel.active {
+    display: block; }
+
 @media (min-width: 740px) {
   .order-sert__inputs-section {
     margin-bottom: 60px; }
@@ -3527,7 +3532,7 @@ body {
     padding: 0 50px;
     max-height: 0;
     overflow: hidden;
-    transition: all .3s; }
+    transition: all 0.3s; }
   .order-sert__total-info-item {
     margin-bottom: 15px; }
   .order-sert__total-info-item-head {

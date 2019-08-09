@@ -18,6 +18,11 @@
     justify-content: center;
     flex-direction: column;
   }
+  &_long {
+    &.active {
+      justify-content: flex-start;
+    }
+  }
 }
 
 .modal__body {

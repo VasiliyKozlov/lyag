@@ -237,7 +237,7 @@
                         </label>
                         <label class="radio-input">
                           <span class="radio-input__text">Печатный формат</span>
-                          <input type="radio" name="time" value="print" id="" />
+                          <input type="radio" name="type-sert" value="print" id="" />
                           <span class="radio-input__decorator"></span>
                         </label>
                       </div>
@@ -252,12 +252,27 @@
                   </div>
                   <div data-tab="nominal" class="order-sert__tab-panel">
                     <div class="order-sert__inputs-section">
-                      <div class="order-sert__inputs-header">Выбрать количество сеансов</div>
+                      <div class="order-sert__inputs-header">Ввести сумму номинала</div>
                       <div class="order-sert__inputs-wrapper order-sert__inputs-wrapper_nowrap">
                         <input type="text" class="text-input order-sert__input-s" placeholder="555 000">
                         <div class="order-sert__inputs-note">2 500 руб. – минимальная сумма на которую можно сделать сертификат</div>
                       </div>
                     </div>
+                    <div class="order-sert__inputs-section">
+                      <div class="order-sert__inputs-header">Выбрать тип абонемента</div>
+                      <div class="order-sert__inputs-wrapper"> 
+                        <label class="radio-input">
+                          <span class="radio-input__text">Электронный</span>
+                          <input type="radio" name="type-ab" value="ellectronic" id="" />
+                          <span class="radio-input__decorator"></span>
+                        </label>
+                        <label class="radio-input">
+                          <span class="radio-input__text">Печатный</span>
+                          <input type="radio" name="type-ab" value="print" id="" />
+                          <span class="radio-input__decorator"></span>
+                        </label>
+                      </div>
+                    </div> 
                     <div class="order-sert__inputs-section">
                       <div class="order-sert__inputs-header">Введите промокод и получите дополнительную скидку</div>
                       <div class="order-sert__inputs-wrapper order-sert__inputs-wrapper_nowrap">

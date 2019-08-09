@@ -22,6 +22,19 @@
   text-transform: uppercase;
 }
 
+.order__inputs-header {
+  width: 100%;
+  font-size: 28px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.1;
+  letter-spacing: normal;
+  color: #ffffff;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
 .order__form-footnote {
   font-family: OpenSans;
   font-size: 12px;
@@ -123,6 +136,13 @@
   .order__form-input-submit_fi {
     flex-grow: 1;
   }
+  .order__form-input_long {
+    width: 100%;
+  }
+  .order__form-input_middle {
+    width: 48%;
+    margin-right: 10px;
+  }
 }
 @media (min-width: 820px) {
   .order__form-wrapper {
@@ -132,6 +152,10 @@
   .order__form-input_modal {
     width: 48%;
     margin-right: 10px;
+  }
+
+  .order__form-input_long {
+    width: 100%;
   }
 }
 @media (min-width: 1080px) {

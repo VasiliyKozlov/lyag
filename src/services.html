@@ -360,144 +360,179 @@
       </div>
       <!--CONTENT  -->
 
-     <!-- MODAL SALON -->
-     <div class="modal modal_long ">
+     <!-- MODAL  ORDER AB -->
+    <div class="modal modal_long ">
+      <div class="modal__overlay"></div>
+      <div class="modal__body modal__body_black">
+        <div class="modal__close btn btn_red"></div>
+        <h2 class="modal__header">
+          Заказать абонемент
+        </h2>
+        <div class="modal__p">Наши менеджеры быстро свяжутся с вами 
+          и скоординируют по нужному вопросу</div>
+        <form action="" class="order__form form">
+        <div class="order-sert__inputs-section">
+            <div class="order__inputs-header">На кого будет оформлен абонемент</div>
+            <div class="order-sert__inputs-wrapper"> 
+              <label class="radio-input active">
+                <span class="radio-input__text">На себя</span>
+                <input type="radio" name="type-ab" checked value="ellectronic" id="" />
+                <span class="radio-input__decorator"></span>
+              </label>
+              <label class="radio-input">
+                <span class="radio-input__text">На другого человека</span>
+                <input type="radio" name="type-ab" value="print" id="" />
+                <span class="radio-input__decorator"></span>
+              </label>
+            </div>
+          </div> 
+          <div class="order__form-wrapper order__form-wrapper_fo order-sert__inputs-section">
+            <div class="order__inputs-header">Ваши контактные <br> данные </div>
+            <div class="order__form-input order__form-input_modal order__form-input_middle">
+              <input type="text" name="name" placeholder="Имя" class="text-input" id="" />
+            </div>
+            <div class="order__form-input order__form-input_modal order__form-input_middle">
+              <input type="text" name="phone" placeholder="Телефон" class="text-input" id="" />
+            </div>
+            <div class="order__form-input order__form-input_modal order__form-input_long">
+              <input type="text" name="email" placeholder="Email" class="text-input" id="" />
+            </div>
+            <div class="order__form-input order__form-input_modal order__form-input_long order__form-input-submit">
+              <button class="btn btn_red">записаться на первый массаж</button>
+            </div>
+            <div class="order__form-footnote">Нажимая кнопку «Записаться на первый массаж» <a class="order__form-footnote-link" href="">я принимаю условия передачи информации</a></div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- MODAL  ORDER AB -->
+
+     <!-- MODAL  ORDER AB -->
+     <div class="modal modal_long active">
         <div class="modal__overlay"></div>
-        <div class="modal__body modal__body_salon modal__body_black">
+        <div class="modal__body modal__body_black">
           <div class="modal__close btn btn_red"></div>
-          <div class="salons__modal-head">
-              <div class="salons__modal-head-adr">
-                  <div class="salons__modal-head-adr-city">Москва</div>
-                  <div class="salons__modal-head-adr-street">Турчанинов переулок, дом 3, строение 1</div>
+          <h2 class="modal__header">
+            Заказать абонемент
+          </h2>
+          <div class="modal__p">Наши менеджеры быстро свяжутся с вами 
+            и скоординируют по нужному вопросу</div>
+          <form action="" class="order__form form">
+          <div class="order-sert__inputs-section">
+              <div class="order__inputs-header">На кого будет оформлен абонемент</div>
+              <div class="order-sert__inputs-wrapper"> 
+                <label class="radio-input active">
+                  <span class="radio-input__text">На себя</span>
+                  <input type="radio" name="type-ab" checked value="ellectronic" id="" />
+                  <span class="radio-input__decorator"></span>
+                </label>
+                <label class="radio-input">
+                  <span class="radio-input__text">На другого человека</span>
+                  <input type="radio" name="type-ab" value="print" id="" />
+                  <span class="radio-input__decorator"></span>
+                </label>
               </div>
-              <div class="salons__modal-head-metro">
-                Парк Культуры
+            </div> 
+            <div class="order__form-wrapper order__form-wrapper_fo order-sert__inputs-section">
+              <div class="order__inputs-header">Ваши контактные <br> данные </div>
+              <div class="order__form-input order__form-input_modal order__form-input_middle">
+                <input type="text" name="name" placeholder="Имя" class="text-input" id="" />
               </div>
-          </div>
-          <div class="salons__modal-videos salons__videos-slider slider">
-              <div class="salons__modal-videos-item video">
-                <img src="./images/salon-example.jpg" alt="">
-                <div class="video__control">
-                    <div class="video__control-btn"></div>
-                    <div class="video__ext">
-                      <div class="video__ext-name">
-                        о ляг.спиной
-                      </div>
-                      <div class="video__ext-time">
-                        2:23 сек.
-                      </div>
-                    </div>
-                  </div>
+              <div class="order__form-input order__form-input_modal order__form-input_middle">
+                <input type="text" name="phone" placeholder="Телефон" class="text-input" id="" />
               </div>
-
-              <div class="salons__modal-videos-item video">
-                  <img src="./images/salon-example.jpg" alt="">
-                  <div class="video__control">
-                      <div class="video__control-btn"></div>
-                      <div class="video__ext">
-                        <div class="video__ext-name">
-                          о ляг.спиной
-                        </div>
-                        <div class="video__ext-time">
-                          2:23 сек.
-                        </div>
-                      </div>
-                    </div>
-                </div>
-
-                <div class="salons__modal-videos-item video">
-                    <img src="./images/salon-example.jpg" alt="">
-                    <div class="video__control">
-                        <div class="video__control-btn"></div>
-                        <div class="video__ext">
-                          <div class="video__ext-name">
-                            о ляг.спиной
-                          </div>
-                          <div class="video__ext-time">
-                            2:23 сек.
-                          </div>
-                        </div>
-                      </div>
-                  </div>
-          </div>
-          <div class="salons__modal-adv">
-            <div class="salons__modal-adv-plus">Парковка в 1 минуте от мастерской <br>(60 руб. — час)</div>
-            <div class="salons__modal-adv-count">
-              <div class="salons__modal-adv-count-item">
-                2
-                <span>кабинета</span>
-              </div>
-              <div class="salons__modal-adv-count-item">
-                10
-                <span>мастеров</span>
+              <div class="order__form-input order__form-input_modal order__form-input_long">
+                <input type="text" name="email" placeholder="Email" class="text-input" id="" />
               </div>
             </div>
-          </div>
-          <div class="salons__modal-how-find">
-            <div class="salons__modal-how-find salons__modal-how-find-slider slider"> 
-              <div class="salons__modal-how-find-item">
-                  <span class="salons__modal-how-find-point"></span>
-                  <div class="salons__modal-how-find-head">Выходим из метро</div>
-                  <div class="salons__modal-how-find-body">Поднимаемся по экскалатору, поварачиваем налево и поднимаемся на ул. Сретенка к храму «Живоначальной Троицы В Листах»</div>
+            <div class="order__form-wrapper order__form-wrapper_fo order-sert__inputs-section">
+              <div class="order__inputs-header">Контактные данные человека <br>
+                  на которого оформляете абонемент </div>
+              <div class="order__form-input order__form-input_modal order__form-input_middle">
+                <input type="text" name="name" placeholder="Имя" class="text-input" id="" />
               </div>
-              <div class="salons__modal-how-find-item">
-                  <span class="salons__modal-how-find-point"></span>
-                  <div class="salons__modal-how-find-head">Выходим из метро</div>
-                  <div class="salons__modal-how-find-body">Поднимаемся по экскалатору, поварачиваем налево и поднимаемся на ул. Сретенка к храму «Живоначальной Троицы В Листах»</div>
+              <div class="order__form-input order__form-input_modal order__form-input_middle">
+                <input type="text" name="phone" placeholder="Телефон" class="text-input" id="" />
               </div>
-              <div class="salons__modal-how-find-item">
-                  <span class="salons__modal-how-find-point"></span>
-                  <div class="salons__modal-how-find-head">Выходим из метро</div>
-                  <div class="salons__modal-how-find-body">Поднимаемся по экскалатору, поварачиваем налево и поднимаемся на ул. Сретенка к храму «Живоначальной Троицы В Листах»</div>
+              <div class="order__form-input order__form-input_modal order__form-input_long">
+                <input type="text" name="email" placeholder="Email" class="text-input" id="" />
               </div>
-              <div class="salons__modal-how-find-item">
-                  <span class="salons__modal-how-find-point"></span>
-                  <div class="salons__modal-how-find-head">Выходим из метро</div>
-                  <div class="salons__modal-how-find-body">Поднимаемся по экскалатору, поварачиваем налево и поднимаемся на ул. Сретенка к храму «Живоначальной Троицы В Листах»</div>
+              <div class="order__form-input order__form-input_modal order__form-input_long order__form-input-submit">
+                <button class="btn btn_red">записаться на первый массаж</button>
               </div>
+              <div class="order__form-footnote">Нажимая кнопку «Записаться на первый массаж» <a class="order__form-footnote-link" href="">я принимаю условия передачи информации</a></div>
             </div>
-            <div class="salons__modal-how-find-btn btn btn_transperent">смотреть на карте</div>
-            <div class="salons__modal-how-find-video video">
-              <div class="salons__modal-how-find-video-header video__header">
-                  Как добраться до салона
-              </div>
-                <img src="./images/salon-example.jpg" alt="">
-                <div class="video__control">
-                    <div class="video__control-btn"></div>
-                    <div class="video__ext">
-                      <div class="video__ext-name">
-                        о ляг.спиной
-                      </div>
-                      <div class="video__ext-time">
-                        2:23 сек.
-                      </div>
-                    </div>
-                  </div>
-            </div>
-          </div>
-          <div class="salons__order-form modal__red-order-form modal__form-two">
-            <div class="modal__header">Записаться 
-                на первый массаж</div>
-                <p class="modal__p">Наши менеджеры быстро свяжутся с вами 
-                    и скоординируют по нужному вопросу</p>   
-            <form action="" class="order__form form">
-                <div class="order__form-wrapper order__form-wrapper_fo">
-                  <div class="order__form-input order__form-input_fo">
-                    <input type="text" name="name" placeholder="Имя" class="text-input" id="" />
-                  </div>
-                  <div class="order__form-input order__form-input_fo">
-                    <input type="text" name="phone" placeholder="Телефон" class="text-input" id="" />
-                  </div>
-                  <div class="order__form-input order__form-input_fo order__form-input-submit">
-                    <button class="btn btn_black">записаться на первый массаж</button>
-                  </div>
-                  <div class="order__form-footnote">Нажимая кнопку «Записаться на первый массаж» <a class="order__form-footnote-link" href="">я принимаю условия передачи информации</a></div>
-                </div>
-              </form>
-          </div>
+          </form>
         </div>
       </div>
-     <!-- MODAL SALON --> 
+      <!-- MODAL  ORDER AB -->
+
+    <!-- MODAL  ORDER AB -->
+    <div class="modal modal_long ">
+        <div class="modal__overlay"></div>
+        <div class="modal__body modal__body_black">
+          <div class="modal__close btn btn_red"></div>
+          <h2 class="modal__header">
+            Заказать абонемент
+          </h2>
+          <div class="modal__p">Наши менеджеры быстро свяжутся с вами 
+            и скоординируют по нужному вопросу</div>
+          <form action="" class="order__form form">
+          <div class="order-sert__inputs-section">
+              <div class="order__inputs-header">На кого будет оформлен абонемент</div>
+              <div class="order-sert__inputs-wrapper"> 
+                <label class="radio-input active">
+                  <span class="radio-input__text">На себя</span>
+                  <input type="radio" name="type-ab" checked value="ellectronic" id="" />
+                  <span class="radio-input__decorator"></span>
+                </label>
+                <label class="radio-input">
+                  <span class="radio-input__text">На другого человека</span>
+                  <input type="radio" name="type-ab" value="print" id="" />
+                  <span class="radio-input__decorator"></span>
+                </label>
+              </div>
+            </div> 
+            <div class="order-sert__inputs-section">
+                <div class="order__inputs-header">Где вам удобно будет забрать абонемент</div>
+                <div class="order-sert__inputs-wrapper_long order__form-input_long"> 
+                  <label class="radio-input radio-input_long active">
+                    <span class="radio-input__text">м. Белорусская, Ленинградский проспект, дом 1</span>
+                    <input type="radio" name="adr" checked value="adr1" id="" />
+                    <span class="radio-input__decorator"></span>
+                  </label>
+                  <label class="radio-input radio-input_long">
+                    <span class="radio-input__text">м. Белорусская, Ленинградский проспект, дом 1</span>
+                    <input type="radio" name="adr" value="adr2" id="" />
+                    <span class="radio-input__decorator"></span>
+                  </label>
+                  <label class="radio-input radio-input_long">
+                    <span class="radio-input__text">м. Белорусская, Ленинградский проспект, дом 1</span>
+                    <input type="radio" name="adr" value="adr3" id="" />
+                    <span class="radio-input__decorator"></span>
+                  </label>
+                </div>
+              </div> 
+            <div class="order__form-wrapper order__form-wrapper_fo order-sert__inputs-section">
+              <div class="order__inputs-header">Ваши контактные <br> данные </div>
+              <div class="order__form-input order__form-input_modal order__form-input_middle">
+                <input type="text" name="name" placeholder="Имя" class="text-input" id="" />
+              </div>
+              <div class="order__form-input order__form-input_modal order__form-input_middle">
+                <input type="text" name="phone" placeholder="Телефон" class="text-input" id="" />
+              </div>
+              <div class="order__form-input order__form-input_modal order__form-input_long">
+                <input type="text" name="email" placeholder="Email" class="text-input" id="" />
+              </div>
+              <div class="order__form-input order__form-input_modal order__form-input_long order__form-input-submit">
+                <button class="btn btn_red">записаться на первый массаж</button>
+              </div>
+              <div class="order__form-footnote">Нажимая кнопку «Записаться на первый массаж» <a class="order__form-footnote-link" href="">я принимаю условия передачи информации</a></div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- MODAL  ORDER AB -->
     
     <script src="../build/bundle.js"></script>
   </body>
